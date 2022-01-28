@@ -53,3 +53,25 @@
 }
 
 /* || Different Sizes for Avatar ends */
+
+/* Text Avatar starts */
+
+.avatar-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .avatar.avatar-sm.avatar-text {
+    font-size: 2.4rem;
+  }
+  .avatar.avatar-md.avatar-text {
+    font-size: 3.2rem;
+  }
+  .avatar.avatar-lg.avatar-text {
+    font-size: 4rem;
+  }
+  
+/* Text Avatar Ends */
