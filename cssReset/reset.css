@@ -33,6 +33,12 @@ html {
   --font-size-h3: 2.4rem;
   --font-size-h4: 1.6rem;
   --font-size-h5: 0.8rem;
+
+  /* Border Radius */
+  --small-border-radius: 5px;
+  --medium-border-radius: 10px;
+  --large-border-radius: 15px;
+  --full-round-border-radius: 999px;
 }
 
 body {
