@@ -1,7 +1,7 @@
 @import url(/components/avatar/avatar.css);
 
 /* || Avatar with badges start */
-.avatar.badge-container {
+.badge-container {
     position: relative;
 }
 
@@ -27,3 +27,24 @@
 }
 
 /* || Avatar with badges ends */
+
+/* || Icons with badges starts */
+
+.icon-container .icon {
+    font-size: 2.8rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.icon-container .icon-badge {
+    position: absolute;
+    font-size: 1.2rem;
+    color: white;
+    background-color: red;
+    padding: 3px 6px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+/* || Icons with badges ends */
