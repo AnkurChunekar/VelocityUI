@@ -1,1 +1,29 @@
-@import url(/cssReset/reset.css);
+@import url(/components/avatar/avatar.css);
+
+/* || Avatar with badges start */
+.avatar.badge-container {
+    position: relative;
+}
+
+.badge-container .avatar-badge {
+    position: absolute;
+    background-color: gray;
+    height: 1.5rem;
+    width: 1.5rem;
+    bottom: 2px;
+    right: 4px;
+    border-radius: 50%;
+    border: solid 2px white;
+}
+
+.avatar-badge.online {
+    background-color: #22c55e;
+}
+.avatar-badge.offline {
+    background-color: gray;
+}
+.avatar-badge.dnd {
+    background-color: red;
+}
+
+/* || Avatar with badges ends */
