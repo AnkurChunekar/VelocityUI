@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* || Remove built-in form typography styles */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* || font size to % */
+html {
+  font-size: 62.5%; /* 100% = 16px, hence 62.5% = 10px */
+}
+
+/* || variables */
+:root {
+  /* Font Sizes start*/
+  --font-size-h1: 4.8rem;
+  --font-size-h2: 3.2rem;
+  --font-size-h3: 2.4rem;
+  --font-size-h4: 1.6rem;
+  --font-size-h5: 0.8rem;
+
+  /* Border Radius */
+  --small-border-radius: 5px;
+  --medium-border-radius: 10px;
+  --large-border-radius: 15px;
+  --full-round-border-radius: 999px;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+/* || headings and paragraph font sizes */
+h1,
+.h1,
+.p1 {
+  font-size: var(--font-size-h1);
+}
+h2,
+.h2,
+.p2 {
+  font-size: var(--font-size-h2);
+}
+h3,
+.h3,
+.p3 {
+  font-size: var(--font-size-h3);
+}
+h4,
+.h4,
+.p4 {
+  font-size: var(--font-size-h4);
+}
+h5,
+.h5,
+.p5 {
+  font-size: var(--font-size-h5);
+}
