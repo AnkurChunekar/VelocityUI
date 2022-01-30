@@ -13,5 +13,64 @@
 
     <link rel="stylesheet" href="alert.css" />
   </head>
-  <body></body>
+  <body>
+
+<!-- Standard alert start -->
+
+<div class="alert-container component-container">
+  <div class="alert alert-success">
+    <i class="fas fa-check-circle icon"></i>
+    <span>Well Done! you have successfully read an alert message.</span>
+  </div>
+  <div class="alert alert-error">
+    <i class="fas fa-exclamation-circle icon"></i>
+    <span>Error! Something went wrong, Try again. </span>
+  </div>
+  <div class="alert alert-info">
+    <i class="fas fa-info-circle icon"></i>
+    <span>When in doubt, use this one to communicate with the user.</span>
+  </div>
+  <div class="alert alert-warn">
+    <i class="fas fa-exclamation-circle icon"></i>
+    <span>Warning! a simple warning, check out. </span>
+  </div>
+</div>
+
+<!-- Standard alert ends -->
+
+<!-- Dismissible alert start -->
+
+<div class="alert-container component-container">
+  <div class="alert alert-success" id="alert-box-example">
+    <i class="fas fa-check-circle icon"></i>
+    <span>Well Done! You can delete this message after reading.</span>
+    <i
+      class="fas fa-times alert-dismissible-icon"
+      id="alert-example-close-btn"
+    ></i>
+  </div>
+</div>
+
+<!-- Dismissible alert end -->
+
+<!-- Alert with a msg start -->
+
+<div class="alert-container component-container">
+
+  <div class="alert alert-error alert-w-additional-text">
+    <div>
+      <i class="fas fa-exclamation-circle icon"></i>
+      <strong>Error! Check the message below and try again.</strong>
+    </div>
+    <div class="additional-text">
+      <span>Make sure that you are including correct classes inside appropriate HTML elements. You can Copy given HTML code.</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Alert with a msg end -->
+
+
+  </body>
 </html>

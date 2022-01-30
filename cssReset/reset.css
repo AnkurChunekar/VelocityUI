@@ -42,12 +42,14 @@ html {
   --velocity-green: #4caf50;
   --velocity-pink: #d1345b;
   --lynx-white: #f7f7f7;
+  /* Plain colors--- */
   --plain-white: white;
   --plain-black: black;
 }
 
 body {
   font-family: "Sora", sans-serif;
+  font-size: var(--font-size-h4);
 }
 
 /* || headings and paragraph font sizes */
