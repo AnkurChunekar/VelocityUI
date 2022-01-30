@@ -1,5 +1,9 @@
 @import url(/cssReset/reset.css);
 
+:root {
+  --text-avatar-bg: #2563eb;
+}
+
 /* || Component Container */
 .component-container {
   border: 1px solid lightgray;
@@ -60,8 +64,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2563eb;
-    color: white;
+    background-color: var(--text-avatar-bg);
+    color: var(--plain-white);
   }
   
   .avatar.avatar-sm.avatar-text {

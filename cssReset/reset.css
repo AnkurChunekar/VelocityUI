@@ -45,6 +45,8 @@ html {
   /* Plain colors--- */
   --plain-white: white;
   --plain-black: black;
+  --plain-gray: gray;
+  --plain-red: red;
 }
 
 body {

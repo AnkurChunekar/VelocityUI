@@ -1,5 +1,9 @@
 @import url(/components/avatar/avatar.css);
 
+:root {
+    --badge-online-bg: #22c55e;
+}
+
 /* || Avatar with badges start */
 .badge-container {
     position: relative;
@@ -7,23 +11,23 @@
 
 .badge-container .avatar-badge {
     position: absolute;
-    background-color: gray;
+    background-color: var(--plain-gray);
     height: 1.5rem;
     width: 1.5rem;
     bottom: 2px;
     right: 4px;
     border-radius: var(--full-round-border-radius);
-    border: solid 2px white;
+    border: solid 2px var(--plain-white);
 }
 
 .avatar-badge.online {
-    background-color: #22c55e;
+    background-color: var(--badge-online-bg);
 }
 .avatar-badge.offline {
-    background-color: gray;
+    background-color: var(--plain-gray);
 }
 .avatar-badge.dnd {
-    background-color: red;
+    background-color: var(--plain-red);
 }
 
 /* || Avatar with badges ends */
@@ -39,8 +43,8 @@
 .icon-container .icon-badge {
     position: absolute;
     font-size: 1.2rem;
-    color: white;
-    background-color: red;
+    color: var(--plain-white);
+    background-color: var(--plain-red);
     padding: 3px 6px;
     border-radius: var(--full-round-border-radius);
     top: 0;
