@@ -1,2 +1,193 @@
 @import url(/cssReset/reset.css);
 @import url(/cssUtilities/utilities.css);
+
+:root {
+  --primary-btn-hover: #0057d9;
+  --secondary-btn-lightgray: lightgray;
+  --secondary-btn-hover: #a9a9a9;
+  --danger-btn-hover: #bc1816;
+  --success-btn-hover: #419544;
+  --warn-btn-hover: #d98200;
+  --dark-btn-hover: #454545;
+  --floating-btn-padding: 1.6rem 2rem;
+  --normal-gray: gray;
+}
+
+/* || Component container start */
+
+.component-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* || Component container ends */
+
+/* || Button styling starts */
+
+.btn {
+  background-color: var(--velocity-blue);
+  border-radius: 5px;
+  color: var(--plain-white);
+  font-size: var(--font-size-h4);
+  margin: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+/* || Button styling ends */
+
+/* || Button Solid starts */
+
+.btn.btn-secondary {
+  color: var(--plain-black);
+  background-color: var(--secondary-btn-lightgray);
+}
+.btn.btn-secondary:hover {
+  background-color: var(--secondary-btn-hover);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-btn-hover);
+}
+
+.btn.btn-dark {
+  background-color: var(--velocity-black);
+}
+.btn.btn-dark:hover {
+  background-color: var(--dark-btn-hover);
+}
+
+.btn.btn-danger {
+  background-color: var(--velocity-red);
+}
+.btn.btn-danger:hover {
+  background-color: var(--danger-btn-hover);
+}
+
+.btn.btn-success {
+  background-color: var(--velocity-green);
+}
+.btn.btn.btn-success:hover {
+  background-color: var(--success-btn-hover);
+}
+
+.btn.btn-warn {
+  color: var(--plain-black);
+  background-color: var(--velocity-orange);
+}
+.btn.btn.btn-warn:hover {
+  background-color: var(--warn-btn-hover);
+}
+
+/* || Button Solid ends */
+
+/* || Button outline starts */
+
+.btn.btn-outline {
+  color: var(--velocity-blue);
+  background-color: transparent;
+  border: solid 2px var(--velocity-blue);
+}
+.btn.btn-primary.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-secondary.btn.btn-outline {
+  color: var(--plain-black);
+  border: solid 2px var(--secondary-btn-lightgray);
+}
+.btn.btn-secondary.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-dark.btn.btn-outline {
+  color: var(--velocity-black);
+  border: solid 2px var(--velocity-black);
+}
+.btn.btn-dark.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-danger.btn.btn-outline {
+  color: var(--velocity-red);
+  border: solid 2px var(--velocity-red);
+}
+.btn.btn-danger.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-success.btn.btn-outline {
+  color: var(--velocity-green);
+  border: solid 2px var(--velocity-green);
+}
+.btn.btn-success.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-warn.btn.btn-outline {
+  color: var(--velocity-orange);
+  border: solid 2px var(--velocity-orange);
+}
+.btn.btn-warn.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+/* || Button outline ends */
+
+/* || Button sizes starts */
+
+.btn.btn-s {
+  padding: 0.5rem 0.75rem;
+  font-size: var(--font-size-h5);
+}
+.btn.btn-lg {
+  font-size: 2rem;
+  padding: 1rem 1.25rem;
+}
+
+/* || Button sizes ends */
+
+/* || Link, Icon Button start */
+
+.btn.btn-link {
+    background-color: inherit;
+    color: var(--velocity-blue);
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+    border-radius: none;
+    text-decoration: underline 0.5px;
+  }
+  .btn.btn-link:hover {
+    color: var(--velocity-blue);
+    text-decoration: underline 3px;
+  }
+
+.btn.btn-w-icon .icon {
+    margin: 0 0.6rem;
+}
+
+/* || Link, Icon Button end */
+
+/* || Button floating starts */
+
+.btn.btn-floating {
+  padding: var(--floating-btn-padding);
+  border-radius: var(--full-round-border-radius);
+}
+
+/* || Button floating ends */
+
+/* || Button disabled start */
+
+.btn.disabled {
+  background-color: var(--normal-gray);
+  cursor: not-allowed;
+}
+.btn.disabled:hover {
+background-color: var(--normal-gray);
+}
+
+/* || Button disabled end */
+

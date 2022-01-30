@@ -1,19 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocity UI Buttons</title>
 
     <script
-    src="https://kit.fontawesome.com/edf7bdb339.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="stylesheet" href="button.css" />
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="button.css" />
+  </head>
+  <body>
+    <!-- Solid Button Starts -->
+
+    <div class="btn-container component-container">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-warn">Warn</button>
+    </div>
+
+    <!-- Solid Button Ends -->
+
+    <!-- Button Sizes Starts -->
+
+    <div class="button-container component-container">
+      <button class="btn btn-primary btn-s">Small</button>
+      <button class="btn btn-primary btn-md">Button</button>
+      <button class="btn btn-primary btn-lg">Large Button</button>
+    </div>
+
+    <!-- Button Sizes Ends -->
+
+    <!-- Button Types start -->
+    <div class="button-container component-container">
+      <button class="btn btn-primary btn-outline">Primary</button>
+      <button class="btn btn-secondary btn-outline">Secondary</button>
+      <button class="btn btn-dark btn-outline">Dark</button>
+      <button class="btn btn-danger btn-outline">Danger</button>
+      <button class="btn btn-success btn-outline">Success</button>
+      <button class="btn btn-warn btn-outline">Warn</button>
+    </div>
+    <!-- Button Types end -->
+
+    <!-- Link and Icon Button start -->
+
+    <div class="button-container component-container">
+      <button class="btn btn-link">My-Link</button>
+
+      <button class="btn btn-w-icon btn-primary">
+        <i class="fas fa-shopping-cart icon"></i> <span> Add to Cart </span>
+      </button>
+      <button class="btn btn-w-icon btn-danger">
+        <span> Delete </span> <i class="fas fa-trash icon"></i> 
+      </button>
+      <button class="btn btn-primary disabled">Disabled</button>
+    </div>
+
+    <!-- Links and icon Button end -->
+
+    <!-- Floating Icon Button starts -->
+
+    <div class="button-container component-container">
+      <button class="btn btn-primary btn-floating"><i class="fas fa-arrow-up"></i></button>
+      <button class="btn btn-success btn-floating"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <!-- Floating Icon Button ends -->
+  </body>
 </html>
