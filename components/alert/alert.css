@@ -12,16 +12,21 @@
     --alert-info-icon-blue: #3182ce;
   }
   
-  .alert-container {
-    padding: 1rem;
-  }
-  
-/* alert styles start */
+.component-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
 
+  /* alert styles start */
+  
+    .alert-container {
+      padding: 1rem;
+    }
+    
 .alert {
   width: 100%;
   padding: 1rem;
-  margin: 1rem 0;
   display: flex;
   align-items: center;
   border-radius: 4px;

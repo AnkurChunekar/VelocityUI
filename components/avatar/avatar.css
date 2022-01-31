@@ -25,7 +25,7 @@
   object-fit: cover;
   height: 4.8rem;
   width: 4.8rem;
-  margin: 1rem;
+  margin: 0.5rem;
   border-radius: var(--full-round-border-radius);
 }
 
