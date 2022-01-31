@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
+  column-gap: 1rem;
   padding: 1rem;
 }
 
@@ -32,7 +33,6 @@
   border-radius: 5px;
   color: var(--plain-white);
   font-size: var(--font-size-h4);
-  margin: 0.5rem 1rem;
   padding: 0.75rem 1.25rem;
 }
 
