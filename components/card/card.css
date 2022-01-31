@@ -6,6 +6,7 @@
 
 :root {
   --card-description-color: #808080;
+  --light-gray: lightgray;
 }
 
 .component-container {
@@ -61,8 +62,10 @@
   margin: 1rem 1.5rem;
 }
 
-.card .card-body .card-text-content .card-description {
-  color: var(--card-description-color);
+.card .card-text-content .card-subtitle {
+  font-size: 1.4rem;
+}
+.card .card-text-content .card-description {
   margin: 0.5rem 0;
 }
 /* Card footer */
@@ -137,16 +140,16 @@
   display: none;
 }
 
-.card .card-body .card-icons .card-left-badge {
+ .card-icons .card-left-badge {
   position: absolute;
   top: 2rem;
   left: -0.2rem;
 }
-.card.card-w-badge .card-body .card-icons .card-like-icon {
+.card.card-w-badge .card-icons .card-like-icon {
   position: absolute;
   top: 1.2rem;
   right: 0.5rem;
-  color: gray;
+  color: var(--plain-gray);
   cursor: pointer;
 }
 
@@ -170,13 +173,13 @@
 
 .card.card-w-dismiss .card-body .dismiss-icon {
   display: block;
-  color: gray;
+  color: var(--plain-gray);
   position: absolute;
   top: 0.5rem;
   right: 1rem;
   border: red;
 }
-.card.card-w-dismiss .card-body .dismiss-icon .icon:hover {
+.card.card-w-dismiss .dismiss-icon .icon:hover {
   cursor: pointer;
   color: var(--velocity-red);
 }
@@ -240,7 +243,7 @@ display: none;
 
 .card.card-border {
   box-shadow: none;
-  border: solid lightgray 1px;
+  border: solid var(--light-gray) 1px;
 }
 
 /* || Card Border ends*/
