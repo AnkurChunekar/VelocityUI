@@ -1,0 +1,246 @@
+@import url(/cssReset/reset.css);
+@import url(/cssUtilities/utilities.css);
+@import url(/components/avatar/avatar.css);
+@import url(/components/button/button.css);
+@import url(/components/badge/badge.css);
+
+:root {
+  --card-description-color: #808080;
+}
+
+.component-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+/* ||------ Standard Card start */
+
+.card {
+  height: max-content;
+  max-width: 300px;
+  border-radius: var(--large-border-radius);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Card Header */
+.card .card-header {
+  display: none;
+}
+
+/* Card image  */
+.card .card-body .card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: var(--large-border-radius);
+  border-top-right-radius: var(--large-border-radius);
+}
+
+.card.card-small .card-image img {
+  height: 200px;
+}
+
+/* dismiss icon */
+.card .card-body .dismiss-icon {
+  color: var(--card-description-color);
+  display: none;
+}
+/* Card Badge */
+.card .card-body .card-icons {
+  display: none;
+}
+
+.card-icons .card-like-icon .icon:hover {
+  color: red;
+}
+
+/* Card Text Content */
+.card .card-body .card-text-content {
+  margin: 1rem 1.5rem;
+}
+
+.card .card-body .card-text-content .card-description {
+  color: var(--card-description-color);
+  margin: 0.5rem 0;
+}
+/* Card footer */
+.card footer.card-actions {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+.card footer.card-actions .menu-icon {
+  margin-left: auto;
+  color: var(--velocity-black);
+  cursor: pointer;
+}
+
+/*------- || Standard Card ends */
+
+/* || Social Media card starts */
+
+.card.card-social-media .card-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.card.card-social-media .card-header .card-badge {
+  margin-right: 1rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.card.card-social-media .card-image img {
+  border-radius: 0;
+}
+
+.card.card-social-media .card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 1rem;
+}
+.card.card-social-media .card-icons .card-left-badge {
+  display: none;
+}
+
+.card.card-social-media .card-icons .card-badge .icon {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+}
+.card.card-social-media .card-body .card-title {
+  display: none;
+}
+.card.card-social-media .card-body .card-description {
+  color: var(--velocity-black);
+}
+
+.card.card-social-media .card-actions {
+  display: none;
+}
+/* || Social Media card ends */
+
+/* || Card with badges start */
+
+.card.card-w-badge .card-body .card-icons {
+  display: block;
+}
+
+.card.card-w-badge .card-icons .card-comment-icon,
+.card.card-w-badge .card-icons .card-share-icon {
+  display: none;
+}
+
+.card .card-body .card-icons .card-left-badge {
+  position: absolute;
+  top: 2rem;
+  left: -0.2rem;
+}
+.card.card-w-badge .card-body .card-icons .card-like-icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 0.5rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.card.card-w-badge .card-subtitle {
+  color: var(--card-description-color);
+  margin: 1rem 0;
+}
+
+.card.card-w-badge .card-text-content .card-description  {
+  border: red;
+  color: black;
+  font-weight: 700;
+}
+.card.card-w-badge .card-description .strike-text {
+  color: var(--card-description-color);
+  font-weight: 400;
+}
+/* || Card with badges ends*/
+
+/* || Card with dismiss icon starts  */
+
+.card.card-w-dismiss .card-body .dismiss-icon {
+  display: block;
+  color: gray;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  border: red;
+}
+.card.card-w-dismiss .card-body .dismiss-icon .icon:hover {
+  cursor: pointer;
+  color: var(--velocity-red);
+}
+
+.card.card-w-dismiss .card-body .card-like-icon {
+  display: none;
+}
+/* || Card with dismiss icon ends */
+
+/* || Card with text overlays starts*/
+
+.card.card-text-overlay .card-text-content {
+  position: relative;
+}
+
+.card.card-text-overlay .card-title {
+  position: absolute;
+  top: -7rem;
+}
+
+.card.card-text-overlay .card-subtitle {
+  position: absolute;
+  top: -4rem;
+}
+
+.card.card-text-overlay .card-description {
+display: none;
+}
+/* || Card with text overlays ends*/
+
+/* || Card with text only starts*/
+
+.card.card-text-only .card-image,
+.card.card-text-only .card-actions {
+  display: none;
+}
+
+/* || Card with text only ends*/
+
+/* || Horizontal card starts*/
+.card.card-horizontal {
+  max-width: 40rem;
+}
+.card.card-horizontal .card-image img {
+  border-top-right-radius: 0;
+  width: 15rem;
+  max-height: 15rem;
+}
+
+.card.card-horizontal .card-body {
+  display: flex;
+}
+
+.card.card-horizontal footer.card-actions {
+  margin-top: 0.3rem;
+}
+
+/* || Horizontal card ends*/
+
+/* || Card Border starts*/
+
+.card.card-border {
+  box-shadow: none;
+  border: solid lightgray 1px;
+}
+
+/* || Card Border ends*/

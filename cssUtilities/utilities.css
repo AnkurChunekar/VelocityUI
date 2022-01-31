@@ -10,3 +10,8 @@
 .display-none {
     display: none;
 }
+
+/* || strike text */
+.strike-text {
+  text-decoration: line-through;
+}
