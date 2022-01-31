@@ -4,9 +4,18 @@
     --badge-online-bg: #22c55e;
 }
 
+.component-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+    padding: 1rem 0;
+}
+
 /* || Avatar with badges start */
 .badge-container {
     position: relative;
+    width: max-content;
 }
 
 .badge-container .avatar-badge {
@@ -36,8 +45,7 @@
 
 .icon-container .icon {
     font-size: 2.8rem;
-    padding: 1rem;
-    margin: 0 0.5rem;
+    padding: 0.5rem;
 }
 
 .icon-container .icon-badge {
@@ -47,8 +55,49 @@
     background-color: var(--plain-red);
     padding: 3px 6px;
     border-radius: var(--full-round-border-radius);
-    top: 0;
-    right: 0;
+    top: -6px;
+    right: -8px;
 }
 
 /* || Icons with badges ends */
+
+/* Tag Badges starts*/
+
+.badge-container.tag {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--font-size-h5);
+    border-radius: none;
+    color: var(--plain-black);
+    background-color: lightgray;
+}
+
+.tag.tag-primary {
+    color: var(--plain-white);
+    background-color: var(--velocity-blue);
+}
+.tag.tag-secondary {
+    color: var(--plain-black);
+    background-color: lightgray;
+}
+.tag.tag-dark {
+    color: var(--plain-white);
+    background-color: var(--velocity-black);
+}
+.tag.tag-success {
+    color: var(--plain-white);
+    background-color: var(--velocity-green);
+}
+.tag.tag-danger {
+    color: var(--plain-white);
+    background-color: var(--velocity-red);
+}
+.tag.tag-warn {
+    color: var(--plain-white);
+    background-color: var(--velocity-orange);
+}
+
+.tag.tag-round-border {
+    border-radius: var(--small-border-radius);
+}
+
+/* Tag Badges ends*/
