@@ -15,3 +15,8 @@
 .strike-text {
   text-decoration: line-through;
 }
+
+/* || gray -text */
+.gray-text {
+  color: gray;
+}

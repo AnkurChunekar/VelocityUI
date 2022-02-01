@@ -81,10 +81,9 @@ h5,
 .p5 {
   font-size: var(--font-size-h5);
 }
-h6,
-.h6,
+
 .p6 {
-  font-size: var(--font-size-h5);
+  font-size: var(--font-size-h6);
 }
 
 
