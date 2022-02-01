@@ -47,6 +47,7 @@ html {
   --plain-black: black;
   --plain-gray: gray;
   --plain-red: red;
+  --plain-lightgray: lightgray;
 }
 
 body {

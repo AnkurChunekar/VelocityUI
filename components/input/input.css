@@ -1,0 +1,71 @@
+@import url(/cssReset/reset.css);
+@import url(/cssUtilities/utilities.css);
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  row-gap: 1rem;
+}
+
+/* Input style starts */
+
+.input-wrapper input {
+  padding: 1rem;
+  border-radius: var(--small-border-radius);
+  border: solid 1.5px var(--velocity-black);
+}
+.input-wrapper .input-label {
+  display: block;
+}
+.input-wrapper .error-msg {
+  display: none;
+}
+.input-wrapper .icon {
+    display: none;
+}
+/* Input style ends */
+
+/* Input Validation style starts */
+.input-wrapper.validation input {
+  border: solid 1.5px var(--velocity-red);
+}
+.input-wrapper.validation .error-msg {
+  display: block;
+  color: var(--velocity-red);
+}
+
+/* Input Validation style ends */
+
+/* Input Validation style starts */
+
+.input-wrapper.radio .input-label {
+  display: none;
+}
+.input-wrapper.radio .input-label2 {
+  cursor: pointer;
+  display: inline;
+  color: inherit;
+}
+
+/* Input Validation style ends */
+
+/* Input w search icon style starts */
+
+.input-wrapper.search .input-label,
+.input-wrapper.search .input-label2 {
+  display: none;
+}
+.input-wrapper.search {
+    position: relative;
+}
+.input-wrapper.search .icon {
+    position: absolute;
+    display: inline;
+    top: 1.4rem;
+    right: 1rem;
+    color: var(--plain-gray);
+    cursor: pointer;
+}
+/* Input w search icon ends */
