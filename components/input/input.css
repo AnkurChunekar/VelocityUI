@@ -28,7 +28,9 @@
 /* Input style ends */
 
 /* Input Validation style starts */
-
+.input-wrapper.validation input {
+  border: solid 1.5px var(--velocity-red);
+}
 .input-wrapper.validation .error-msg {
   display: block;
   color: var(--velocity-red);
@@ -42,6 +44,7 @@
   display: none;
 }
 .input-wrapper.radio .input-label2 {
+  cursor: pointer;
   display: inline;
   color: inherit;
 }
