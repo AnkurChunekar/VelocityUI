@@ -21,6 +21,7 @@
 
 .highlight-text {
   background-color: var(--plain-lightgray);
+  border-radius: var(--small-border-radius);
 }
 .primary-color-text {
   color: var(--velocity-blue);
