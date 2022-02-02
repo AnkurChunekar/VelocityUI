@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-/* snackbar component */
+/* standard snackbar component starts */
 .snackbar {
   width: fit-content;
   display: flex;
@@ -25,9 +25,11 @@
   border-radius: var(--small-border-radius);
   box-shadow: 0 2px 5px var(--plain-lightgray);
 }
+
 .snackbar .heading {
   color: inherit;
 }
+
 .snackbar-actions {
   display: flex;
   align-items: baseline;
@@ -36,14 +38,20 @@
   padding-left: 3rem;
   column-gap: 1rem;
 }
+
 .snackbar-actions * {
   cursor: pointer;
 }
+
 .snackbar-actions .snackbar-action-btn {
   border: none;
   background-color: transparent;
   color: var(--velocity-blue);
 }
+
+/* standard snackbar component ends */
+
+/* stacked snackbar component starts */
 
 .stacked-snackbar {
   flex-direction: column;
@@ -51,26 +59,39 @@
   left: 50%;
 }
 
+/* stacked snackbar component ends */
+
+/* colors for snackbar starts */
+
 .snackbar.success {
   background-color: var(--alert-success-green);
   color: var(--velocity-black);
 }
+
 .snackbar.danger {
   background-color: var(--alert-error-red);
   color: var(--velocity-black);
 }
+
 .snackbar.warn {
   background-color: var(--alert-warn-orange);
   color: var(--velocity-black);
 }
 
+/* colors for snackbar ends */
+
+/* for demo starts */
+
 #demo-snackbar {
-position: fixed;
-z-index: 10;
-bottom: 3rem;
-left: 50%;
-transform: translateX(-50%);
+  position: fixed;
+  z-index: 10;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .display-none {
-    display: none;
+  display: none;
 }
+
+/* for demo ends */
