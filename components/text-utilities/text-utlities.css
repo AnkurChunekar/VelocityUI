@@ -1,0 +1,35 @@
+@import url(/cssReset/reset.css);
+@import url(/cssUtilities/utilities.css);
+
+.component-container {
+  padding: 1rem;
+}
+.component-container p {
+  padding: 0.5rem 0;
+}
+/* Text style starts */
+
+.center-align-text {
+  text-align: center;
+}
+.right-align-text {
+  text-align: right;
+}
+.left-align-text {
+  text-align: left;
+}
+
+.highlight-text {
+  background-color: var(--plain-lightgray);
+  border-radius: var(--small-border-radius);
+}
+.primary-color-text {
+  color: var(--velocity-blue);
+}
+.secondary-color-text {
+  color: var(--velocity-gray);
+}
+.light-weight-text {
+  font-weight: 100;
+}
+/* Text style ends */

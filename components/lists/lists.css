@@ -1,0 +1,89 @@
+@import url(/cssReset/reset.css);
+@import url(/cssUtilities/utilities.css);
+
+.component-container {
+  padding: 1rem;
+}
+/* Normal List starts */
+
+.list {
+  list-style-position: inside;
+}
+
+.list-roman {
+  list-style-type: upper-roman;
+}
+
+.list-square {
+  list-style-type: square;
+}
+
+.list-alpha {
+  list-style-type: lower-alpha;
+}
+
+.list-circle {
+  list-style-type: circle;
+}
+
+.list-style-none {
+  list-style: none;
+}
+/* Normal List ends */
+.notification-drawer {
+  width: fit-content;
+  /* border: solid 0.5px var(--plain-lightgray); */
+  border-radius: var(--small-border-radius);
+  min-width: 280px;
+  background-color: var(--plain-white);
+  box-shadow: 0 2px 5px var(--plain-lightgray);
+}
+
+.notification-drawer header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.notification-drawer header h1 {
+  font-weight: 600;
+}
+
+.notification-drawer header .icon {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.notification-drawer .heading {
+  font-size: var(--font-size-h4);
+}
+
+/* .notification-drawer .list {
+  width: 100%;
+} */
+
+.notification {
+  padding: 1rem;
+}
+
+li.notification:hover {
+  cursor: pointer;
+  background-color: var(--lynx-white);
+}
+
+.notification .subtitle {
+  font-size: 1.2rem;
+  margin-left: 2.1rem;
+}
+
+.notification-drawer footer {
+  padding: 1rem;
+}
+.notification-drawer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.notification-divider {
+  border-top: solid 0.5px var(--plain-lightgray);
+}
