@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="snackbar.css" />
+    <script
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- standard snackbar starts -->
+
+    <div class="component-container">
+      <div class="snackbar">
+        <span class="heading">Normal snackbar here</span>
+        <div class="snackbar-actions">
+          <button class="btn btn-s btn-primary">RETRY</button>
+          <button class="btn btn-s btn-danger">
+            <i class="fas fa-times snackbar-action-close"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- standard snackbar ends -->
+
+    <!-- One btn snackbar starts -->
+
+    <div class="component-container">
+      <div class="snackbar">
+        <span class="heading">Only one button</span>
+        <div class="snackbar-actions">
+          <button class="btn btn-s btn-primary">Okay</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- One btn snackbar ends -->
+
+    <!-- Stacked snackbar starts -->
+
+    <div class="component-container">
+      <div class="snackbar stacked-snackbar">
+        <span class="heading">This one's stacked</span>
+        <div class="snackbar-actions">
+          <button class="btn btn-s btn-primary">RETRY</button>
+          <button class="btn btn-s btn-danger">
+            <i class="fas fa-times snackbar-action-close"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stacked snackbar ends -->
+
+    <!-- success snackbar starts -->
+
+    <div class="component-container">
+      <div class="snackbar success">
+        <span class="heading">Success! you read this</span>
+        <div class="snackbar-actions">
+          <button class="btn btn-s btn-success btn-outline">Okay</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- success snackbar ends -->
+
+    <!-- danger snackbar ends -->
+
+    <div class="component-container">
+      <div class="snackbar danger">
+        <span class="heading">Beware! privacy at risk</span>
+        <div class="snackbar-actions">
+          <button class="btn btn-s btn-danger btn-outline">Got it!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- danger snackbar starts -->
+
+    <!-- warn snackbar starts -->
+
+    <div class="component-container">
+      <div class="snackbar warn">
+        <span class="heading">Are you sure?</span>
+        <div class="snackbar-actions">
+          <button class="btn btn-s btn-primary btn-outline">Yes</button>
+          <button class="btn btn-s btn-danger btn-outline">
+            <i class="fas fa-times snackbar-action-close"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- warn snackbar ends -->
+
+    <!-- Snackbar for demo starts -->
+
+    <p class="p4">
+      Click<button id="demo-snackbar-preview-btn" class="btn btn-link">
+        Preview</button
+      >for a simple demo.
+    </p>
+
+    <div class="snackbar display-none" id="demo-snackbar">
+      <span class="heading">Normal snackbar here</span>
+      <div class="snackbar-actions">
+        <button id="demo-snackbar-close-btn" class="btn btn-s btn-primary">
+          Got it!
+        </button>
+      </div>
+    </div>
+
+    <!-- Snackbar for demo ends -->
+
+    <script src="/components/snackbar/snackbar.js"></script>
+  </body>
+</html>

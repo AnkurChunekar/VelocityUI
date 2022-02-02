@@ -48,6 +48,16 @@ html {
   --plain-gray: gray;
   --plain-red: red;
   --plain-lightgray: lightgray;
+
+  /* alert colors */
+  --alert-error-red: rgb(254, 215, 215);
+  --alert-error-icon-red: #e53e3e;
+  --alert-success-green: rgb(198, 246, 213);
+  --alert-success-icon-green: #38a169;
+  --alert-warn-orange: rgb(254, 235, 200);
+  --alert-warn-icon-orange: #dd6b20;
+  --alert-info-blue: rgb(190, 227, 248);
+  --alert-info-icon-blue: #3182ce;
 }
 
 body {
