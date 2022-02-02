@@ -30,9 +30,11 @@
   list-style: none;
 }
 /* Normal List ends */
+
+/* Notification drawer starts */
+
 .notification-drawer {
   width: fit-content;
-  /* border: solid 0.5px var(--plain-lightgray); */
   border-radius: var(--small-border-radius);
   min-width: 280px;
   background-color: var(--plain-white);
@@ -57,10 +59,6 @@
 .notification-drawer .heading {
   font-size: var(--font-size-h4);
 }
-
-/* .notification-drawer .list {
-  width: 100%;
-} */
 
 .notification {
   padding: 1rem;
@@ -87,3 +85,14 @@ li.notification:hover {
 .notification-divider {
   border-top: solid 0.5px var(--plain-lightgray);
 }
+
+/* Notification drawer ends */
+
+/* Stacked list starts */
+
+/* .notification-drawer.stacked header,
+.notification-drawer.stacked footer {
+  display: none;
+} */
+
+/* Stacked list ends */
