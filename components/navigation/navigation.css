@@ -30,6 +30,7 @@
 
 .brand-logo {
   width: 3rem;
+  margin-right: 0.5rem;
 }
 
 .brand-name {
@@ -84,6 +85,55 @@
 }
 
 /* || Navigation styles ends ------ */
+
+/* || Navigation blue styles starts ------ */
+
+.navigation.blue {
+  background-color: var(--velocity-blue);
+  color: var(--plain-white);
+}
+
+/* Nav-brand  */
+
+.navigation.blue .brand-logo {
+  width: 4rem;
+  border-radius: var(--full-round-border-radius);
+}
+
+.navigation.blue .brand-name {
+  color: var(--plain-white);
+}
+
+
+/* Nav list */
+
+.navigation.blue .nav-list .nav-link {
+  color: var(--plain-lightgray);
+}
+
+.navigation.blue .nav-list .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navigation.blue .nav-link.active {
+  color: var(--plain-white);
+  font-weight: 600;
+}
+
+/* Nav actions */
+
+.navigation.blue .search-bar input, 
+.navigation.blue .search-bar i {
+  color: var(--plain-white);
+}
+
+.navigation.blue .search-bar input::placeholder {
+  color: var(--plain-white);
+}
+
+
+/* || Navigation blue styles ends ------ */
+
 
 /* || Media Query starts ----*/
 
