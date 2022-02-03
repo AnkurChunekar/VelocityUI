@@ -1,0 +1,135 @@
+@import url(/components/button/button.css);
+@import url(/components/input/input.css);
+
+:root {
+  --navigation-shodow: 0 2px 5px var(--plain-lightgray);
+}
+
+/* for reusability */
+
+.flex-row-center2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* || Navigation styles starts ------ */
+
+/* Navigation Parent  */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--lynx-white);
+  box-shadow: var(--navigation-shodow);
+  width: 100%;
+}
+
+/* Nav-brand  */
+
+.brand-logo {
+  width: 3rem;
+}
+
+.brand-name {
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+  margin-right: 4rem;
+  color: var(--plain-black);
+  text-decoration: none;
+}
+
+.navigation .menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: auto;
+}
+
+/* Nav list */
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list .nav-item {
+  display: inline;
+}
+
+.nav-list .nav-link {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: var(--plain-gray);
+}
+
+.nav-list .nav-link:hover {
+  color: var(--velocity-blue);
+}
+
+.nav-link.active {
+  color: var(--plain-black);
+  font-weight: 600;
+}
+
+/* Nav actions */
+
+.nav-actions {
+  margin-left: auto;
+}
+
+.nav-actions .search-bar input {
+  border: none;
+  background-color: inherit;
+}
+
+/* || Navigation styles ends ------ */
+
+/* || Media Query starts ----*/
+
+@media screen and (max-width: 850px) {
+
+  /* navigation */
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* nav brand */
+
+  .nav-brand {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .navigation .menu-icon {
+    display: block;
+  }
+
+  .nav-dropdown-menu {
+    display: none;
+  }
+  
+  .nav-dropdown-menu.active {
+    display: block;
+  }
+
+  /* nav list */
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: flex-start;
+    margin: 1.5rem;
+  }
+  
+  /* nav-actions */
+
+  .nav-actions {
+    display: none;
+  }
+}
+
+/* || Media Query ends --------*/
