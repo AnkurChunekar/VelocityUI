@@ -68,4 +68,9 @@
     color: var(--plain-gray);
     cursor: pointer;
 }
+
+.input-wrapper.search .search-bar {
+  display: inline-block;
+  position: relative;
+}
 /* Input w search icon ends */

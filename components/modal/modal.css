@@ -1,0 +1,71 @@
+@import url(/components/button/button.css);
+
+.component-container {
+    background-color: var(--velocity-gray);
+}
+
+/* || Modal styles starts */
+
+/* Modal container */
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.modal-container.active {
+    display: flex;
+}
+/* modal */
+.modal {
+  max-width: 40rem;
+  height: fit-content;
+  padding: 2rem;
+  background-color: var(--plain-white);
+  border-radius: var(--medium-border-radius);
+}
+
+/* header */
+.modal header {
+  display: flex;
+  align-items: center;
+  color: var(--velocity-black);
+}
+
+.modal-title {
+  font-size: var(--font-size-h3);
+  margin: 0 1rem;
+}
+
+.modal header .close-icon {
+  margin-left: auto;
+  font-size: 2rem;
+}
+
+.modal header .close-icon:hover {
+    cursor: pointer;
+    color: var(--velocity-red);
+}
+
+/* Section */
+.modal section {
+    padding: 2.5rem 0;
+}
+
+/* Footer */
+
+.modal footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1.5rem;
+}
+
+/* || Modal styles ends */

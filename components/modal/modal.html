@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+
+    <link rel="stylesheet" href="modal.css" />
+    <script
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="component-container">
+        <div class="modal">
+            <header>
+                <i class="fas fa-bolt"></i>
+                <h1 class="modal-title">Are you sure?</h1>
+                <i class="fas fa-times close-icon"></i>
+            </header>
+        <section class="modal-body">
+            <p>Some error or normal informative message can be shown here, which user can approve or disapprove.</p>
+        </section>
+        <footer class="modal-actions">
+        
+        <button class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-primary">Agree</button>
+        </footer>
+        </div>
+    </div>
+
+<br>
+
+<p> Just for a demo click this button <button id="demo-modal-preview-btn" class="btn btn-s btn-dark btn-outline">Demo</button> and click cross-icon to close.</p>
+    
+
+    <div id="demo-modal" class="modal-container">
+
+        <div class="modal">
+            <header>
+                <!-- <i class="fas fa-cloud-download-alt"></i> -->
+                <i class="fas fa-bolt"></i>
+                <h1 class="modal-title">Are you sure?</h1>
+                <i id="demo-modal-close-btn" class="fas fa-times close-icon"></i>
+            </header>
+        <section class="modal-body">
+            <p>Some error or normal informative message can be shown here, which user can approve or disapprove.</p>
+        </section>
+        <footer class="modal-actions">
+        
+        <button class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-primary">Agree</button>
+        </footer>
+        </div>
+        
+        </div>
+
+
+        <script src="/components/modal/modal.js"></script>
+</body>
+</html>
