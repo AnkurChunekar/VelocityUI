@@ -89,6 +89,7 @@
   color: var(--velocity-blue);
   background-color: transparent;
   border: solid 2px var(--velocity-blue);
+  padding: 0.55rem 1.25rem;
 }
 .btn.btn-primary.btn.btn-outline:hover {
   color: var(--plain-white);
