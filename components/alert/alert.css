@@ -1,18 +1,5 @@
-@import url(/cssReset/reset.css);
-@import url(/cssUtilities/utilities.css);
+/* alert styles start */
 
-.component-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-}
-
-  /* alert styles start */
-  
-    .alert-container {
-      padding: 1rem;
-    }
-    
 .alert {
   width: 100%;
   padding: 1rem;
@@ -28,61 +15,61 @@
 
 /* || Alert Color styles  */
 
-  /* success */
-  .alert.alert-success {
-    background-color: var(--alert-success-green);
-  }
-  .alert-success .fa-check-circle {
-    color: var(--alert-success-icon-green);
-  }
-  
-  /* error */
-  .alert.alert-error {
-    background-color: var(--alert-error-red);
-  }
-  .alert-error .fa-exclamation-circle {
-    color: var(--alert-error-icon-red);
-  }
-  
-  /* info */
-  .alert.alert-info {
-    background-color: var(--alert-info-blue);
-  }
-  .alert-info .fa-info-circle {
-    color: var(--alert-info-icon-blue);
-  }
-  
-  /* warn */
-  .alert.alert-warn {
-    background-color: var(--alert-warn-orange);
-  }
-  .alert-warn .fa-exclamation-circle {
-    color: var(--alert-warn-icon-orange);
-  }
-  
+/* success */
+.alert.alert-success {
+  background-color: var(--alert-success-green);
+}
+.alert-success .fa-check-circle {
+  color: var(--alert-success-icon-green);
+}
+
+/* error */
+.alert.alert-error {
+  background-color: var(--alert-error-red);
+}
+.alert-error .fa-exclamation-circle {
+  color: var(--alert-error-icon-red);
+}
+
+/* info */
+.alert.alert-info {
+  background-color: var(--alert-info-blue);
+}
+.alert-info .fa-info-circle {
+  color: var(--alert-info-icon-blue);
+}
+
+/* warn */
+.alert.alert-warn {
+  background-color: var(--alert-warn-orange);
+}
+.alert-warn .fa-exclamation-circle {
+  color: var(--alert-warn-icon-orange);
+}
+
 /* alert color ends */
 
-  /* || For Dissmisible alert btn starts */
+/* || For Dissmisible alert btn starts */
 
-  .alert .alert-dismissible-icon {
-    margin-left: auto;
-    cursor: pointer;
-  }
-  .alert .alert-dismissible-icon:hover {
-    color: var(--alert-error-icon-red);
-  }
+.alert .alert-dismissible-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+.alert .alert-dismissible-icon:hover {
+  color: var(--alert-error-icon-red);
+}
 
-  /* || For Dissmisible alert btn ends */
-  
-  /* || Alert with aditional text starts */
-  
-  .alert.alert-w-additional-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .alert.alert-w-additional-text .additional-text {
-    margin: 1rem 3rem;
-  }
+/* || For Dissmisible alert btn ends */
 
-  /* || Alert with aditional text ends*/
+/* || Alert with aditional text starts */
+
+.alert.alert-w-additional-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.alert.alert-w-additional-text .additional-text {
+  margin: 1rem 3rem;
+}
+
+/* || Alert with aditional text ends*/

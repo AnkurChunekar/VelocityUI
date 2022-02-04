@@ -9,8 +9,8 @@
 /* flex, direction, align items, justify-content */
 .flex-row-center-sb {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* || Navigation styles starts ------ */
@@ -137,7 +137,7 @@
 
 /* || Media Query starts ----*/
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
 
   /* navigation */
 

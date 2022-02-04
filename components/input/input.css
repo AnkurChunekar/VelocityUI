@@ -1,14 +1,3 @@
-@import url(/cssReset/reset.css);
-@import url(/cssUtilities/utilities.css);
-
-.component-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  row-gap: 1rem;
-}
-
 /* Input style starts */
 
 .input-wrapper input {

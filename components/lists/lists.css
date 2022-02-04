@@ -1,11 +1,4 @@
-@import url(/cssReset/reset.css);
-@import url(/cssUtilities/utilities.css);
-
-.component-container {
-  padding: 1rem;
-}
-/* Normal List starts */
-
+/* Normal List styles starts */
 .list {
   list-style-position: inside;
 }

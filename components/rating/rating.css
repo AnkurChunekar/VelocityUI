@@ -1,6 +1,3 @@
-@import url(/cssReset/reset.css);
-@import url(/cssUtilities/utilities.css);
-
 :root {
     --rating-star-color: orange;
 }
