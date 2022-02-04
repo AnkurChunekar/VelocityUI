@@ -1,0 +1,157 @@
+@import url(/css/components.css);
+
+:root {
+  --velocity-light-blue: #3385ff;
+}
+
+/* || homepage navbar starts */
+
+.homepage-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 10px var(--plain-lightgray);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.homepage-navbar .brand-logo {
+  max-width: 3rem;
+  margin-right: 1rem;
+}
+.homepage-navbar .brand-name {
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+}
+.brand-name a {
+  color: inherit;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  margin: 1rem 0;
+}
+.homepage-navbar .nav-links {
+  margin-left: auto;
+}
+.nav-links li {
+  margin: 0 2rem;
+  display: inline;
+}
+.nav-links li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.nav-links li a:hover {
+  color: var(--velocity-blue);
+  text-decoration: none;
+}
+
+/* || homepage navbar ends */
+
+/* || Main Content starts */
+.homepage-main,
+.homepage-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-main {
+  text-align: center;
+  height: 90vh;
+  max-width: 83rem;
+  margin: 0 auto;
+  row-gap: 3.5rem;
+}
+
+.homepage-main .homepage-heading {
+  font-size: 6.4rem;
+  color: var(--velocity-black);
+  margin: 0 0.5rem;
+}
+.homepage-heading .heading-brand-name {
+  color: var(--velocity-light-blue);
+}
+.homepage-main .homepage-description {
+  font-size: 2rem;
+  max-width: 68rem;
+  color: var(--plain-gray);
+  margin: 0 0.5rem;
+}
+.main-actions .btn {
+  padding: 2rem 3.5rem;
+  margin: 0 1rem;
+}
+/* || Main Content ends */
+
+/* || footer starts  */
+
+.homepage-footer {
+  row-gap: 1rem;
+}
+.homepage-footer .nav-links li {
+  color: var(--plain-gray);
+  margin: 1rem;
+}
+.footer-link i {
+  font-size: 2rem;
+}
+
+/* || footer ends */
+
+/* || media query starts */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-links li {
+    margin: 0 1rem;
+  }
+
+  .homepage-main .homepage-heading {
+    font-size: 6rem;
+    max-width: 70rem;
+  }
+
+  .homepage-main .homepage-description {
+    font-size: 2rem;
+    max-width: 55rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 42%;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .homepage-main .homepage-heading {
+    font-size: 4rem;
+    max-width: 47rem;
+  }
+
+  .homepage-main .homepage-description {
+    font-size: 2rem;
+    max-width: 41rem;
+  }
+
+  .main-actions .btn {
+    padding: 2.55rem 3.75rem;
+    margin: 0 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+/* || media queries ends */
