@@ -88,6 +88,8 @@
 .main-actions .btn {
   padding: 2rem 3.5rem;
   margin: 0 1rem;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* || Main Content ends */
 
@@ -110,7 +112,7 @@
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 52%;
   }
 
   .nav-links li {
@@ -136,9 +138,12 @@
   .nav-links li {
     margin: 0 0.5rem;
   }
+  .nav-links li a{
+  font-size: 2rem;
+  }
 
   .homepage-main .homepage-heading {
-    font-size: 4rem;
+    font-size: 3.8rem;
     max-width: 47rem;
   }
 
@@ -152,6 +157,7 @@
     margin: 0 0.5rem;
     font-size: 2rem;
   }
+
 }
 
 /* || media queries ends */
