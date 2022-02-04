@@ -6,8 +6,8 @@
 }
 
 /* for reusability */
-
-.flex-row-center2 {
+/* flex, direction, align items, justify-content */
+.flex-row-center-sb {
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chips</title>
+
+    <link rel="stylesheet" href="chips.css" />
+    <script
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Basic chips start -->
+
+    <div class="chips-container">
+      <div class="chip-body normal-chip">
+        <i class="fas fa-tag"></i>
+        <span>Tag</span>
+        <i class="fas fa-times close"></i>
+      </div>
+
+      <div class="chip-body normal-chip">
+        <i class="fas fa-check-circle"></i>
+        <span>Selected</span>
+        <i class="fas fa-times close"></i>
+      </div>
+
+      <div class="chip-body blue-chip">
+        <i class="fab fa-js-square"></i>
+        <span>JavaScript</span>
+        <i class="fas fa-times close"></i>
+      </div>
+
+      <div class="chip-body black-chip">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS</span>
+        <i class="fas fa-times close"></i>
+      </div>
+    </div>
+
+    <!-- Basic Chips End -->
+
+    <!-- Input Chips start -->
+
+    <div class="input-chip-container">
+      <h3>Chips inside an input</h3>
+
+      <div class="chips-container">
+        <div class="chip-body blue-chip">
+          <span>One Fish</span>
+          <i class="fas fa-times close"></i>
+        </div>
+
+        <!-- chip-inputElement-body -->
+
+        <div id="demo-chip-container">
+          <input id="chip-inputElement" type="text" placeholder="New Chip..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Chips end -->
+
+    <script src="/components/chips/chips.js"></script>
+  </body>
+</html>
