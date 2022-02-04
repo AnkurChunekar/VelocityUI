@@ -1,24 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* || font size to % */
-html {
-  font-size: 62.5%; /* 100% = 16px, hence 62.5% = 10px */
-}
-
-/* || variables */
 :root {
   /* Font Sizes start*/
+
   --font-size-h1: 4.8rem;
   --font-size-h2: 3.2rem;
   --font-size-h3: 2.4rem;
@@ -27,22 +9,26 @@ html {
   --font-size-h6: 0.8rem;
 
   /* Border Radius */
+
   --small-border-radius: 5px;
   --medium-border-radius: 10px;
   --large-border-radius: 15px;
   --full-round-border-radius: 999px;
 
   /* Colour Palatte */
+
   --velocity-blue: #0066ff;
   --velocity-black: #242424;
   --velocity-gray: #9a9a9a;
-  --velocity-orange: #FF9900;
-  --velocity-light-blue: #a5b3db;
+  --velocity-orange: #ff9900;
+  --velocity-light-blue: #3988ff;
   --velocity-red: #dd1c1a;
   --velocity-green: #4caf50;
   --velocity-pink: #d1345b;
   --lynx-white: #f7f7f7;
+
   /* Plain colors--- */
+
   --plain-white: white;
   --plain-black: black;
   --plain-gray: gray;
@@ -50,6 +36,7 @@ html {
   --plain-lightgray: lightgray;
 
   /* alert colors */
+
   --alert-error-red: rgb(254, 215, 215);
   --alert-error-icon-red: #e53e3e;
   --alert-success-green: rgb(198, 246, 213);
@@ -58,56 +45,5 @@ html {
   --alert-warn-icon-orange: #dd6b20;
   --alert-info-blue: rgb(190, 227, 248);
   --alert-info-icon-blue: #3182ce;
-}
-
-body {
-  font-family: "Sora", sans-serif;
-  font-size: var(--font-size-h4);
-}
-
-/* || headings and paragraph font sizes */
-h1,
-.h1,
-.p1 {
-  font-size: var(--font-size-h1);
-}
-h2,
-.h2,
-.p2 {
-  font-size: var(--font-size-h2);
-}
-h3,
-.h3,
-.p3 {
-  font-size: var(--font-size-h3);
-}
-h4,
-.h4,
-.p4 {
-  font-size: var(--font-size-h4);
-}
-h5,
-.h5,
-.p5 {
-  font-size: var(--font-size-h5);
-}
-
-.p6 {
-  font-size: var(--font-size-h6);
-}
-
-
-/* || Remove built-in form typography styles */
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Button styles */
-button {
-  border: none;
-  cursor: pointer;
+  
 }

@@ -1,7 +1,5 @@
-@import url(/cssReset/reset.css);
-@import url(/cssUtilities/utilities.css);
-  
-  /* Basic Chips styling Start */
+/* Basic Chips styling Start */
+
   .chips-container {
     display: flex;
     flex-wrap: wrap;

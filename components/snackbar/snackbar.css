@@ -1,17 +1,9 @@
-/* @import url(/cssReset/reset.css); */
-/* @import url(/cssUtilities/utilities.css);  */
 @import url(/components/button/button.css);
 
 /* ROOT Variable */
 
 :root {
   --snackbar-bg: #303030;
-}
-
-.component-container {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
 }
 
 /* standard snackbar component starts */

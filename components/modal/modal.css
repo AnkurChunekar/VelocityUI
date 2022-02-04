@@ -1,9 +1,5 @@
 @import url(/components/button/button.css);
 
-.component-container {
-    background-color: var(--velocity-gray);
-}
-
 /* || Modal styles starts */
 
 /* Modal container */

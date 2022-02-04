@@ -1,0 +1,57 @@
+/* || Remove from Display */
+.display-none {
+  display: none;
+}
+
+/* || strike text */
+
+.strike-text {
+  text-decoration: line-through;
+}
+
+/* || gray -text */
+
+.gray-text {
+  color: gray;
+}
+
+/* || headings and paragraph font sizes */
+
+.h1,
+.p1 {
+  font-size: var(--font-size-h1);
+}
+
+.h2,
+.p2 {
+  font-size: var(--font-size-h2);
+}
+
+.h3,
+.p3 {
+  font-size: var(--font-size-h3);
+}
+
+.h4,
+.p4 {
+  font-size: var(--font-size-h4);
+}
+
+.h5,
+.p5 {
+  font-size: var(--font-size-h5);
+}
+
+.p6 {
+  font-size: var(--font-size-h6);
+}
+
+/* || container for components */
+
+.component-container {
+  border: 1px solid lightgray;
+  border-radius: var(--small-border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 1.6rem auto;
+  max-width: 700px;
+}
