@@ -51,7 +51,10 @@
 .component-container {
   border: 1px solid lightgray;
   border-radius: var(--small-border-radius);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 1.6rem auto;
-  max-width: 700px;
+  margin: 3rem 0;
+  max-width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
 }
