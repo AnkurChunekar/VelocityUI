@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity UI | Navigation</title>
+    <title>Velocity UI | introduction</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
-    <link rel="stylesheet" href="/components/input/input.css" />
     <link rel="stylesheet" href="/documentation/documentation.css" />
-    <link rel="stylesheet" href="/components/navigation/navigation.css" />
+    <link rel="stylesheet" href="introduction.css" />
 
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
@@ -63,32 +62,10 @@
 
       <nav id="hamburger-menu" class="side-navbar">
         <ul class="ul-side-navbar">
-          <li>
-            <a
-              href="/components/introduction/introduction.html"
-              class="side-nav-link title"
-              >Get Started</a
-            >
-          </li>
-          <li>
-            <a
-              href="/components/introduction/introduction.html"
-              class="side-nav-link"
-              >Installation</a
-            >
-          </li>
-          <li>
-            <a href="/components/colors-docs/colors.html" class="side-nav-link"
-              >Colors</a
-            >
-          </li>
-          <li>
-            <a
-              href="/components/typography-docs/typography.html"
-              class="side-nav-link"
-              >Typography</a
-            >
-          </li>
+          <li><a href="" class="side-nav-link title">Get Started</a></li>
+          <li><a href="" class="side-nav-link active">Installation</a></li>
+          <li><a href="/components/colors-docs/colors.html" class="side-nav-link">Colors</a></li>
+          <li><a href="/components/typography-docs/typography.html" class="side-nav-link">Typography</a></li>
 
           <li>
             <a href="/components/alert/alert.html" class="side-nav-link title"
@@ -149,7 +126,7 @@
           <li>
             <a
               href="/components/navigation/navigation.html"
-              class="side-nav-link active"
+              class="side-nav-link"
               >Navigation</a
             >
           </li>
@@ -182,89 +159,84 @@
           <!-- || Header area start -->
 
           <header class="docs-body-header">
-            <h2>Navigation</h2>
+            <h2>Velocity UI</h2>
+            <p class="docs-body-para">Hello and welcome!</p>
             <p class="docs-body-para">
-              Navigation bar is used to navigate through the websites. Velocity
-              provides a responsive navigation bar, which has a hamburger menu
-              for screens smaller than 768px.
+              Quickly design beautiful, responsive web pages with the help
+              Velocity UI, without a lot of hassle using only HTML and CSS.
             </p>
           </header>
 
           <!-- || Header area end -->
 
-          <!-- || Navigation start -->
-
-          <section id="standard" class="docs-body-section">
-            <h3>Standard Navigation bar</h3>
-
+          <!-- || Installation start -->
+          <section id="installation" class="docs-body-section">
+            <h3>Installation</h3>
             <p class="docs-body-para">
-              Navigations can be easily created using
-              <span class="text-pink-bg">"navigation"</span> class.
+              In order to use the components in your project, Copy and paste the
+              code in the <span class="text-pink-bg">head</span> tag of your
+              html document, above all other style sheets.
+            </p>
+            <p class="docs-body-para">
+              Once you are done with the first step, you can easily use the
+              components by just adding class names to your html elements.
             </p>
 
-            <div class="component-container">
-              <nav class="navigation">
-                <div class="nav-brand flex-row-center-sb">
-                  <a href="">
-                    <img
-                      class="brand-logo"
-                      src="/images/sample-nav-logo1.svg"
-                      alt="brand logo"
-                    />
-                  </a>
-                  <a href="" class="brand-name">Blink</a>
-                  <i class="fas fa-bars menu-icon" id="nav-menu-icon"></i>
-                </div>
-                <div class="nav-dropdown-menu">
-                  <ul class="nav-list">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="nav-actions flex-row-center-sb">
-                  <div class="input-wrapper search">
-                    <div class="search-bar">
-                      <input type="text" placeholder="search here..." />
-                      <i class="fas fa-search icon"></i>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-
-            <div class="code-container">
+            <div class="code-container install">
               <!-- iframe starts -->
+
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navigation%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520flex-row-center-sb%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522brand-logo%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fsample-nav-logo1.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522brand%2520logo%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522brand-name%2522%253EBlink%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520menu-icon%2522%2520id%253D%2522nav-menu-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-dropdown-menu%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2520active%2522%2520href%253D%2522%2522%253EServices%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520class%253D%2522nav-link%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2522%253EProjects%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520class%253D%2522nav-link%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2522%253EContact%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520class%253D%2522nav-link%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2522%253EAbout%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-actions%2520flex-row-center-sb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-wrapper%2520search%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-bar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522search%2520here...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fvelocity-ui.netlify.app%252Fcss%252Fcomponents.css%2522%253E"
+              
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
               <!-- iframe ends -->
             </div>
           </section>
+          <!-- || installation end -->
 
-          <!-- Navigation ends -->
+          <!-- || Customisable start -->
+          <section id="customisable" class="docs-body-section">
+            <h3>Customisable</h3>
+            <p class="docs-body-para">
+              Components can be easily customised. In order to override the base
+              classes, users can add their own class to the pre-existing
+              classes, and style them seperately.
+            </p>
+
+            <div class="component-container">
+              <button class="btn btn-primary my-style">Primary</button>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=516&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520my-style%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%253C%21--%2520you%2520can%2520style%2520the%2520provided%2520class%2520--%253E%250A%253Cstyle%253E%250A%2520%2520.my-style%2520%257B%250A%2520%2520%2520%2520color%253A%2520var%28--my-blue%29%253B%250A%2520%2520%257D%2520%2520%250A%253C%252Fstyle%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+          <!-- || Customisable end -->
+
+          <!-- || Component Footer starts -->
 
           <footer class="component-footer">
-            <a href="/components/modal/modal.html">
-              <i class="fas fa-angle-double-left"></i> Modal</a
-            >
-            <a href="/components/rating/rating.html"> Rating ></a>
+            <a href=""></a>
+            <a href="/components/colors-docs/colors.html">
+              Colors <i class="fas fa-angle-double-right"></i
+            ></a>
           </footer>
 
-          <!-- || Input components ends -->
+          <!-- || Component Footer ends -->
 
-          <!-- Footer starts  -->
+          <!-- || Main Footer starts  -->
 
           <footer class="main-footer">
             <p class="docs-body-para">
               <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
               Reserved
-            </p>
+            </p  class="docs-body-para">
             <ul>
               <li>
                 <a
@@ -301,23 +273,25 @@
             </ul>
           </footer>
 
-          <!-- Footer ends -->
+          <!-- || Main Footer ends -->
         </div>
 
+        <!-- || Page info side nav bar starts-->
 
         <aside class="side-navbar page-info">
           <ul class="ul-side-navbar">
             <li><a href="" class="side-nav-link title">On This Page</a></li>
 
+            <li><a href="#installation" class="side-nav-link">Installation</a></li>
             <li>
-              <a href="#standard" class="side-nav-link"> Standard Navigation</a>
+              <a href="#customisable" class="side-nav-link">Customisable</a>
             </li>
           </ul>
         </aside>
+
+        <!-- || Page info side nav bar ends -->
       </main>
     </section>
-
-    <script src="/components/navigation/navigation.js"></script>
 
     <script src="/documentation/JS/documentation.js"></script>
   </body>

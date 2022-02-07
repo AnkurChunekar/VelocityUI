@@ -4,134 +4,512 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity ui input</title>
+    <title>Velocity UI | Inputs</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/input/input.docs.css" />
 
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="input.css" />
   </head>
+
   <body>
-    <!-- Using 'input-group' as outside container, containing label, input and error
-  message  -->
+    <!-- || top nav start -->
 
-    <!-- standard input start -->
-
-    <div class="component-container">
-      <div class="input-wrapper">
-        <label class="input-label">Username *</label>
-        <input type="text" placeholder="sample placeholder" />
-        <label class="input-label2 error-msg">Username not found.</label>
-      </div>
-    </div>
-    <!-- standard input end -->
-
-    <!-- input with validation start -->
-
-    <div class="component-container">
-      <div class="input-wrapper validation">
-        <label class="input-label">Username *</label>
-        <input type="text" placeholder="sample placeholder" />
-        <label class="input-label2 error-msg">Username not found.</label>
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
       </div>
 
-      <div class="input-wrapper validation">
-        <label class="input-label">Password *</label>
-        <input type="text" placeholder="sample placeholder" />
-        <label class="input-label2 error-msg">Wrong Password. Try again.</label>
-      </div>
-    </div>
-    <!-- input with validation end -->
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
 
-    <!-- Radio input start -->
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="component-container">
-      <div class="input-wrapper radio">
-        <label class="input-label">Username</label>
-        <input
-          type="radio"
-          name="unique"
-          placeholder="sample placeholder"
-          id="radio-1"
-        />
-        <label class="input-label2" for="radio-1">Small</label>
-      </div>
+    <!-- || top nav end -->
 
-      <div class="input-wrapper radio">
-        <label class="input-label">Password</label>
-        <input
-          type="radio"
-          name="unique"
-          placeholder="sample placeholder"
-          id="radio-2"
-        />
-        <label class="input-label2" for="radio-2">Medium</label>
-      </div>
+    <!-- || Main component Section start -->
 
-      <div class="input-wrapper radio">
-        <label class="input-label">Password</label>
-        <input
-          type="radio"
-          name="unique"
-          placeholder="sample placeholder"
-          id="radio-3"
-        />
-        <label class="input-label2" for="radio-3">large</label>
-      </div>
-    </div>
-    <!-- Radio input end -->
+    <section class="component-section">
+      <!-- || Side Navbar start -->
 
-    <!-- Checkbox input start -->
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
 
-    <div class="component-container">
-      <div class="input-wrapper radio">
-        <label class="input-label">Username</label>
-        <input
-          type="checkbox"
-          placeholder="sample placeholder"
-          id="checkbox-1"
-        />
-        <label class="input-label2" for="checkbox-1">HTML</label>
-      </div>
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
 
-      <div class="input-wrapper radio">
-        <label class="input-label">Password</label>
-        <input
-          type="checkbox"
-          placeholder="sample placeholder"
-          id="checkbox-2"
-        />
-        <label class="input-label2" for="checkbox-2">CSS</label>
-      </div>
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link active"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="/components/rating/rating.html" class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-      <div class="input-wrapper radio">
-        <label class="input-label">Password</label>
-        <input
-          type="checkbox"
-          placeholder="sample placeholder"
-          id="checkbox-3"
-        />
-        <label class="input-label2" for="checkbox-3">JavaScript</label>
-      </div>
-    </div>
-    <!-- Checkbox input end -->
+      <!-- || Side Navbar end -->
 
-    <!-- standard input w icon start -->
+      <main>
+        <!-- || Main Component Body -->
 
-    <div class="component-container">
-      <div class="input-wrapper search">
-        <label class="input-label">Username *</label>
-        <div class="search-bar">
-          <input type="text" placeholder="search here..." />
-          <i class="fas fa-search icon"></i>
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h2>Input</h2>
+            <p class="docs-body-para">
+              Form Inputs are very useful for users to input some login/signup
+              data, and they also provide validation.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || standard input start -->
+
+          <section id="standard" class="docs-body-section">
+            <h3>Standard Input</h3>
+            <p class="docs-body-para">
+              Create standard input providing a
+              <span class="text-pink-bg">"input-wrapper"</span> class to the
+              parent container of input tag. Include label tags along with the
+              input tag.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper">
+                <label class="input-label">Username *</label>
+                <input type="text" placeholder="sample placeholder" />
+                <label class="input-label2 error-msg"
+                  >Username not found.</label
+                >
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EUsername%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522sample%2520placeholder%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2520error-msg%2522%253EUsername%2520not%2520found.%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+          <!-- || standard input end -->
+
+          <!-- || Round image start -->
+
+          <section id="validation" class="docs-body-section">
+            <h3>Validation with input</h3>
+            <p class="docs-body-para">
+              To provide validation to the user add
+              <span class="text-pink-bg">"validation"</span> class along with
+              <span class="text-pink-bg">"input-wrapper"</span> class.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper validation">
+                <label class="input-label">Username *</label>
+                <input type="text" placeholder="sample placeholder" />
+                <label class="input-label2 error-msg"
+                  >Username not found.</label
+                >
+              </div>
+
+              <div class="input-wrapper validation">
+                <label class="input-label">Password *</label>
+                <input type="text" placeholder="sample placeholder" />
+                <label class="input-label2 error-msg"
+                  >Wrong Password. Try again.</label
+                >
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EUsername%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522sample%2520placeholder%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2520error-msg%2522%253EUsername%2520not%2520found.%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EPassword%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522sample%2520placeholder%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2520error-msg%2522%253EWrong%2520Password.%2520Try%2520again.%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Validation input ends -->
+
+          <!-- || Radio inputs start -->
+
+          <section id="radio" class="docs-body-section">
+            <h3>Radio inputs</h3>
+
+            <p class="docs-body-para">
+              To create radio inputs use
+              <span class="text-pink-bg">"radio"</span> class along with
+              <span class="text-pink-bg">"input-wrapper"</span> class.
+            </p>
+
+            <p class="docs-body-para">
+              Provide
+              <span class="text-pink-bg">"input-label2"</span> class to the
+              label.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper radio">
+                <label class="input-label">Username</label>
+                <input
+                  type="radio"
+                  name="unique"
+                  placeholder="sample placeholder"
+                  id="radio-1"
+                />
+                <label class="input-label2" for="radio-1">Small</label>
+              </div>
+
+              <div class="input-wrapper radio">
+                <label class="input-label">Password</label>
+                <input
+                  type="radio"
+                  name="unique"
+                  placeholder="sample placeholder"
+                  id="radio-2"
+                />
+                <label class="input-label2" for="radio-2">Medium</label>
+              </div>
+
+              <div class="input-wrapper radio">
+                <label class="input-label">Password</label>
+                <input
+                  type="radio"
+                  name="unique"
+                  placeholder="sample placeholder"
+                  id="radio-3"
+                />
+                <label class="input-label2" for="radio-3">large</label>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520name%253D%2522unique%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522radio-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520for%253D%2522radio-1%2522%253ESmall%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520name%253D%2522unique%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522radio-2%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520for%253D%2522radio-2%2522%253EMedium%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520name%253D%2522unique%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522radio-3%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520for%253D%2522radio-3%2522%253Elarge%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Radio inputs ends -->
+
+          <!-- || Searchbar with icon start -->
+
+          <section id="searchbar" class="docs-body-section">
+            <h3>Searchbar Input</h3>
+
+            <p class="docs-body-para">
+              To create searchbar input use
+              <span class="text-pink-bg">"search"</span> class along with
+              <span class="text-pink-bg">"input-wrapper"</span> class.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper search">
+                <div class="search-bar">
+                  <input type="text" placeholder="search here..." />
+                  <i class="fas fa-search icon"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520search%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522search-bar%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522search%2520here...%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Radio inputs ends -->
+
+          <!-- || checkbox inputs start -->
+
+          <section id="checkbox" class="docs-body-section">
+            <h3>Checkbox inputs</h3>
+
+            <p class="docs-body-para">
+              To create checkbox inputs use
+              <span class="text-pink-bg">"radio"</span> class, only change the
+              type attribute of the input tag to "checkbox".
+            </p>
+
+            <p class="docs-body-para">
+              Provide
+              <span class="text-pink-bg">"input-label2"</span> class to the
+              label.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper radio">
+                <label class="input-label">Username</label>
+                <input
+                  type="checkbox"
+                  placeholder="sample placeholder"
+                  id="checkbox-1"
+                />
+                <label class="input-label2" for="checkbox-1">HTML</label>
+              </div>
+
+              <div class="input-wrapper radio">
+                <label class="input-label">Password</label>
+                <input
+                  type="checkbox"
+                  placeholder="sample placeholder"
+                  id="checkbox-2"
+                />
+                <label class="input-label2" for="checkbox-2">CSS</label>
+              </div>
+
+              <div class="input-wrapper radio">
+                <label class="input-label">Password</label>
+                <input
+                  type="checkbox"
+                  placeholder="sample placeholder"
+                  id="checkbox-3"
+                />
+                <label class="input-label2" for="checkbox-3">JavaScript</label>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522checkbox%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522checkbox-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520for%253D%2522checkbox-1%2522%253EHTML%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522checkbox%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522checkbox-2%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520for%253D%2522checkbox-2%2522%253ECSS%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522checkbox%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522checkbox-3%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520for%253D%2522checkbox-3%2522%253EJavaScript%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Radio inputs ends -->
+
+          <footer class="component-footer">
+            <a href="/components/imageComponent/image.html">
+              <i class="fas fa-angle-double-left"></i> Images</a
+            >
+            <a href="/components/lists/lists.html"> Lists ></a>
+          </footer>
+
+          <!-- || Input components ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
         </div>
-        <label class="input-label2">Username not found.</label>
-      </div>
-    </div>
-    <!-- standard input w icon end -->
+
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a href="" class="side-nav-link title">On This Page</a></li>
+
+            <li>
+              <a href="#standard" class="side-nav-link">Standard</a>
+            </li>
+            <li>
+              <a href="#validation" class="side-nav-link">Validation</a>
+            </li>
+            <li>
+              <a href="#radio" class="side-nav-link">Radio </a>
+            </li>
+            <li>
+              <a href="#searchbar" class="side-nav-link">Searchbar </a>
+            </li>
+            <li>
+              <a href="#checkbox" class="side-nav-link">Checkbox </a>
+            </li>
+          </ul>
+
+        </aside>
+
+      </main>
+
+    </section>
+
+    <script src="/components/chips/chips.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
   </body>
 </html>

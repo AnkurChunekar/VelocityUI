@@ -1,66 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocity UI | Modal</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/modal/modal.css" />
+    <link rel="stylesheet" href="/components/modal/modal-docs.css" />
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="modal.css" />
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-    <div class="component-container">
-        <div class="modal">
-            <header>
-                <i class="fas fa-bolt"></i>
-                <h1 class="modal-title">Are you sure?</h1>
-                <i class="fas fa-times close-icon"></i>
-            </header>
-        <section class="modal-body">
-            <p>Some error or normal informative message can be shown here, which user can approve or disapprove.</p>
-        </section>
-        <footer class="modal-actions">
-        
-        <button class="btn btn-secondary">Cancel</button>
-        <button class="btn btn-primary">Agree</button>
-        </footer>
+  </head>
+
+  <body>
+    <!-- || top nav start -->
+
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
+      </div>
+
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
+
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link active"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="/components/rating/rating.html" class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h2>Modal</h2>
+            <p class="docs-body-para">
+              Modals are like pop-ups which are positioned over everything else
+              in the document and remove scroll from the page. Only way to close
+              it, is to click the close button.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Standard Modal start -->
+
+          <section id="standard" class="docs-body-section">
+            <h3>Standard modal</h3>
+            <p class="docs-body-para">
+              Modals can be easily created using 
+              <span class="text-pink-bg">"modal"</span> class.
+            </p>
+
+            <div class="component-container">
+              <div class="modal">
+                <header>
+                  <i class="fas fa-bolt"></i>
+                  <h1 class="modal-title">Are you sure?</h1>
+                  <i class="fas fa-times close-icon"></i>
+                </header>
+
+                <section class="modal-body">
+                  <p>
+                    Some error or normal informative message can be shown here,
+                    which user can approve or disapprove.
+                  </p>
+                </section>
+
+                <footer class="modal-actions">
+                  <button class="btn btn-secondary">Cancel</button>
+                  <button class="btn btn-primary">Agree</button>
+                </footer>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cheader%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bolt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522modal-title%2522%253EAre%2520you%2520sure%253F%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%253Csection%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520Some%2520error%2520or%2520normal%2520informative%250A%2520%2520%2520%2520%2520%2520message%2520can%2520be%2520shown%2520here%252C%250A%2520%2520%2520%2520%2520%2520which%2520user%2520can%2520approve%2520or%2520disapprove.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fsection%253E%250A%250A%2520%2520%253Cfooter%2520class%253D%2522modal-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAgree%253C%252Fbutton%253E%250A%2520%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Standard Modal end -->
+
+          <!-- || Demo modal start -->
+
+          <section id="modal-demo" class="docs-body-section">
+            <h3>Demo For Modal</h3>
+            <p class="docs-body-para">
+                For a live demo click this link <button id="demo-modal-preview-btn" class="btn btn-s btn-link">Live Demo</button> and click cross-icon to close.
+            </p>
+            
+
+            <div id="demo-modal" class="modal-container">
+
+                <div class="modal">
+                    <header>
+                        <!-- <i class="fas fa-cloud-download-alt"></i> -->
+                        <i class="fas fa-bolt"></i>
+                        <h1 class="modal-title">Are you sure?</h1>
+                        <i id="demo-modal-close-btn" class="fas fa-times close-icon"></i>
+                    </header>
+                <section class="modal-body">
+                    <p>Some error or normal informative message can be shown here, which user can approve or disapprove.</p>
+                </section>
+                <footer class="modal-actions">
+                
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-primary">Agree</button>
+                </footer>
+                </div>
+                
+                </div>
+
+          </section>
+
+          <!-- || demo modal ends end -->
+
+          <footer class="component-footer">
+            <a href="/components/lists/lists.html">
+              <i class="fas fa-angle-double-left"></i> Lists</a
+            >
+            <a href="/components/navigation/navigation.html"> Modal ></a>
+          </footer>
+
+          <!-- || Input components ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
         </div>
-    </div>
-
-<br>
-
-<p> Just for a demo click this button <button id="demo-modal-preview-btn" class="btn btn-s btn-dark btn-outline">Demo</button> and click cross-icon to close.</p>
-    
-
-    <div id="demo-modal" class="modal-container">
-
-        <div class="modal">
-            <header>
-                <!-- <i class="fas fa-cloud-download-alt"></i> -->
-                <i class="fas fa-bolt"></i>
-                <h1 class="modal-title">Are you sure?</h1>
-                <i id="demo-modal-close-btn" class="fas fa-times close-icon"></i>
-            </header>
-        <section class="modal-body">
-            <p>Some error or normal informative message can be shown here, which user can approve or disapprove.</p>
-        </section>
-        <footer class="modal-actions">
-        
-        <button class="btn btn-secondary">Cancel</button>
-        <button class="btn btn-primary">Agree</button>
-        </footer>
-        </div>
-        
-        </div>
 
 
-        <script src="/components/modal/modal.js"></script>
-</body>
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a href="" class="side-nav-link title">On This Page</a></li>
+
+            <li>
+              <a href="#standard" class="side-nav-link">Standard Modal</a>
+            </li>
+            <li>
+              <a href="#modal-demo" class="side-nav-link">Live Demo</a>
+            </li>
+          </ul> 
+
+        </aside>
+
+      </main>
+
+    </section>
+
+     <script src="/components/modal/modal.js"></script>
+
+    <script src="/documentation/JS/documentation.js"></script>
+
+  </body>
 </html>

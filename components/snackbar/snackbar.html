@@ -4,124 +4,389 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Velocity UI | Snackbar</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/snackbar/snackbar.css" />
+    <link rel="stylesheet" href="/components/snackbar/snackbar-docs.css" />
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="snackbar.css" />
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <!-- standard snackbar starts -->
+    <!-- || top nav start -->
 
-    <div class="component-container">
-      <div class="snackbar">
-        <span class="heading">Normal snackbar here</span>
-        <div class="snackbar-actions">
-          <button class="btn btn-s btn-primary">RETRY</button>
-          <button class="btn btn-s btn-danger">
-            <i class="fas fa-times snackbar-action-close"></i>
-          </button>
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
+      </div>
+
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
+
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/rating/rating.html"
+              class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link active"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h2>Snackbars</h2>
+            <p class="docs-body-para">
+              Snackbar is to used show messages, notifications, or some actions that need users attention.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Standard snackbar start -->
+
+          <section id="standard" class="docs-body-section">
+            <h3>Standard Snackbar</h3>
+
+            <p class="docs-body-para">
+              Snackbars can be created using the <span class="text-pink-bg">"snackbar"</span> class.
+            </p>
+
+            <div class="component-container">
+              <div class="snackbar">
+                <span class="heading">Normal snackbar here</span>
+                <div class="snackbar-actions">
+                  <button class="btn btn-s btn-primary">RETRY</button>
+                  <button class="btn btn-s btn-danger">
+                    <i class="fas fa-times snackbar-action-close"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+        
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522heading%2522%253ENormal%2520snackbar%2520here%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-primary%2522%253ERETRY%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-danger%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+
+            </iframe>
+
+              <!-- iframe ends -->
+
+            </div>
+
+          </section>
+
+          <!-- Standard snackbar ends -->
+
+          <!-- ||  types of snackbar start -->
+
+          <section id="types" class="docs-body-section">
+            <h3>Snackbar Types</h3>
+
+            <p class="docs-body-para">
+              Additionally create snackbars for success, danger and warning using 
+              <span class="text-pink-bg">"success"</span>, 
+              <span class="text-pink-bg">"danger"</span> and
+              <span class="text-pink-bg">"warn"</span> classes.
+            </p>
+
+            <div class="component-container">
+
+              <div class="snackbar success">
+                <span class="heading">Success! you read this</span>
+                <div class="snackbar-actions">
+                  <button class="btn btn-s btn-success btn-outline">Okay</button>
+                </div>
+              </div>
+
+              <div class="snackbar danger">
+                <span class="heading">Beware! privacy at risk</span>
+                <div class="snackbar-actions">
+                  <button class="btn btn-s btn-danger btn-outline">Got it!</button>
+                </div>
+              </div>
+
+              <div class="snackbar warn">
+                <span class="heading">Are you sure?</span>
+                <div class="snackbar-actions">
+                  <button class="btn btn-s btn-warn btn-outline">Yes</button>
+                  <button class="btn btn-s btn-danger btn-outline">
+                    <i class="fas fa-times snackbar-action-close"></i>
+                  </button>
+                </div>
+              </div>
+
+
+            </div>
+        
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520success%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522heading%2522%253ESuccess%21%2520you%2520read%2520this%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-success%2520btn-outline%2522%253EOkay%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520danger%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522heading%2522%253EBeware%21%2520privacy%2520at%2520risk%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-danger%2520btn-outline%2522%253EGot%2520it%21%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520warn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522heading%2522%253EAre%2520you%2520sure%253F%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-warn%2520btn-outline%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-danger%2520btn-outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+              <!-- iframe ends -->
+
+            </div>
+
+          </section>
+
+          <!-- types of snackbar ends -->
+
+          <!-- || demo for snackbar start -->
+
+          <section id="demo" class="docs-body-section">
+            <h3>Demo for Snackbar</h3>
+
+            <p class="docs-body-para">
+              Click<button id="demo-snackbar-preview-btn" class="btn btn-link">
+                Preview</button
+              >for a simple demo.
+            </p>
+
+            <div class="snackbar display-none" id="demo-snackbar">
+              <span class="heading">Normal snackbar here</span>
+              <div class="snackbar-actions">
+                <button id="demo-snackbar-close-btn" class="btn btn-s btn-primary">
+                  Got it!
+                </button>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- Standard snackbar ends -->
+
+          <footer class="component-footer">
+            <a href="/components/rating/rating.html">
+              <i class="fas fa-angle-double-left"></i> Ratings</a
+            >
+            <a href="/components/text-utilities/text-utilities.html">Text Utilities <i class="fas fa-angle-double-right"></i></a>
+          </footer>
+
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
         </div>
-      </div>
-    </div>
 
-    <!-- standard snackbar ends -->
 
-    <!-- One btn snackbar starts -->
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a class="side-nav-link title">On This Page</a></li>
 
-    <div class="component-container">
-      <div class="snackbar">
-        <span class="heading">Only one button</span>
-        <div class="snackbar-actions">
-          <button class="btn btn-s btn-primary">Okay</button>
-        </div>
-      </div>
-    </div>
+            <li>
+              <a href="#standard" class="side-nav-link"> Standard Snackbar</a>
+            </li>
+            <li>
+              <a href="#types" class="side-nav-link"> Types of Snackbars</a>
+            </li>
+            <li>
+              <a href="#demo" class="side-nav-link">Live Demo</a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+    </section>
 
-    <!-- One btn snackbar ends -->
-
-    <!-- Stacked snackbar starts -->
-
-    <div class="component-container">
-      <div class="snackbar stacked-snackbar">
-        <span class="heading">This one's stacked</span>
-        <div class="snackbar-actions">
-          <button class="btn btn-s btn-primary">RETRY</button>
-          <button class="btn btn-s btn-danger">
-            <i class="fas fa-times snackbar-action-close"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Stacked snackbar ends -->
-
-    <!-- success snackbar starts -->
-
-    <div class="component-container">
-      <div class="snackbar success">
-        <span class="heading">Success! you read this</span>
-        <div class="snackbar-actions">
-          <button class="btn btn-s btn-success btn-outline">Okay</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- success snackbar ends -->
-
-    <!-- danger snackbar ends -->
-
-    <div class="component-container">
-      <div class="snackbar danger">
-        <span class="heading">Beware! privacy at risk</span>
-        <div class="snackbar-actions">
-          <button class="btn btn-s btn-danger btn-outline">Got it!</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- danger snackbar starts -->
-
-    <!-- warn snackbar starts -->
-
-    <div class="component-container">
-      <div class="snackbar warn">
-        <span class="heading">Are you sure?</span>
-        <div class="snackbar-actions">
-          <button class="btn btn-s btn-warn btn-outline">Yes</button>
-          <button class="btn btn-s btn-danger btn-outline">
-            <i class="fas fa-times snackbar-action-close"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- warn snackbar ends -->
-
-    <!-- Snackbar for demo starts -->
-
-    <p class="p4">
-      Click<button id="demo-snackbar-preview-btn" class="btn btn-link">
-        Preview</button
-      >for a simple demo.
-    </p>
-
-    <div class="snackbar display-none" id="demo-snackbar">
-      <span class="heading">Normal snackbar here</span>
-      <div class="snackbar-actions">
-        <button id="demo-snackbar-close-btn" class="btn btn-s btn-primary">
-          Got it!
-        </button>
-      </div>
-    </div>
-
-    <!-- Snackbar for demo ends -->
 
     <script src="/components/snackbar/snackbar.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
   </body>
 </html>

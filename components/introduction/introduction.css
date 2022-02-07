@@ -1,0 +1,19 @@
+@import url(/components/button/button.css);
+
+.code-container {
+    height: 230px;
+    overflow: hidden;
+}
+
+.code-container.install {
+    height: 110px;
+}
+
+.component-container {
+    padding: 2rem;
+    display: flex;
+    max-width: 100%;
+    margin: 3rem 0;
+    box-shadow: none;
+    justify-content: center;
+  }
