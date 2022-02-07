@@ -1,61 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velocity ui Image</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alerts</title>
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="image.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/imageComponent/image.css" />
+    <!-- <link rel="stylesheet" href="/components/chips/chips-docs.css" /> -->
+
     <script
-    src="https://kit.fontawesome.com/edf7bdb339.js"
-    crossorigin="anonymous"
-  ></script>
-</head>
-<body>
-    <!-- Image responsive start -->
-    <div class="component-container">
-        
-        <figure>
-            <img class="img-responsive" src="/images/res-img-ref.jpg" alt="Old Disposable Camera From 2006">
-            <figcaption>Old Camera by <a href="https://unsplash.com/@markbishop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mark Bishop</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
-        </figure>
-    </div>
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    <!-- Image responsive ends -->
+  <body>
+    <!-- || top nav start -->
 
-    <!-- Image round starts -->
-    
-    <div class="component-container small-img-container">
-        
-        <figure class="img-150px-wrapper">
-            <img class="img-round" src="/images/card-image-1.jpg" alt="Camera From 2022">
-        </figure>
-        
-        <figure class="img-150px-wrapper">
-            <img class="img-round" src="/images/avatar-image3.jpg" alt="maya's profile picture">
-        </figure>
-        
-    </div>
-    <!-- Image round ends -->
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
+      </div>
 
-    <!-- Square round starts -->
-    
-    <div class="component-container small-img-container">
-        
-        <figure class="img-150px-wrapper">
-            <img class="img-square" src="/images/avatar-image2.jpg" alt="amy's profile picture">
-        </figure>
-        
-        <figure class="img-150px-wrapper">
-            <img class="img-square" src="/images/avatar-image1.jpg" alt="adam's profile picture">
-        </figure>
-        
-    </div>
-    <!-- Square round ends -->
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
 
-</body>
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link active"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="/components/rating/rating.html" class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h2>Images</h2>
+            <p class="docs-body-para">
+                Images are very useful in any web application.Image components provided by velocity are Responsive and fit perfectly into parent's width.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Responsive Images start -->
+
+          <section id="responsive" class="docs-body-section">
+            <h3>Responsive Image</h3>
+            <p class="docs-body-para">
+              Create Responsive image using the
+              <span class="text-pink-bg">"img-responsive"</span> class.
+            </p>
+            <p class="docs-body-para">
+              Resize the screen width to check responsiveness.
+            </p>
+
+
+            <div class="component-container">
+                <figure>
+                    <img class="img-responsive" src="/images/res-img-ref.jpg" alt="Old Disposable Camera From 2006">
+                    <figcaption>Old Camera by <a href="https://unsplash.com/@markbishop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mark Bishop</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+                </figure>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cfigure%253E%250A%2520%2520%253Cimg%2520class%253D%2522img-responsive%2522%2520src%253D%2522%252Fimages%252Fres-img-ref.jpg%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Old%2520Disposable%2520Camera%2520From%25202006%2522%253E%250A%2520%2520%253Cfigcaption%253EOld%2520Camera%2520by%2520Mark%2520Bishop%253C%252Ffigcaption%253E%250A%253C%252Ffigure%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+              <!-- iframe ends -->
+            </div>
+
+          </section>
+          <!-- || Responsive Image end -->
+
+          <!-- || Round image start -->
+
+          <section id="round" class="docs-body-section">
+            <h3>Round Images</h3>
+            <p class="docs-body-para">
+             To create circular images use <span class="text-pink-bg">"img-round"</span> class.
+            </p>
+
+            <div class="component-container small-img-container">
+        
+                <figure class="img-150px-wrapper">
+                    <img class="img-round" src="/images/card-image-1.jpg" alt="Camera From 2022">
+                </figure>
+                
+                <figure class="img-150px-wrapper">
+                    <img class="img-round" src="/images/avatar-image3.jpg" alt="maya's profile picture">
+                </figure>
+                
+            </div>
+
+
+            <div class="code-container">
+                <!-- iframe starts -->
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cfigure%253E%250A%2520%2520%253Cimg%2520class%253D%2522img-round%2522%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522Camera%2520From%25202022%2522%253E%250A%253C%252Ffigure%253E%250A%250A%253Cfigure%253E%250A%2520%2520%253Cimg%2520class%253D%2522img-round%2522%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%2520alt%253D%2522maya%27s%2520profile%2520picture%2522%253E%250A%253C%252Ffigure%253E"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+                <!-- iframe ends -->
+              </div>
+
+          </section>
+
+
+          <!-- || Round Image ends -->
+
+          <!-- || square image start -->
+
+          <section id="square" class="docs-body-section">
+            <h3>Square Images</h3>
+            <p class="docs-body-para">
+             To create square images use <span class="text-pink-bg">"img-square"</span> class.
+            </p>
+
+            <div class="component-container small-img-container">
+        
+                <figure class="img-150px-wrapper">
+                    <img class="img-square" src="/images/avatar-image2.jpg" alt="amy's profile picture">
+                </figure>
+                
+                <figure class="img-150px-wrapper">
+                    <img class="img-square" src="/images/avatar-image1.jpg" alt="adam's profile picture">
+                </figure>
+                
+            </div>
+
+
+            <div class="code-container">
+                <!-- iframe starts -->
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cfigure%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-square%2522%2520src%253D%2522%252Fimages%252Favatar-image2.jpg%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522amy%27s%2520profile%2520picture%2522%253E%250A%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cfigure%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-square%2522%2520src%253D%2522%252Fimages%252Favatar-image1.jpg%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522adam%27s%2520profile%2520picture%2522%253E%250A%253C%252Ffigure%253E"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+                <!-- iframe ends -->
+              </div>
+
+          </section>
+
+
+          <!-- || Round Image ends -->
+
+
+          <footer class="component-footer">
+            <a href="/components/chips/chips.html">
+              <i class="fas fa-angle-double-left"></i> Chips</a
+            >
+            <a href="/components/input/input.html">
+              Input <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- || Alert components ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a href="" class="side-nav-link title">On This Page</a></li>
+
+            <li><a href="#responsive" class="side-nav-link">Responsive images</a></li>
+            <li>
+              <a href="#round" class="side-nav-link">Round Image</a>
+            </li>
+            <li>
+              <a href="#square" class="side-nav-link">Square Image</a>
+            </li>
+          </ul>
+        </aside>
+
+      </main>
+      <!-- || Image Components end -->
+    </section>
+    <script src="/components/chips/chips.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
+  </body>
 </html>
