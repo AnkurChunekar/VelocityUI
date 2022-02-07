@@ -1,6 +1,6 @@
 const lastInputChip = document.querySelector("#demo-chip-container");
 const chipInputElement = document.querySelector("#chip-inputElement");
-const inputChipConatinerDiv = document.querySelectorAll(".chips-container")[1];
+const inputChipConatinerDiv = document.querySelectorAll(".chips-container")[0];
 let n = 2;
 
 function createChip(chipLabel) {

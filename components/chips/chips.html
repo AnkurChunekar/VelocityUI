@@ -4,69 +4,359 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chips</title>
+    <title>Alerts</title>
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="chips.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/chips/chips.css" />
+    <link rel="stylesheet" href="/components/chips/chips-docs.css" />
+
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <!-- Basic chips start -->
+    <!-- || top nav start -->
 
-    <div class="chips-container">
-      <div class="chip-body normal-chip">
-        <i class="fas fa-tag"></i>
-        <span>Tag</span>
-        <i class="fas fa-times close"></i>
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
       </div>
 
-      <div class="chip-body normal-chip">
-        <i class="fas fa-check-circle"></i>
-        <span>Selected</span>
-        <i class="fas fa-times close"></i>
-      </div>
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
 
-      <div class="chip-body blue-chip">
-        <i class="fab fa-js-square"></i>
-        <span>JavaScript</span>
-        <i class="fas fa-times close"></i>
-      </div>
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="chip-body black-chip">
-        <i class="fab fa-css3-alt"></i>
-        <span>CSS</span>
-        <i class="fas fa-times close"></i>
-      </div>
-    </div>
+    <!-- || top nav end -->
 
-    <!-- Basic Chips End -->
+    <!-- || Main component Section start -->
 
-    <!-- Input Chips start -->
+    <section class="component-section">
+      <!-- || Side Navbar start -->
 
-    <div class="input-chip-container">
-      <h3>Chips inside an input</h3>
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
 
-      <div class="chips-container">
-        <div class="chip-body blue-chip">
-          <span>One Fish</span>
-          <i class="fas fa-times close"></i>
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link active"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="/components/rating/rating.html" class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h2>Chips</h2>
+            <p class="docs-body-para">
+              Chips allow users to enter information, make selections, filter
+              content, or trigger actions.
+            </p>
+            <div class="divider"></div>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Basic Chips start -->
+
+          <section id="basic" class="docs-body-section">
+            <h3>Basic Chips</h3>
+            <p class="docs-body-para">
+              Create standard chip using the
+              <span class="text-pink-bg">"chip-body"</span> class.
+            </p>
+            <p class="docs-body-para">
+              Additionally use classes such as
+              <span class="text-pink-bg">"normal-chip"</span>,
+              <span class="text-pink-bg">"blue-chip"</span> and
+              <span class="text-pink-bg">"black-chip"</span>, to create
+              respective components.
+            </p>
+
+            <div class="component-container">
+              <div class="chip-body normal-chip">
+                <i class="fas fa-tag"></i>
+                <span>Tag</span>
+                <i class="fas fa-times close"></i>
+              </div>
+
+              <div class="chip-body normal-chip">
+                <i class="fas fa-check-circle"></i>
+                <span>Selected</span>
+                <i class="fas fa-times close"></i>
+              </div>
+
+              <div class="chip-body blue-chip">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+                <i class="fas fa-times close"></i>
+              </div>
+
+              <div class="chip-body black-chip">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+                <i class="fas fa-times close"></i>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522chip-body%2520normal-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-tag%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253ETag%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522chip-body%2520normal-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253ESelected%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522chip-body%2520blue-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-js-square%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253EJavaScript%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522chip-body%2520black-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-css3-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253ECSS%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+
+          </section>
+          <!-- || Basic Chips end -->
+
+          <!-- || Input chips start -->
+
+          <section id="input-chip" class="docs-body-section">
+            <h3>Chips inside Input</h3>
+            <p class="docs-body-para">
+              We can use chips with various components, for example try adding
+              chips inside a input given below.
+            </p>
+
+            <div class="component-container">
+              <div class="input-chip-container">
+                <h3>Chips inside an input</h3>
+
+                <div class="chips-container">
+                  <div class="chip-body blue-chip">
+                    <span>One Fish</span>
+                    <i class="fas fa-times close"></i>
+                  </div>
+
+                  <div id="demo-chip-container">
+                    <input
+                      id="chip-inputElement"
+                      type="text"
+                      placeholder="New Chip..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- || Input Chip end -->
+
+
+          <footer class="component-footer">
+            <a href="/components/card/card.html">
+              <i class="fas fa-angle-double-left"></i> Cards</a
+            >
+            <a href="/components/imageComponent/image.html">
+              Images <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- || Alert components ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
         </div>
 
-        <!-- chip-inputElement-body -->
+        <!-- here-->
 
-        <div id="demo-chip-container">
-          <input id="chip-inputElement" type="text" placeholder="New Chip..." />
-        </div>
-      </div>
-    </div>
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a href="" class="side-nav-link title">On This Page</a></li>
 
-    <!-- Input Chips end -->
+            <li><a href="#basic" class="side-nav-link">Basic Chips</a></li>
+            <li>
+              <a href="#input-chip" class="side-nav-link">Input Chips</a>
+            </li>
+          </ul>
+        </aside>
 
+        <!-- || Alert with a msg end -->
+      </main>
+      <!-- || Alert Components end -->
+    </section>
     <script src="/components/chips/chips.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
   </body>
 </html>
