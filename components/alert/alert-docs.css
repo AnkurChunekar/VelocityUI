@@ -10,4 +10,7 @@
     margin: 3rem 0;
     box-shadow: none;
   }
+  .alert.display-none {
+    display: none;
+  }
   
