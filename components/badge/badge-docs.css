@@ -1,0 +1,7 @@
+.component-container {
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}

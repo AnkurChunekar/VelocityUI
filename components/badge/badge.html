@@ -4,112 +4,501 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badge Components</title>
+    <title>Alerts</title>
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/badge/badge.css" />
+    <link rel="stylesheet" href="/components/badge/badge-docs.css" />
+
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="badge.css" />
   </head>
+
   <body>
-    <!-- || Avatars with a Badge start -->
+    <!-- || top nav start -->
 
-    <div class="component-container">
-      <figure class="avatar badge-container">
-        <img class="avatar-image" src="/images/avatar-image1.jpg" alt="avatar-profile-1" />
-        <span class="avatar-badge online"></span>
-      </figure>
-      <figure class="avatar badge-container">
-        <img class="avatar-image" src="/images/avatar-image2.jpg" alt="avatar-profile-1" />
-        <span class="avatar-badge offline"></span>
-      </figure>
-      <figure class="avatar badge-container">
-        <img class="avatar-image" src="/images/avatar-image3.jpg" alt="avatar-profile-1" />
-        <span class="avatar-badge dnd"></span>
-      </figure>
-    </div>
-
-    <!-- || Avatars with a Badge ends -->
-
-    <!-- || Icons with a Badge start -->
-
-    <div class="component-container">
-      <div class="icon-container badge-container">
-        <i class="fas fa-heart icon"></i>
-        <span class="icon-badge">2</span>
-      </div>
-      <div class="icon-container badge-container">
-        <i class="fas fa-shopping-cart icon"></i>
-        <span class="icon-badge">2</span>
-      </div>
-      <div class="icon-container badge-container">
-        <i class="fas fa-heart icon"></i>
-        <span class="icon-badge">9+</span>
-      </div>
-    </div>
-
-    <!-- || Icons with a Badge ends -->
-
-   <!-- || Tag Badge start -->
-
-   <div class="component-container">
-    <div class="badge-container tag tag-primary">
-      <span class="icon-badge">PREMIUM</span>
-    </div>
-    <div class="badge-container tag tag-secondary">
-      <span class="icon-badge">REGULAR</span>
-    </div>
-    <div class="badge-container tag tag-success">
-      <span class="icon-badge">NEW</span>
-    </div>
-    <div class="badge-container tag tag-danger">
-      <span class="icon-badge">LIMITED</span>
-    </div>
-    <div class="badge-container tag tag-dark tag-round-border">
-      <span class="icon-badge">Sold Out</span>
-    </div>
-    <div class="badge-container tag tag-warn tag-round-border">
-      <span class="icon-badge">Check Out</span>
-    </div>
-  </div>
-
-  <!-- || Tag Badge ends -->
-
-    <!-- || Text with a Badge start -->
-
-    <div class="component-container">
-      <div class="icon-container badge-container text">
-        <span>Any Text</span>
-        <span class="icon-badge">2</span>
-      </div>
-      <div class="icon-container badge-container text">
-        <span>Notify</span>
-        <span class="icon-badge">2</span>
-      </div>
-    </div>
-
-    <!-- || Text with a Badge ends -->
-
-    <!-- || Button with a Badge start -->
-
-    <div class="component-container">
-      <div class="icon-container badge-container text">
-        <button id="demo-badge-hide-btn" class="btn btn-primary">Live Demo</button>
-        <span id="demo-badge" class="icon-badge">2</span>
-      </div>
-      <div class="icon-container badge-container text">
-        <button class="btn btn-secondary">Cancel</button>
-        <span class="icon-badge">7</span>
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
       </div>
 
-    </div>
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
 
-    <!-- || Button with a Badge ends -->
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
 
-<script src="/components/badge/badge.js"></script>
+    <!-- || top nav end -->
 
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link active"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="/components/rating/rating.html" class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header>
+            <h2>Badge</h2>
+            <p>
+              A badge can display the number of notifications or the status of
+              being online or offline, or can even be used it as a tag.
+            </p>
+            <div class="divider"></div>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Avatars with a Badge start -->
+
+          <section id="avatar-w-badge">
+            <h3>Avatar with a badge</h3>
+            <p>
+              Add Badges to the avatars using
+              <span class="text-pink-bg">"badge-container"</span> class, after
+              <span class="text-pink-bg">"avatar"</span> class.
+            </p>
+
+            <div class="component-container">
+              <figure class="avatar badge-container">
+                <img
+                  class="avatar-image"
+                  src="/images/avatar-image1.jpg"
+                  alt="avatar-profile-1"
+                />
+                <span class="avatar-badge online"></span>
+              </figure>
+              <figure class="avatar badge-container">
+                <img
+                  class="avatar-image"
+                  src="/images/avatar-image2.jpg"
+                  alt="avatar-profile-1"
+                />
+                <span class="avatar-badge offline"></span>
+              </figure>
+              <figure class="avatar badge-container">
+                <img
+                  class="avatar-image"
+                  src="/images/avatar-image3.jpg"
+                  alt="avatar-profile-1"
+                />
+                <span class="avatar-badge dnd"></span>
+              </figure>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cfigure%2520class%253D%2522avatar%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image1.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520online%2522%253E%253C%252Fspan%253E%250A%253C%252Ffigure%253E%250A%250A%253Cfigure%2520class%253D%2522avatar%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image2.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520offline%2522%253E%253C%252Fspan%253E%250A%253C%252Ffigure%253E%250A%250A%253Cfigure%2520class%253D%2522avatar%2520badge-container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520dnd%2522%253E%253C%252Fspan%253E%250A%253C%252Ffigure%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Avatars with a Badge ends -->
+
+          <!-- || Icons with a Badge start -->
+
+          <section id="icon-w-badge">
+            <h3>Icons with Badges</h3>
+
+            <p>
+              Add Badges to the icons using
+              <span class="text-pink-bg">"icon-container"</span> class, along
+              with <span class="text-pink-bg">"badge-container"</span> class.
+              Include your desired icon with a span tag.
+            </p>
+
+            <div class="component-container">
+              <div class="icon-container badge-container">
+                <i class="fas fa-heart icon"></i>
+                <span class="icon-badge">2</span>
+              </div>
+              <div class="icon-container badge-container">
+                <i class="fas fa-shopping-cart icon"></i>
+                <span class="icon-badge">2</span>
+              </div>
+              <div class="icon-container badge-container">
+                <i class="fas fa-heart icon"></i>
+                <span class="icon-badge">9+</span>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E9%252B%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Icons with a Badge ends -->
+
+          <!-- || Tag Badge start -->
+
+          <section id="tag-badge">
+            <h3>Badges used as tags</h3>
+            <p>
+              Tag Badges can be created using
+              <span class="text-pink-bg">"tag"</span> class.
+            </p>
+            <p>
+              Additionally use
+              <span class="text-pink-bg">"tag-primary"</span>,
+              <span class="text-pink-bg">"tag-secondary"</span>,
+              <span class="text-pink-bg">"tag-success"</span>,
+              <span class="text-pink-bg">"tag-danger"</span>,
+              <span class="text-pink-bg">"tag-danger"</span>,
+              <span class="text-pink-bg">"tag-dark"</span> and
+              <span class="text-pink-bg">"tag-warn"</span> to create desired
+              tag.
+            </p>
+            <p>
+              <span class="text-pink-bg">"tag-round-border"</span> class can be
+              used give small border radius.
+            </p>
+
+            <div class="component-container">
+              <div class="badge-container tag tag-primary">
+                <span class="icon-badge">PREMIUM</span>
+              </div>
+              <div class="badge-container tag tag-secondary">
+                <span class="icon-badge">REGULAR</span>
+              </div>
+              <div class="badge-container tag tag-success">
+                <span class="icon-badge">NEW</span>
+              </div>
+              <div class="badge-container tag tag-danger">
+                <span class="icon-badge">LIMITED</span>
+              </div>
+              <div class="badge-container tag tag-dark tag-round-border">
+                <span class="icon-badge">Sold Out</span>
+              </div>
+              <div class="badge-container tag tag-warn tag-round-border">
+                <span class="icon-badge">Check Out</span>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-primary%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253EPREMIUM%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-secondary%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253EREGULAR%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-success%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENEW%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ELIMITED%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-dark%2520tag-round-border%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ESold%2520Out%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-warn%2520tag-round-border%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ECheck%2520Out%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- || Tag Badge ends -->
+
+          <!-- || Text with a Badge start -->
+
+          <section id="text-w-badge">
+            <h3>Badges on text content</h3>
+            <p>
+              Text can also have badges and to create such badges,
+              <span class="text-pink-bg">"icon-container"</span>,
+              <span class="text-pink-bg">"badge-container"</span>, and
+              <span class="text-pink-bg">"text"</span>
+              classes can be used.
+            </p>
+
+            <div class="component-container">
+              <div class="icon-container badge-container text">
+                <span>Any Text</span>
+                <span class="icon-badge">2</span>
+              </div>
+              <div class="icon-container badge-container text">
+                <span>Notify</span>
+                <span class="icon-badge">2</span>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2520text%2522%253E%250A%2520%2520%253Cspan%253EAny%2520Text%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2520text%2522%253E%250A%2520%2520%253Cspan%253ENotify%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- || Text with a Badge ends -->
+
+          <!-- || Button with a Badge start -->
+
+          <section id="button-w-badge">
+            <h3>Badges on buttons</h3>
+            <p>
+              Badges on buttons are similar to text-badges, just include the
+              desired <a href="/components/button/button.html">button</a> inside
+              the parent badge container.
+            </p>
+
+            <div class="component-container">
+              <div class="icon-container badge-container text">
+                <button id="demo-badge-hide-btn" class="btn btn-primary">
+                  Live Demo
+                </button>
+                <span id="demo-badge" class="icon-badge display-none">2</span>
+              </div>
+              <div class="icon-container badge-container text">
+                <button class="btn btn-secondary">Cancel</button>
+                <span class="icon-badge">7</span>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2520text%2522%253E%250A%2520%2520%253Cbutton%2520id%253D%2522demo-badge-hide-btn%2522%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520Live%2520Demo%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cspan%2520id%253D%2522demo-badge%2522%2520class%253D%2522icon-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2520text%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E7%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- || Button with a Badge ends -->
+
+          <!-- || Component Footer starts -->
+
+          <footer class="component-footer">
+            <a href="/components/avatar/avatar.html">
+              <i class="fas fa-angle-double-left"></i> Avatar</a
+            >
+            <a href="/components/button/button.html">
+              Button <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- Component Footer ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p>
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a href="" class="side-nav-link title">On This Page</a></li>
+
+            <li><a href="#avatar-w-badge" class="side-nav-link">Avatar badge</a></li>
+
+            <li>
+              <a href="#icon-w-badge" class="side-nav-link"
+                >Icon badge</a
+              >
+            </li>
+            
+            <li>
+              <a href="#tag-badge" class="side-nav-link">Tag badge</a>
+            </li>
+
+            <li>
+              <a href="#text-w-badge" class="side-nav-link">Text badge</a>
+            </li>
+
+            <li>
+              <a href="#button-w-badge" class="side-nav-link">Button badge</a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- || Alert with a msg end -->
+      </main>
+      <!-- || Alert Components end -->
+    </section>
+    <script src="/components/badge/badge.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
   </body>
 </html>
