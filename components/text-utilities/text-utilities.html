@@ -4,45 +4,320 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity UI text utilities</title>
+    <title>Velocity UI | Text Utilities</title>
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="text-utlities.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/text-utilities/text-utlities.css" />
+    <link rel="stylesheet" href="/components/text-utilities/text-utilities-docs.css" />
+   
+    <script
+      src="https://kit.fontawesome.com/edf7bdb339.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
+    <!-- || top nav start -->
 
-    <!-- Headings start -->
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
+      </div>
 
-    <div class="component-container">
-      <h1>H1-Heading</h1>
-      <h2>H2-Heading</h2>
-      <h3>H3-Heading</h3>
-      <h4>H4-Heading</h4>
-      <h5>H5-Heading</h5>
-    </div>
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
 
-    <!-- Headings ends -->
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
 
-    <!-- paragraph start -->
+    <!-- || top nav end -->
 
-    <div class="component-container">
-      <p>This is a paragraph</p>
-      <p class="gray-text">This is gray text example</p>
-      <p class="strike-text">This is a strike through text</p>
-      <p class="center-align-text">This is a center aligned text</p>
-      <p class="right-align-text">This is a right aligned text</p>
-      <p class="left-align-text">This is a left aligned text</p>
-      <p>The <span class="highlight-text">"next"</span> word here is highlighted</p>
-      <p class="light-weight-text">This is a light weighted text</p>
-      <p><b>This is a bold text</b></p>
-      <p class="primary-color-text">Primary Color text</p>
-      <p class="secondary-color-text">Secondary Color text</p>
-      <small>smaller text here</small>
-    </div>
+    <!-- || Main component Section start -->
 
-    <!-- paragraph ends -->
+    <section class="component-section">
+      <!-- || Side Navbar start -->
 
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/rating/rating.html"
+              class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link active"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h2>Text Utilities</h2>
+            <p class="docs-body-para">
+              Text Utilities are useful for providing different styles to text content.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || text styles start -->
+
+          <section id="styles" class="docs-body-section">
+            <h3>Text Styles</h3>
+
+            <p class="docs-body-para">
+              <ul>
+                <li>Use <span class="text-pink-bg">"gray-text"</span> class for <span class="gray-text">gray text color</span>.</li>
+                <li>Use <span class="text-pink-bg">"strike-text"</span> class for strike text from center.</li>
+                <li>Use <span class="text-pink-bg">"center-align-text"</span> class to align text content center.</li>
+                <li>Use <span class="text-pink-bg">"right-align-text"</span> class to align text content right.</li>
+                <li>Use <span class="text-pink-bg">"left-align-text"</span> class to align text content left.</li>
+                <li>Use <span class="text-pink-bg">"highlight-text"</span> class for highlight text.</li>
+                <li>Use <span class="text-pink-bg">"light-weight-text"</span> class for small font weight text.</li>
+                <li>Use <span class="text-pink-bg">"b"</span> tag for bold text.</li>
+                <li>Use <span class="text-pink-bg">"primary-color-text"</span> class for primary text color.</li>
+                <li>Use <span class="text-pink-bg">"secondary-color-text"</span> class for secondary text color.</li>
+                <li>Use <span class="text-pink-bg">"small"</span> tag for bold text.</li>
+              </ul>
+            </p>
+
+            <div class="component-container">
+              <p>This is a paragraph</p>
+              <p class="gray-text">This is gray text example</p>
+              <p class="strike-text">This is a strike through text</p>
+              <p class="center-align-text">This is a center aligned text</p>
+              <p class="right-align-text">This is a right aligned text</p>
+              <p class="left-align-text">This is a left aligned text</p>
+              <p>The <span class="highlight-text">"next"</span> word here is highlighted</p>
+              <p class="light-weight-text">This is a light weighted text</p>
+              <p><b>This is a bold text</b></p>
+              <p class="primary-color-text">Primary Color text</p>
+              <p class="secondary-color-text">Secondary Color text</p>
+              <small>smaller text here</small>
+            </div>
+        
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%253EThis%2520is%2520a%2520paragraph%253C%252Fp%253E%250A%253Cp%2520class%253D%2522gray-text%2522%253EThis%2520is%2520gray%2520text%2520example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522strike-text%2522%253EThis%2520is%2520a%2520strike%2520through%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522center-align-text%2522%253EThis%2520is%2520a%2520center%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522right-align-text%2522%253EThis%2520is%2520a%2520right%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522left-align-text%2522%253EThis%2520is%2520a%2520left%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%253EThe%2520%253Cspan%2520class%253D%2522highlight-text%2522%253E%2522next%2522%253C%252Fspan%253E%2520word%2520here%2520is%2520highlighted%253C%252Fp%253E%250A%253Cp%2520class%253D%2522light-weight-text%2522%253EThis%2520is%2520a%2520light%2520weighted%2520text%253C%252Fp%253E%250A%253Cp%253E%253Cb%253EThis%2520is%2520a%2520bold%2520text%253C%252Fb%253E%253C%252Fp%253E%250A%253Cp%2520class%253D%2522primary-color-text%2522%253EPrimary%2520Color%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522secondary-color-text%2522%253ESecondary%2520Color%2520text%253C%252Fp%253E%250A%253Csmall%253Esmaller%2520text%2520here%253C%252Fsmall%253E"
+          
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+              <!-- iframe ends -->
+
+            </div>
+
+          </section>
+
+          <!-- text-styles ends -->
+
+          <footer class="component-footer">
+            <a href="/components/snackbar/snackbar.html">
+              <i class="fas fa-angle-double-left"></i> Snackbar</a
+            >
+            <a></a>
+          </footer>
+
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a class="side-nav-link title">On This Page</a></li>
+
+            <li>
+              <a href="#styles" class="side-nav-link"> Text styles</a>
+            </li>
+
+          </ul>
+          
+        </aside>
+
+      </main>
+
+    </section>
+
+
+    <script src="/documentation/JS/documentation.js"></script>
   </body>
 </html>
