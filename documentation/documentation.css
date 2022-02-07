@@ -153,23 +153,23 @@ main {
   /* border: solid 1px red; */
 }
 
-.main-component-body header {
+.main-component-body .docs-body-header {
   margin: 2rem 0;
   color: var(--velocity-black);
   border-bottom: solid 1px lightgray;
 }
-
-.main-component-body p {
+/* -- */
+.main-component-body .docs-body-para {
   margin: 2rem 0;
   color: var(--velocity-black);
 }
 
-.main-component-body section {
+.main-component-body .docs-body-section {
   padding-bottom: 2.5rem;
   margin: 3rem 0;
   border-bottom: solid 1px lightgray;
 }
-
+/* -- */
 .cta-blue-text {
   color: var(--velocity-blue);
 }
