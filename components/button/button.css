@@ -18,6 +18,7 @@
   color: var(--plain-white);
   font-size: var(--font-size-h4);
   padding: 0.75rem 1.25rem;
+  width: fit-content;
 }
 
 /* || Button styling ends */
