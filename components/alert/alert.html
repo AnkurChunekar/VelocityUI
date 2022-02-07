@@ -4,74 +4,391 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity UI Alerts</title>
+    <title>Alerts</title>
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/alert/alert.css" />
+    <link rel="stylesheet" href="/components/alert/alert-docs.css" />
 
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/variables.css" />
-    <link rel="stylesheet" href="/css/utilities.css" />
-    <link rel="stylesheet" href="alert.css" />
   </head>
+
   <body>
-    <!-- Standard alert start -->
+    <!-- || top nav start -->
 
-    <div class="component-container">
-      <div class="alert alert-success">
-        <i class="fas fa-check-circle icon"></i>
-        <span>Well Done! you have successfully read an alert message.</span>
+    <nav class="top-navbar">
+      <div class="top-nav-brand">
+        <a href="/index.html">
+          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
+        </a>
+        <a href="/index.html" class="brand-name">Velocity</a>
       </div>
-      <div class="alert alert-error">
-        <i class="fas fa-exclamation-circle icon"></i>
-        <span>Error! Something went wrong, Try again. </span>
-      </div>
-      <div class="alert alert-info">
-        <i class="fas fa-info-circle icon"></i>
-        <span>When in doubt, use this one to communicate with the user.</span>
-      </div>
-      <div class="alert alert-warn">
-        <i class="fas fa-exclamation-circle icon"></i>
-        <span>Warning! a simple warning, check out. </span>
-      </div>
-    </div>
 
-    <!-- Standard alert ends -->
+      <ul class="top-nav-links doc-links">
+        <li class="inline-list">
+          <a href="/components/introduction/introduction.html">Get Started</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Documentation</a>
+        </li>
+        <li class="inline-list">
+          <a href="/components/alert/alert.html">Components</a>
+        </li>
+      </ul>
 
-    <!-- Dismissible alert start -->
+      <ul class="top-nav-links">
+        <li class="inline-list">
+          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
+            ><i class="fab fa-github h3"></i
+          ></a>
+        </li>
+        <li class="inline-list menu-icon">
+          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="component-container">
-      <div class="alert alert-success" id="alert-box-example">
-        <i class="fas fa-check-circle icon"></i>
-        <span>Well Done! You can delete this message after reading.</span>
-        <i
-          class="fas fa-times alert-dismissible-icon"
-          id="alert-example-close-btn"
-        ></i>
-      </div>
-    </div>
+    <!-- || top nav end -->
 
-    <!-- Dismissible alert end -->
+    <!-- || Main component Section start -->
 
-    <!-- Alert with a msg start -->
+    <section class="component-section">
+      <!-- || Side Navbar start -->
 
-    <div class="component-container">
-      <div class="alert alert-error alert-w-additional-text">
-        <div>
-          <i class="fas fa-exclamation-circle icon"></i>
-          <strong>Error! Check the message below and try again.</strong>
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link title"
+              >Get Started</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/introduction/introduction.html"
+              class="side-nav-link"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/typography-docs/typography.html"
+              class="side-nav-link"
+              >Typography</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link title"
+              >Components</a
+            >
+          </li>
+
+          <li>
+            <a href="/components/alert/alert.html" class="side-nav-link active"
+              >Alert</a
+            >
+          </li>
+          <li>
+            <a href="/components/avatar/avatar.html" class="side-nav-link"
+              >Avatar</a
+            >
+          </li>
+          <li>
+            <a href="/components/badge/badge.html" class="side-nav-link"
+              >Badge</a
+            >
+          </li>
+          <li>
+            <a href="/components/button/button.html" class="side-nav-link"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+          </li>
+          <li>
+            <a href="/components/chips/chips.html" class="side-nav-link"
+              >Chips</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/imageComponent/image.html"
+              class="side-nav-link"
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="/components/input/input.html" class="side-nav-link"
+              >Input</a
+            >
+          </li>
+          <li>
+            <a href="/components/lists/lists.html" class="side-nav-link"
+              >Lists</a
+            >
+          </li>
+          <li>
+            <a href="/components/modal/modal.html" class="side-nav-link"
+              >Modal</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/navigation/navigation.html"
+              class="side-nav-link"
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="/components/rating/rating.html" class="side-nav-link"
+              >Rating</a
+            >
+          </li>
+          <li>
+            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+              >Snackbar</a
+            >
+          </li>
+          <li>
+            <a
+              href="/components/text-utilities/text-utilities.html"
+              class="side-nav-link"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header>
+            <h2>Alerts</h2>
+            <p>
+              An alert is used to communicate an important message in a way that
+              attracts the user's attention without interrupting the user.
+            </p>
+            <div class="divider"></div>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Standard Alert start -->
+          <section id="standard">
+            <h3>Standard Alert</h3>
+            <p>
+              Create standard alert using the
+              <span class="text-pink-bg">"alert"</span> class.
+            </p>
+            <p>
+              Additionally use classes such as
+              <span class="text-pink-bg">"alert-success"</span>,
+              <span class="text-pink-bg">"alert-error"</span>,
+              <span class="text-pink-bg">"alert-info"</span>,
+              <span class="text-pink-bg">"alert-warn"</span> to create
+              respective components.
+            </p>
+
+            <div class="component-container">
+              <div class="alert alert-success">
+                <i class="fas fa-check-circle icon"></i>
+                <span
+                  >Well Done! you have successfully read an alert message.</span
+                >
+              </div>
+              <div class="alert alert-error">
+                <i class="fas fa-exclamation-circle icon"></i>
+                <span>Error! Something went wrong, Try again. </span>
+              </div>
+              <div class="alert alert-info">
+                <i class="fas fa-info-circle icon"></i>
+                <span
+                  >When in doubt, use this one to communicate with the
+                  user.</span
+                >
+              </div>
+              <div class="alert alert-warn">
+                <i class="fas fa-exclamation-circle icon"></i>
+                <span>Warning! a simple warning, check out. </span>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EWell%2520Done%21%2520you%2520have%2520successfully%2520read%2520an%2520alert%2520message.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EError%21%2520Something%2520went%2520wrong%252C%2520Try%2520again.%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EWhen%2520in%2520doubt%252C%2520use%2520this%2520one%2520to%2520communicate%2520with%2520the%2520user.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EWarning%21%2520a%2520simple%2520warning%252C%2520check%2520out.%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+          <!-- || Standard Alert end -->
+
+          <!-- || Dismissible Alert start -->
+          <section id="dismissible">
+            <h3>Dissmible Alert</h3>
+            <p>
+              Create dismisible alert using the
+              <span class="text-pink-bg">"alert-dismissible-icon"</span> class
+              given to your desired dismiss icon.
+            </p>
+
+            <div class="component-container">
+              <div class="alert alert-success" id="alert-box-example">
+                <i class="fas fa-check-circle icon"></i>
+                <span
+                  >Well Done! You can delete this message after reading.</span
+                >
+                <i
+                  class="fas fa-times alert-dismissible-icon"
+                  id="alert-example-close-btn"
+                ></i>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%2520id%253D%2522alert-box-example%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EWell%2520Done%21%2520You%2520can%2520delete%2520this%2520message%2520after%2520reading.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-times%2520alert-dismissible-icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522alert-example-close-btn%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+          <!-- || Dismissible Alert end -->
+
+          <!-- || Alert with a message start -->
+          <section id="additional">
+            <h3>Alert with a additional text</h3>
+            <p>
+              Use
+              <span class="text-pink-bg">"alert-w-additional-text"</span> class
+              to create an alert with additional information. Add
+              <span class="text-pink-bg">"additional-text"</span> class to the
+              text container.
+            </p>
+
+            <div class="component-container">
+              <div class="alert alert-error alert-w-additional-text">
+                <div>
+                  <i class="fas fa-exclamation-circle icon"></i>
+                  <strong>Error! Check the message below and try again.</strong>
+                </div>
+                <div class="additional-text">
+                  <span
+                    >Make sure that you are including correct classes inside
+                    appropriate HTML elements. You can Copy given HTML
+                    code.</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2520alert-w-additional-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EError%21%2520Check%2520the%2520message%2520below%2520and%2520try%2520again.%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522additional-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EMake%2520sure%2520that%2520you%2520are%2520including%2520correct%2520classes%2520inside%2520appropriate%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520HTML%2520elements.%2520You%2520can%2520Copy%2520given%2520HTML%2520code.%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+          <footer class="component-footer">
+            <a href="/components/typography-docs/typography.html">
+              <i class="fas fa-angle-double-left"></i> Typography</a
+            >
+            <a href="/components/avatar/avatar.html">
+              Avatar <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- || Alert with a message ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p>
+              <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
+              Reserved
+            </p>
+            <ul>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://ankurchunekar.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-home"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AnkurChunekar"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/ankur_chunekar"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/ankurchunekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
         </div>
-        <div class="additional-text">
-          <span
-            >Make sure that you are including correct classes inside appropriate
-            HTML elements. You can Copy given HTML code.</span
-          >
-        </div>
-      </div>
-    </div>
 
-    <!-- Alert with a msg end -->
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li><a href="" class="side-nav-link title">On This Page</a></li>
+
+            <li><a href="#standard" class="side-nav-link">Standard</a></li>
+            <li>
+              <a href="#dismissible" class="side-nav-link">Dismissible</a>
+            </li>
+            <li>
+              <a href="#additional" class="side-nav-link">Additional Text</a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- || Alert with a msg end -->
+      </main>
+      <!-- || Alert Components end -->
+    </section>
+
+    <script src="/documentation/JS/documentation.js"></script>
   </body>
 </html>
