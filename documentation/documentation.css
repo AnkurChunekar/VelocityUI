@@ -170,11 +170,6 @@ main {
   border-bottom: solid 1px lightgray;
 }
 
-/* .divider {
-    border-top: solid 1px lightgray;
-    margin: 1rem 0 3rem 0;
-  }
-   */
 .cta-blue-text {
   color: var(--velocity-blue);
 }

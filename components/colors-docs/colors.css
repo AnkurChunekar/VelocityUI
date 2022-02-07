@@ -1,0 +1,123 @@
+
+.component-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.component-container .color-box {
+    border-radius: var(--small-border-radius);
+    margin: 0.5rem 1rem;
+    box-shadow: 0 2px 5px var(--plain-lightgray);
+}
+
+.component-container .color {
+  height: 8rem;
+  width: 8rem;
+  border-top-left-radius: var(--small-border-radius);
+  border-top-right-radius: var(--small-border-radius);
+}
+.component-container .color-hex {
+  height: 3rem;
+  width: 8rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.component-container .component-container {
+    margin: 0;
+    border: none;
+}
+
+
+/* Defaults */
+
+.color.blue {
+    background-color: var(--velocity-blue);
+}
+.color.black {
+    background-color: var(--velocity-black);
+}
+.color.pink {
+    background-color: var(--velocity-pink);
+}
+.color.orange {
+    background-color: var(--velocity-orange);
+}
+.color.gray {
+    background-color: var(--velocity-gray);
+}
+
+
+/* Others */
+
+.color.white {
+    background-color: var(--plain-white);
+}
+
+.color.black {
+    background-color: var(--plain-black);
+}
+
+.color.red {
+    background-color: var(--velocity-red);
+}
+
+.color.green {
+    background-color: var(--velocity-green);
+}
+
+.color.lynx-white {
+    background-color: var(--lynx-white);
+}
+
+.color.alert-red {
+    background-color: var(--alert-error-red);
+}
+
+.color.alert-icon-red {
+    background-color: var(--alert-error-icon-red);
+}
+
+.color.alert-warn-orange {
+    background-color: var(--alert-warn-orange);
+}
+
+.color.alert-icon-orange {
+    background-color: var(--alert-warn-icon-orange);
+}
+
+
+.color.alert-success-green {
+    background-color: var(--alert-success-green);
+}
+
+.color.alert-icon-green {
+    background-color: var(--alert-success-icon-green);
+}
+
+.color.alert-info-blue {
+    background-color: var(--alert-info-blue);
+}
+
+.color.alert-icon-blue {
+    background-color: var(--alert-info-icon-blue);
+}
+
+.color.lightblue {
+    background-color: var(--velocity-light-blue);
+}
+
+
+
+/*   --alert-info-blue: rgb(190, 227, 248);
+  --alert-info-icon-blue: #3182ce; */
+
+
+
+/*   --alert-success-green: rgb(198, 246, 213);
+  --alert-success-icon-green: #38a169; */
+
+
+/* 
+--alert-warn-orange: rgb(254, 235, 200);
+--alert-warn-icon-orange: #dd6b20; */
