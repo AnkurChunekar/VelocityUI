@@ -5,14 +5,6 @@
   --navigation-shodow: 0 2px 5px var(--plain-lightgray);
 }
 
-/* for reusability */
-/* flex, direction, align items, justify-content */
-.flex-row-center-sb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 /* || Navigation styles starts ------ */
 
 /* Navigation Parent  */
@@ -20,166 +12,76 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: white;
   padding: 1rem;
-  background-color: var(--lynx-white);
   box-shadow: var(--navigation-shodow);
+  font-size: 1.8rem;
   width: 100%;
 }
 
-/* Nav-brand  */
-
-.brand-logo {
-  width: 3rem;
-  margin-right: 0.5rem;
+.navigation a {
+  text-decoration: none;
+  color: inherit;
 }
 
+/* Nav-brand  */
+
 .brand-name {
-  font-size: var(--font-size-h2);
   font-weight: bold;
-  margin-right: 4rem;
-  color: var(--plain-black);
-  text-decoration: none;
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
 }
 
 .navigation .menu-icon {
-  display: none;
-  cursor: pointer;
   font-size: 2.5rem;
-  margin-left: auto;
-}
-
-/* Nav list */
-
-.nav-list {
-  list-style: none;
-}
-
-.nav-list .nav-item {
-  display: inline;
-}
-
-.nav-list .nav-link {
-  text-decoration: none;
+  cursor: pointer;
+  display: none;
   margin: 0 0.5rem;
-  color: var(--plain-gray);
 }
 
-.nav-list .nav-link:hover {
-  color: var(--velocity-blue);
+.navigation .menu-icon:hover {
+ color: var(--velocity-blue);
 }
 
-.nav-link.active {
-  color: var(--plain-black);
-  font-weight: 600;
+/* Search bar */
+
+.navigation .input-wrapper {
+  width: 40%;
 }
+
+.navigation .input-wrapper input {
+  border: solid var(--plain-lightgray) 0.2px; 
+  outline: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  width: 100%;
+} 
 
 /* Nav actions */
 
-.nav-actions {
-  margin-left: auto;
+.nav-actions a {
+  padding: 0.8rem 1rem;
 }
-
-.nav-actions .search-bar input {
-  border: none;
-  background-color: inherit;
-}
-
-/* || Navigation styles ends ------ */
-
-/* || Navigation blue styles starts ------ */
-
-.navigation.blue {
-  background-color: var(--velocity-blue);
-  color: var(--plain-white);
-}
-
-/* Nav-brand  */
-
-.navigation.blue .brand-logo {
-  width: 4rem;
+.nav-actions a:hover {
+  background-color: var(--lynx-white);
   border-radius: var(--full-round-border-radius);
 }
 
-.navigation.blue .brand-name {
-  color: var(--plain-white);
-}
-
-
-/* Nav list */
-
-.navigation.blue .nav-list .nav-link {
-  color: var(--plain-lightgray);
-}
-
-.navigation.blue .nav-list .nav-link:hover {
-  text-decoration: underline;
-}
-
-.navigation.blue .nav-link.active {
-  color: var(--plain-white);
-  font-weight: 600;
-}
-
-/* Nav actions */
-
-.navigation.blue .search-bar input, 
-.navigation.blue .search-bar i {
-  color: var(--plain-white);
-}
-
-.navigation.blue .search-bar input::placeholder {
-  color: var(--plain-white);
-}
-
-
-/* || Navigation blue styles ends ------ */
-
-
-/* || Media Query starts ----*/
+/* Media query starts */
 
 @media screen and (max-width: 768px) {
 
-  /* navigation */
-
-  .navigation {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  /* nav brand */
-
-  .nav-brand {
-    width: 100%;
-    justify-content: flex-start;
-  }
-  
   .navigation .menu-icon {
-    display: block;
+    display: inline;
   }
 
-  .nav-dropdown-menu {
+  .navigation .input-wrapper {
     display: none;
-  }
-  
-  .nav-dropdown-menu.active {
-    display: block;
-  }
+  } 
 
-  /* nav list */
-
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-items: flex-start;
-    margin: 1.5rem;
-  }
-  
-  /* nav-actions */
-
-  .nav-actions {
-    display: none;
-  }
 }
 
-/* || Media Query ends --------*/
+/* Media query ends */
+
