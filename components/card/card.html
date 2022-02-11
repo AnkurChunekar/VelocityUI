@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocity UI | Cards</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
@@ -202,7 +202,7 @@
 
           <!-- Standard Cards Starts -->
 
-          <section class="docs-body-section"  id="standard">
+          <section class="docs-body-section" id="standard">
             <h3>Standard Card</h3>
             <p class="docs-body-para">
               Create a standard card using
@@ -213,73 +213,58 @@
 
             <div class="component-container">
               <div class="card">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
                     <h1 class="card-title">Sony Camera</h1>
-                    <p class="card-subtitle">A small subtitle</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> Give some description here.
-                    </p>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">
+                      Add to Cart
+                    </button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                </footer>
               </div>
             </div>
 
@@ -287,97 +272,79 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
-          <!-- Standard Card ends -->
 
+          <!-- Standard Card ends -->
 
           <!-- Social media card Starts -->
 
-          <section class="docs-body-section"  id="standard">
-            <h3>Social Media Card</h3>
+          <section class="docs-body-section" id="standard">
+            <h3>E-Commerce Card</h3>
             <p class="docs-body-para">
-              Create a social media card using
-              <span class="text-pink-bg">"card-social-media"</span> class.
+             E-commerce card with like buttons are highly useful, easily create one using 
+              <span class="text-pink-bg">"e-com"</span> class.
             </p>
 
             <!-- Component here -->
 
             <div class="component-container">
-              <div class="card card-social-media">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+              <div class="card card-ecom">
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">50% Off</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">Liked by cristiano and 24 others.</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> How's my new Cam?
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -385,21 +352,22 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-social-media%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-social-media%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!-- Social media  Card ends -->
 
           <!-- Card with badge Starts -->
 
-          <section class="docs-body-section"  id="badge">
+          <section class="docs-body-section" id="badge">
             <h3>Card with a Badge</h3>
             <p class="docs-body-para">
-              Card with a Badge can be created using  
+              Card with a Badge can be created using
               <span class="text-pink-bg">"card-w-badge"</span> class.
             </p>
 
@@ -407,76 +375,58 @@
 
             <div class="component-container">
               <div class="card card-w-badge">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
-        
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <!-- Card icons -->
+
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
-        
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle"
-                      >This is some description about the product. Only write p
-                      description.</p>
-                    <p class="card-description">
-                      <span class="strike-text"> 899$</span> 499$
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">
+                      Add to Cart
+                    </button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -484,97 +434,82 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-w-badge%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-w-badge%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!-- Card with a badge ends -->
 
           <!-- Card with dismiss Starts -->
 
-          <section class="docs-body-section"  id="dismissible">
+          <section class="docs-body-section" id="dismissible">
             <h3>Dismissible Card</h3>
             <p class="docs-body-para">
-              Use  
-              <span class="text-pink-bg">"card-w-dismiss"</span> class to create dismissible card.
+              Use
+              <span class="text-pink-bg">"card-w-dismiss"</span> class to create
+              dismissible card.
             </p>
 
             <!-- Component here -->
 
             <div class="component-container">
               <div class="card card-w-dismiss">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">This is subtitle</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> Here you can write a
-                      simple description.
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">
+                      Add to Cart
+                    </button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -582,98 +517,82 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-w-dismiss%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-w-dismiss%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!-- Dismissible Card ends -->
- 
 
           <!-- Card with Text overlay Starts -->
 
-          <section class="docs-body-section"  id="text-overlay">
+          <section class="docs-body-section" id="text-overlay">
             <h3>Card with Text Overlay</h3>
             <p class="docs-body-para">
-              Use  
-              <span class="text-pink-bg">"card-text-overlay"</span> class to create card with text overlay.
+              Use
+              <span class="text-pink-bg">"card-text-overlay"</span> class to
+              create card with text overlay.
             </p>
 
             <!-- Component here -->
 
             <div class="component-container">
               <div class="card card-text-overlay">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">This is subtitle</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> Here you can write a
-                      simple description.
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">
+                      Add to Cart
+                    </button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -681,194 +600,163 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-text-overlay%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card-text-overlay%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!--Card with text overlay ends -->
- 
 
           <!-- Horizontal Card Starts -->
 
-          <section class="docs-body-section"  id="horizontal">
+          <section class="docs-body-section" id="horizontal">
             <h3>Horizontal Card</h3>
             <p class="docs-body-para">
-              Use  
-              <span class="text-pink-bg">"card-horizontal"</span> class to create horizontal card.
+              Use
+              <span class="text-pink-bg">"card-horizontal"</span> class to
+              create horizontal card.
             </p>
 
             <!-- Component here -->
+
             <div class="component-container">
-
               <div class="card card-horizontal">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">This is some description about the product. Only write p description.</p>
-                    <p class="card-description">
-                      <span class="gray-text strike-text">$1500</span> $799.
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">
+                      Add to Cart
+                    </button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                </footer>
               </div>
             </div>
+
             <!-- Component here -->
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%2520simple%2520description.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%2520simple%2520description.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!-- Horizontal Card ends -->
- 
 
           <!-- Text Only card Starts -->
 
-          <section class="docs-body-section"  id="text-only">
+          <section class="docs-body-section" id="text-only">
             <h3>Text Only Card</h3>
             <p class="docs-body-para">
-              Use  
-              <span class="text-pink-bg">"card-text-only"</span> class to create Text Only card.
+              Use
+              <span class="text-pink-bg">"card-text-only"</span> class to create
+              Text Only card.
             </p>
 
             <!-- Component here -->
 
             <div class="component-container">
               <div class="card card-text-only">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">This is subtitle</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> Here you can write a
-                      simple description.
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A Camera with a high quality lens for professional photography.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -876,22 +764,22 @@
 
             <div class="code-container">
               <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-text-only%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%2520simple%2520description.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-p"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-text-only%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%2520simple%2520description.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-p"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!--Text only card ends -->
- 
 
           <!-- Border card Starts -->
 
           <section class="docs-body-section" id="border">
             <h3>Card with border</h3>
             <p class="docs-body-para">
-             If you want a Border to the card without shadow use   
+              If you want a Border to the card without shadow use
               <span class="text-pink-bg">"card-border"</span> class.
             </p>
 
@@ -899,75 +787,56 @@
 
             <div class="component-container">
               <div class="card card-border">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/avatar-image3.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">This is subtitle</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> Here you can write a
-                      simple description.
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -975,98 +844,80 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-border%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%2520simple%2520description.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-prim"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-border%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Favatar-image3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%2520simple%2520description.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-prim"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!--Card with Border ends -->
- 
 
           <!-- Single button card Starts -->
 
-          <section class="docs-body-section"  id="small">
+          <section class="docs-body-section" id="small">
             <h3>Single button card</h3>
             <p class="docs-body-para">
-              Use  
-              <span class="text-pink-bg">"single-btn"</span> class to create relatively smaller card.
+              Use
+              <span class="text-pink-bg">"single-btn"</span> class to create
+              relatively smaller card.
             </p>
 
             <!-- Component here -->
 
             <div class="component-container">
               <div class="card single-btn">
-                <header class="card-header">
-                  <figure class="avatar avatar-sm">
-                    <img
-                      class="avatar-image"
-                      src="/images/card-image-1.jpg"
-                      alt="avatar-profile-1"
-                    />
-                  </figure>
-                  <div class="card-header-body">
-                    <h4>Maya Joseph</h4>
-                    <p>Sent 2 hours ago.</p>
-                  </div>
-                  <div class="card-badge">
-                    <div class="icon-container badge-container">
-                      <i class="fas fa-ellipsis-v icon"></i>
-                    </div>
-                  </div>
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
                 </header>
+
                 <section class="card-body">
-                  <div class="card-image">
-                    <img src="/images/card-image-1.jpg" alt="product image" />
-                  </div>
+                  <!-- Card icons -->
 
-                  <div class="dismiss-icon">
-                    <div class="card-badge">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-times icon"></i>
-                      </div>
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
                     </div>
                   </div>
 
-                  <div class="card-icons">
-                    <div class="card-badge card-left-badge">
-                      <div class="badge-container tag tag-danger">
-                        <span class="icon-badge">New</span>
-                      </div>
-                    </div>
-                    <div class="card-badge card-like-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-heart icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-comment-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-comment icon"></i>
-                      </div>
-                    </div>
-                    <div class="card-badge card-share-icon">
-                      <div class="icon-container badge-container">
-                        <i class="fas fa-paper-plane icon"></i>
-                      </div>
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
                     </div>
                   </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
                   <div class="card-text-content">
-                    <h3 class="card-title">Sony Camera</h3>
-                    <p class="card-subtitle">This is subtitle</p>
-                    <p class="card-description">
-                      <span class="strike-text"></span> Here you can write a
-                      simple description.
-                    </p>
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
                   </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
                 </section>
-                <footer class="card-actions">
-                  <button class="btn btn-primary card-btn-1">Buy Now</button>
-                  <button class="btn btn-secondary card-btn-2">
-                    Add to Cart
-                  </button>
-                  
-                </footer>
               </div>
             </div>
 
@@ -1074,15 +925,98 @@
 
             <div class="code-container">
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520single-btn%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520single-btn%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
               <!-- iframe ends -->
             </div>
           </section>
-          
+
           <!--Small card ends -->
- 
+
+          <!-- Out of Stock Card Starts -->
+
+          <section class="docs-body-section" id="small">
+            <h3>Card with Overlay</h3>
+            <p class="docs-body-para">
+              Use
+              <span class="text-pink-bg">"disabled"</span> class to create
+              a card with overlay.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card disabled">
+                <header class="card-image">
+                  <img src="/images/card-image-1.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-badge card-dismiss">
+                    <div class="icon-container badge-container">
+                      <i class="fas fa-times icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="card-badge card-like">
+                    <div class="icon-container badge-container">
+                      <i class="far fa-heart icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="card-badge left-badge">
+                    <div class="badge-container tag tag-danger">
+                      <span class="icon-badge">New</span>
+                    </div>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content">
+                    <h1 class="card-title">Sony Camera</h1>
+
+                    <p class="flexible-txt subtitle">A flexible subtitle here.</p>
+
+                    <div class="ecom-qty">
+                      Quantity: <input type="number" min="1" max="50" />
+                    </div>
+
+                    <p class="flexible-txt details"><span class="strike-text gray-text">$1599</span> $749</p>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions">
+                    <button class="btn btn-primary card-btn-1">Buy Now</button>
+                    <button class="btn btn-secondary card-btn-2">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520single-btn%2522%253E%250A%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-image%2522%250A%2520%2520%2520%2520%2520%2520%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-profile-1%2522%250A%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-header-body%2522%253E%250A%2520%2520%2520%2520%2520%253Ch4%253EMaya%2520Joseph%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESent%25202%2520hours%2520ago.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fheader%253E%250A%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image-1.jpg%2522%2520%250Aalt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-left-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-like-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-comment-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2520card-share-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strike-text%2522%253E%253C%252Fspan%253E%2520Here%2520you%2520can%2520write%2520a%250A%2520%2520%2520%2520%2520%2520%2520simple%2520description.%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fsection%253E%250A%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520card-btn-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520card-btn-2%2522%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%250A%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!--Small card ends -->
+
+
           <!-- || Component Footer starts -->
 
           <footer class="component-footer">
@@ -1099,7 +1033,7 @@
           <!-- Footer starts  -->
 
           <footer class="main-footer">
-            <p  class="docs-body-para">
+            <p class="docs-body-para">
               <i class="far fa-copyright"></i> 2022 Ankur Chunekar. All Rights
               Reserved
             </p>
@@ -1165,26 +1099,18 @@
             </li>
 
             <li>
-              <a href="#horizontal" class="side-nav-link"
-                >Horizontal</a
-              >
+              <a href="#horizontal" class="side-nav-link">Horizontal</a>
             </li>
 
             <li>
-              <a href="#text-only" class="side-nav-link"
-                >Text Only</a
-              >
+              <a href="#text-only" class="side-nav-link">Text Only</a>
             </li>
 
             <li>
-              <a href="#border" class="side-nav-link"
-                >Border Card</a
-              >
+              <a href="#border" class="side-nav-link">Border Card</a>
             </li>
             <li>
-              <a href="#small" class="side-nav-link"
-                >Small</a
-              >
+              <a href="#small" class="side-nav-link">Small</a>
             </li>
           </ul>
         </aside>
