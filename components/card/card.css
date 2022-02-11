@@ -1,6 +1,7 @@
 @import url(/components/avatar/avatar.css);
 @import url(/components/button/button.css);
 @import url(/components/badge/badge.css);
+@import url(/components/rating/rating.css);
 
 :root {
   --card-description-color: #808080;
@@ -81,6 +82,10 @@
   display: none;
 }
 
+.card .card-text-content .rating {
+  display: none;
+}
+
 /* || Card footer */
 
 .card .card-actions {
@@ -133,7 +138,7 @@
   color: var(--velocity-red);
 }
 
-.card.card-ecom .ecom-qty {
+.card.card-ecom .card-text-content .rating {
   display: block;
 }
 
@@ -214,6 +219,10 @@
 }
 
 .card.card-horizontal .ecom-qty {
+  display: block;
+}
+
+.card.card-horizontal .card-text-content .rating {
   display: block;
 }
 
