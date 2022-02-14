@@ -44,7 +44,7 @@
 /* Card Text Content */
 
 .card-body .card-text-content {
-  margin: 1rem 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .card-text-content .card-title {
