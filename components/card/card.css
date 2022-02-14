@@ -31,6 +31,8 @@
   object-fit: cover;
   width: 100%;
   height: max-content;
+  border-top-left-radius: var(--medium-border-radius);
+  border-top-right-radius: var(--medium-border-radius);
 }
 
 /* icons */
@@ -54,6 +56,11 @@
   margin: 0.8rem 0;
 }
 
+.flexible-txt.subtitle {
+  font-size: 1.4rem;
+  color: var(--plain-gray);
+}
+
 .card-text-content .ecom-qty input {
   width: 4rem;
   margin: 0 0.5rem;
@@ -64,6 +71,15 @@
 
 .card .ecom-qty {
   display: none;
+}
+
+.card .ecom-qty span {
+  margin: 0 0.5rem;
+}
+
+.card .ecom-qty .qty-btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--full-round-border-radius);
 }
 
 .card .card-text-content .rating {
