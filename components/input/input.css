@@ -1,28 +1,39 @@
 /* Input style starts */
 
+.input-wrapper {
+  width: 100%;
+}
+
 .input-wrapper input {
-  padding: 1rem;
   border-radius: var(--small-border-radius);
   border: solid 1.5px var(--velocity-black);
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  outline: none;
 }
+
 .input-wrapper .input-label {
   display: block;
 }
-.input-wrapper .error-msg {
-  display: none;
-}
-.input-wrapper .icon {
-    display: none;
-}
+
+
 /* Input style ends */
 
 /* Input Validation style starts */
-.input-wrapper.validation input {
-  border: solid 1.5px var(--velocity-red);
+.input-wrapper .error-input {
+  border: solid 2px var(--velocity-red);
 }
-.input-wrapper.validation .error-msg {
-  display: block;
+.input-wrapper .error-msg {
   color: var(--velocity-red);
+}
+
+.input-wrapper .success-input {
+  border: solid 2px var(--velocity-green);;
+}
+
+.input-wrapper .success-msg {
+  color: var(--velocity-green);
 }
 
 /* Input Validation style ends */

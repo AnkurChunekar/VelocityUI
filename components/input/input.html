@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocity UI | Inputs</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/components/input/input.docs.css" />
 
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -204,11 +204,8 @@
 
             <div class="component-container">
               <div class="input-wrapper">
-                <label class="input-label">Username *</label>
-                <input type="text" placeholder="sample placeholder" />
-                <label class="input-label2 error-msg"
-                  >Username not found.</label
-                >
+                <label class="input-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" />
               </div>
             </div>
 
@@ -236,18 +233,30 @@
 
             <div class="component-container">
               <div class="input-wrapper validation">
-                <label class="input-label">Username *</label>
-                <input type="text" placeholder="sample placeholder" />
-                <label class="input-label2 error-msg"
-                  >Username not found.</label
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                  class="success-input"
+                />
+                <label class="success-msg"
+                  ><i class="fa-solid fa-circle-check"></i> Success! Email
+                  entered is correct.</label
                 >
               </div>
 
               <div class="input-wrapper validation">
-                <label class="input-label">Password *</label>
-                <input type="text" placeholder="sample placeholder" />
-                <label class="input-label2 error-msg"
-                  >Wrong Password. Try again.</label
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  class="error-input"
+                  type="password"
+                  placeholder="*****"
+                />
+                <label class="error-msg"
+                  ><i class="fa-solid fa-circle-exclamation"></i> Wrong
+                  Password. Try again.</label
                 >
               </div>
             </div>
@@ -429,7 +438,9 @@
             <a href="/components/imageComponent/image.html">
               <i class="fas fa-angle-double-left"></i> Images</a
             >
-            <a href="/components/lists/lists.html"> Lists <i class="fas fa-angle-double-right"></i></a>
+            <a href="/components/lists/lists.html">
+              Lists <i class="fas fa-angle-double-right"></i
+            ></a>
           </footer>
 
           <!-- || Input components ends -->
@@ -502,11 +513,8 @@
               <a href="#checkbox" class="side-nav-link">Checkbox </a>
             </li>
           </ul>
-
         </aside>
-
       </main>
-
     </section>
 
     <script src="/components/chips/chips.js"></script>
