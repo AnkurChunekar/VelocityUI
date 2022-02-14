@@ -21,6 +21,7 @@
   max-width: 26rem;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
   position: relative;
+  border-radius: var(--medium-border-radius);
 }
 
 /* Card Header */
@@ -36,23 +37,6 @@
 
 .card .card-badge {
   display: none;
-}
-
-/* overlay */
-
-.card .card-overlay {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Card Text Content */
@@ -96,7 +80,6 @@
 }
 
 .card .card-actions .btn {
-  border-radius: 0;
   width: 100%;
 }
 
@@ -229,6 +212,22 @@
 /* || Horizontal card ends*/
 
 /* || Card Overlay starts */
+
+.card .card-overlay {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--medium-border-radius);
+}
 
 .card.disabled .card-overlay {
   display: flex;
