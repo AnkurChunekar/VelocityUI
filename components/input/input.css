@@ -1,65 +1,101 @@
 /* Input style starts */
 
-.input-wrapper input {
-  padding: 1rem;
-  border-radius: var(--small-border-radius);
-  border: solid 1.5px var(--velocity-black);
+.input-wrapper {
+  width: 100%;
 }
+
+.input-wrapper input {
+  border-radius: var(--small-border-radius);
+  border: solid 1.8px var(--velocity-black);
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  outline: none;
+}
+
 .input-wrapper .input-label {
   display: block;
 }
-.input-wrapper .error-msg {
-  display: none;
-}
-.input-wrapper .icon {
-    display: none;
-}
+
 /* Input style ends */
 
 /* Input Validation style starts */
-.input-wrapper.validation input {
-  border: solid 1.5px var(--velocity-red);
+.input-wrapper .error-input {
+  border: solid 2px var(--velocity-red);
 }
-.input-wrapper.validation .error-msg {
-  display: block;
+.input-wrapper .error-msg {
   color: var(--velocity-red);
 }
 
+.input-wrapper .success-input {
+  border: solid 2px var(--velocity-green);
+}
+
+.input-wrapper .success-msg {
+  color: var(--velocity-green);
+}
+
 /* Input Validation style ends */
 
-/* Input Validation style starts */
+/* Radio starts */
 
-.input-wrapper.radio .input-label {
-  display: none;
+.input-wrapper.radio,
+.input-wrapper.checkbox {
+  width: max-content;
 }
-.input-wrapper.radio .input-label2 {
+
+.input-wrapper.radio label,
+.input-wrapper.checkbox label {
   cursor: pointer;
-  display: inline;
-  color: inherit;
 }
 
-/* Input Validation style ends */
+.input-wrapper.radio input,
+.input-wrapper.checkbox input {
+  width: max-content;
+}
+
+.input-wrapper.disabled label {
+  color: var(--plain-gray);
+  cursor: not-allowed;
+}
+
+/* Radio ends */
 
 /* Input w search icon style starts */
 
-.input-wrapper.search .input-label,
-.input-wrapper.search .input-label2 {
-  display: none;
+.input-wrapper.input-icon {
+  position: relative;
+  border: solid red 1px;
+  display: flex;
+  align-items: center;
+  border: solid 1.8px var(--velocity-black);
+  border-radius: var(--small-border-radius);
+  margin: 1rem 0;
 }
-.input-wrapper.search {
-    position: relative;
+
+.input-icon input {
+  border: none;
+  margin: 0;
+  border-radius: var(--small-border-radius);
 }
+
+.input-icon .icon {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
 .input-wrapper.search .icon {
-    position: absolute;
-    display: inline;
-    top: 1.4rem;
-    right: 1rem;
-    color: var(--plain-gray);
-    cursor: pointer;
+  position: absolute;
+  display: inline;
+  top: 1.4rem;
+  right: 1rem;
+  color: var(--plain-gray);
+  cursor: pointer;
 }
 
 .input-wrapper.search .search-bar {
   display: inline-block;
   position: relative;
 }
+
 /* Input w search icon ends */

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocity UI | Snackbar</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/components/snackbar/snackbar-docs.css" />
 
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -155,14 +155,14 @@
             >
           </li>
           <li>
-            <a
-              href="/components/rating/rating.html"
-              class="side-nav-link"
+            <a href="/components/rating/rating.html" class="side-nav-link"
               >Rating</a
             >
           </li>
           <li>
-            <a href="/components/snackbar/snackbar.html" class="side-nav-link active"
+            <a
+              href="/components/snackbar/snackbar.html"
+              class="side-nav-link active"
               >Snackbar</a
             >
           </li>
@@ -187,7 +187,8 @@
           <header class="docs-body-header">
             <h2>Snackbars</h2>
             <p class="docs-body-para">
-              Snackbar is to used show messages, notifications, or some actions that need users attention.
+              Snackbar is to used show messages, notifications, or some actions
+              that need users attention.
             </p>
           </header>
 
@@ -199,34 +200,33 @@
             <h3>Standard Snackbar</h3>
 
             <p class="docs-body-para">
-              Snackbars can be created using the <span class="text-pink-bg">"snackbar"</span> class.
+              Snackbars can be created using the
+              <span class="text-pink-bg">"snackbar"</span> class. Here's a
+              simple
+              <button id="demo-snackbar-preview-btn" class="btn btn-link">
+                Demo</button
+              >for a snackbar.
             </p>
 
             <div class="component-container">
               <div class="snackbar">
-                <span class="heading">Normal snackbar here</span>
-                <div class="snackbar-actions">
-                  <button class="btn btn-s btn-primary">RETRY</button>
-                  <button class="btn btn-s btn-danger">
-                    <i class="fas fa-times snackbar-action-close"></i>
-                  </button>
-                </div>
+                <span>Added to the Cart</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
               </div>
             </div>
-        
 
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522heading%2522%253ENormal%2520snackbar%2520here%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-primary%2522%253ERETRY%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-danger%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%253Cspan%253EAdded%2520to%2520the%2520Cart%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+              
               sandbox="allow-scripts allow-same-origin">
-
             </iframe>
 
               <!-- iframe ends -->
-
             </div>
-
           </section>
 
           <!-- Standard snackbar ends -->
@@ -237,88 +237,65 @@
             <h3>Snackbar Types</h3>
 
             <p class="docs-body-para">
-              Additionally create snackbars for success, danger and warning using 
-              <span class="text-pink-bg">"success"</span>, 
+              Additionally create snackbars for success, danger and warning
+              using
+              <span class="text-pink-bg">"success"</span>,
               <span class="text-pink-bg">"danger"</span> and
               <span class="text-pink-bg">"warn"</span> classes.
             </p>
 
             <div class="component-container">
-
               <div class="snackbar success">
-                <span class="heading">Success! you read this</span>
-                <div class="snackbar-actions">
-                  <button class="btn btn-s btn-success btn-outline">Okay</button>
-                </div>
-              </div>
-
-              <div class="snackbar danger">
-                <span class="heading">Beware! privacy at risk</span>
-                <div class="snackbar-actions">
-                  <button class="btn btn-s btn-danger btn-outline">Got it!</button>
-                </div>
+                <span>Success! Profile Update.</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
               </div>
 
               <div class="snackbar warn">
-                <span class="heading">Are you sure?</span>
-                <div class="snackbar-actions">
-                  <button class="btn btn-s btn-warn btn-outline">Yes</button>
-                  <button class="btn btn-s btn-danger btn-outline">
-                    <i class="fas fa-times snackbar-action-close"></i>
-                  </button>
-                </div>
+                <span>Warning! Privacy at Risk. </span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
               </div>
 
-
-            </div>
-        
-
-            <div class="code-container">
-              <!-- iframe starts -->
-              <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520success%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522heading%2522%253ESuccess%21%2520you%2520read%2520this%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-success%2520btn-outline%2522%253EOkay%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520danger%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522heading%2522%253EBeware%21%2520privacy%2520at%2520risk%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-danger%2520btn-outline%2522%253EGot%2520it%21%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520warn%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522heading%2522%253EAre%2520you%2520sure%253F%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522snackbar-actions%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-warn%2520btn-outline%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-s%2520btn-danger%2520btn-outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-
-              <!-- iframe ends -->
-
-            </div>
-
-          </section>
-
-          <!-- types of snackbar ends -->
-
-          <!-- || demo for snackbar start -->
-
-          <section id="demo" class="docs-body-section">
-            <h3>Demo for Snackbar</h3>
-
-            <p class="docs-body-para">
-              Click<button id="demo-snackbar-preview-btn" class="btn btn-link">
-                Preview</button
-              >for a simple demo.
-            </p>
-
-            <div class="snackbar display-none" id="demo-snackbar">
-              <span class="heading">Normal snackbar here</span>
-              <div class="snackbar-actions">
-                <button id="demo-snackbar-close-btn" class="btn btn-s btn-primary">
-                  Got it!
+              <div class="snackbar danger">
+                <span>Error Occurred! Try Again</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
                 </button>
               </div>
             </div>
 
+            <div class="snackbar display-none" id="demo-snackbar">
+              <span class="heading">Success! Profile Update.</span>
+              <button id="demo-snackbar-close-btn">
+                <i class="fas fa-times snackbar-action-close"></i>
+              </button>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520success%2522%253E%250A%2520%2520%253Cspan%253ESuccess%21%2520Profile%2520Update.%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520warn%2522%253E%250A%2520%2520%253Cspan%253EWarning%21%2520Privacy%2520at%2520Risk.%2520%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520danger%2522%253E%250A%2520%2520%253Cspan%253EError%2520Occurred%21%2520Try%2520Again%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+             
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+              <!-- iframe ends -->
+            </div>
           </section>
 
-          <!-- Standard snackbar ends -->
+          <!-- types of snackbar ends -->
 
           <footer class="component-footer">
             <a href="/components/rating/rating.html">
               <i class="fas fa-angle-double-left"></i> Ratings</a
             >
-            <a href="/components/text-utilities/text-utilities.html">Text Utilities <i class="fas fa-angle-double-right"></i></a>
+            <a href="/components/text-utilities/text-utilities.html"
+              >Text Utilities <i class="fas fa-angle-double-right"></i
+            ></a>
           </footer>
-
 
           <!-- Footer starts  -->
 
@@ -366,7 +343,6 @@
           <!-- Footer ends -->
         </div>
 
-
         <aside class="side-navbar page-info">
           <ul class="ul-side-navbar">
             <li><a class="side-nav-link title">On This Page</a></li>
@@ -377,14 +353,10 @@
             <li>
               <a href="#types" class="side-nav-link"> Types of Snackbars</a>
             </li>
-            <li>
-              <a href="#demo" class="side-nav-link">Live Demo</a>
-            </li>
           </ul>
         </aside>
       </main>
     </section>
-
 
     <script src="/components/snackbar/snackbar.js"></script>
     <script src="/documentation/JS/documentation.js"></script>

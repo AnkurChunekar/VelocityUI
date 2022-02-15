@@ -21,6 +21,7 @@
   max-width: 26rem;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
   position: relative;
+  border-radius: var(--medium-border-radius);
 }
 
 /* Card Header */
@@ -30,6 +31,8 @@
   object-fit: cover;
   width: 100%;
   height: max-content;
+  border-top-left-radius: var(--medium-border-radius);
+  border-top-right-radius: var(--medium-border-radius);
 }
 
 /* icons */
@@ -38,27 +41,10 @@
   display: none;
 }
 
-/* overlay */
-
-.card .card-overlay {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Card Text Content */
 
 .card-body .card-text-content {
-  margin: 1rem 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .card-text-content .card-title {
@@ -68,6 +54,11 @@
 .card-text-content .card-title,
 .card-text-content .flexible-txt {
   margin: 0.8rem 0;
+}
+
+.flexible-txt.subtitle {
+  font-size: 1.4rem;
+  color: var(--plain-gray);
 }
 
 .card-text-content .ecom-qty input {
@@ -80,6 +71,15 @@
 
 .card .ecom-qty {
   display: none;
+}
+
+.card .ecom-qty span {
+  margin: 0 0.5rem;
+}
+
+.card .ecom-qty .qty-btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--full-round-border-radius);
 }
 
 .card .card-text-content .rating {
@@ -96,7 +96,6 @@
 }
 
 .card .card-actions .btn {
-  border-radius: 0;
   width: 100%;
 }
 
@@ -229,6 +228,22 @@
 /* || Horizontal card ends*/
 
 /* || Card Overlay starts */
+
+.card .card-overlay {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--medium-border-radius);
+}
 
 .card.disabled .card-overlay {
   display: flex;

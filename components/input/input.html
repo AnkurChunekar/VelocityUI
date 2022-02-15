@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocity UI | Inputs</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/components/input/input.docs.css" />
 
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -198,24 +198,20 @@
             <p class="docs-body-para">
               Create standard input providing a
               <span class="text-pink-bg">"input-wrapper"</span> class to the
-              parent container of input tag. Include label tags along with the
-              input tag.
+              parent container of input tag.
             </p>
 
             <div class="component-container">
               <div class="input-wrapper">
-                <label class="input-label">Username *</label>
-                <input type="text" placeholder="sample placeholder" />
-                <label class="input-label2 error-msg"
-                  >Username not found.</label
-                >
+                <label class="input-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" />
               </div>
             </div>
 
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EUsername%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522sample%2520placeholder%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2520error-msg%2522%253EUsername%2520not%2520found.%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%2520for%253D%2522name%2522%253EName%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522John%2520Doe%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -236,18 +232,30 @@
 
             <div class="component-container">
               <div class="input-wrapper validation">
-                <label class="input-label">Username *</label>
-                <input type="text" placeholder="sample placeholder" />
-                <label class="input-label2 error-msg"
-                  >Username not found.</label
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                  class="success-input"
+                />
+                <label class="success-msg"
+                  ><i class="fa-solid fa-circle-check"></i> Success! Email
+                  entered is correct.</label
                 >
               </div>
 
               <div class="input-wrapper validation">
-                <label class="input-label">Password *</label>
-                <input type="text" placeholder="sample placeholder" />
-                <label class="input-label2 error-msg"
-                  >Wrong Password. Try again.</label
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  class="error-input"
+                  type="password"
+                  placeholder="*****"
+                />
+                <label class="error-msg"
+                  ><i class="fa-solid fa-circle-exclamation"></i> Wrong
+                  Password. Try again.</label
                 >
               </div>
             </div>
@@ -255,10 +263,10 @@
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EUsername%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522sample%2520placeholder%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2520error-msg%2522%253EUsername%2520not%2520found.%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EPassword%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522sample%2520placeholder%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2520error-msg%2522%253EWrong%2520Password.%2520Try%2520again.%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%253C%252Flabel%253E%250A%2520%253Cinput%250A%2520%2520type%253D%2522text%2522%250A%2520%2520id%253D%2522email%2522%250A%2520%2520placeholder%253D%2522johndoe%2540gmail.com%2522%250A%2520%2520class%253D%2522success-input%2522%250A%2520%2520%252F%253E%250A%2520%253Clabel%2520class%253D%2522success-msg%2522%250A%2520%2520%253E%253Ci%2520class%253D%2522fa-solid%2520fa-circle-check%2522%253E%253C%252Fi%253E%2520Success%21%2520Email%250A%2520%2520entered%2520is%2520correct.%253C%252Flabel%253E%250A%2520%2520%2520%250A%2520%253C%252Fdiv%253E%250A%2520%2520%2520%250A%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%2520%250A%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%253Cinput%250A%2520%2520id%253D%2522password%2522%250A%2520%2520class%253D%2522error-input%2522%250A%2520%2520type%253D%2522password%2522%250A%2520%2520placeholder%253D%2522*****%2522%250A%2520%2520%252F%253E%250A%2520%253Clabel%2520class%253D%2522error-msg%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-exclamation%2522%253E%253C%252Fi%253E%2520%250A%2520%2520Wrong%2520Password.%2520Try%2520again.%253C%252Flabel%253E%250A%2520%2520%2520%250A%253C%252Fdiv%253E"
+              
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
               <!-- iframe ends -->
             </div>
           </section>
@@ -278,52 +286,32 @@
 
             <p class="docs-body-para">
               Provide
-              <span class="text-pink-bg">"input-label2"</span> class to the
-              label.
+              <span class="text-pink-bg">"disabled"</span> class to disable the input.
             </p>
 
             <div class="component-container">
               <div class="input-wrapper radio">
-                <label class="input-label">Username</label>
-                <input
-                  type="radio"
-                  name="unique"
-                  placeholder="sample placeholder"
-                  id="radio-1"
-                />
-                <label class="input-label2" for="radio-1">Small</label>
+                <input type="radio" name="unique" id="radio-1" />
+                <label for="radio-1">Radio-1</label>
               </div>
 
               <div class="input-wrapper radio">
-                <label class="input-label">Password</label>
-                <input
-                  type="radio"
-                  name="unique"
-                  placeholder="sample placeholder"
-                  id="radio-2"
-                />
-                <label class="input-label2" for="radio-2">Medium</label>
+                <input type="radio" name="unique" id="radio-2" />
+                <label for="radio-2">Radio-2</label>
               </div>
 
-              <div class="input-wrapper radio">
-                <label class="input-label">Password</label>
-                <input
-                  type="radio"
-                  name="unique"
-                  placeholder="sample placeholder"
-                  id="radio-3"
-                />
-                <label class="input-label2" for="radio-3">large</label>
+              <div class="input-wrapper radio disabled">
+                <input type="radio" name="unique" id="radio-3" disabled />
+                <label for="radio-3">Disabled</label>
               </div>
             </div>
 
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520name%253D%2522unique%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522radio-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520for%253D%2522radio-1%2522%253ESmall%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520name%253D%2522unique%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522radio-2%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520for%253D%2522radio-2%2522%253EMedium%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520name%253D%2522unique%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522radio-3%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520for%253D%2522radio-3%2522%253Elarge%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522unique%2522%2520id%253D%2522radio-1%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522radio-1%2522%253ERadio-1%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522unique%2522%2520id%253D%2522radio-2%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522radio-2%2522%253ERadio-2%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2520disabled%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522unique%2522%2520id%253D%2522radio-3%2522%2520disabled%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522radio-3%2522%253EDisabled%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
               <!-- iframe ends -->
             </div>
           </section>
@@ -333,30 +321,31 @@
           <!-- || Searchbar with icon start -->
 
           <section id="searchbar" class="docs-body-section">
-            <h3>Searchbar Input</h3>
+            <h3>Input with an Icon</h3>
 
             <p class="docs-body-para">
               To create searchbar input use
-              <span class="text-pink-bg">"search"</span> class along with
+              <span class="text-pink-bg">"input-icon"</span> class along with
               <span class="text-pink-bg">"input-wrapper"</span> class.
             </p>
 
             <div class="component-container">
-              <div class="input-wrapper search">
-                <div class="search-bar">
-                  <input type="text" placeholder="search here..." />
-                  <i class="fas fa-search icon"></i>
-                </div>
+              <div class="input-wrapper input-icon">
+                <input
+                  type="text"
+                  placeholder="search for brands, products and more..."
+                />
+                <i class="fas fa-search icon"></i>
               </div>
             </div>
 
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520search%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522search-bar%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522search%2520here...%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520input-icon%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520placeholder%253D%2522search%2520for%2520brands%252C%2520products%2520and%2520more...%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+             
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
               <!-- iframe ends -->
             </div>
           </section>
@@ -370,55 +359,39 @@
 
             <p class="docs-body-para">
               To create checkbox inputs use
-              <span class="text-pink-bg">"radio"</span> class, only change the
+              <span class="text-pink-bg">"checkbox"</span> class, only change the
               type attribute of the input tag to "checkbox".
             </p>
 
             <p class="docs-body-para">
               Provide
-              <span class="text-pink-bg">"input-label2"</span> class to the
-              label.
+              <span class="text-pink-bg">"disabled"</span> class to disable the input.
             </p>
 
             <div class="component-container">
-              <div class="input-wrapper radio">
-                <label class="input-label">Username</label>
-                <input
-                  type="checkbox"
-                  placeholder="sample placeholder"
-                  id="checkbox-1"
-                />
-                <label class="input-label2" for="checkbox-1">HTML</label>
+              <div class="input-wrapper checkbox">
+                <input type="checkbox" id="checkbox-1" />
+                <label for="checkbox-1">HTML</label>
               </div>
 
-              <div class="input-wrapper radio">
-                <label class="input-label">Password</label>
-                <input
-                  type="checkbox"
-                  placeholder="sample placeholder"
-                  id="checkbox-2"
-                />
-                <label class="input-label2" for="checkbox-2">CSS</label>
+              <div class="input-wrapper checkbox">
+                <input type="checkbox" id="checkbox-2" />
+                <label for="checkbox-2">CSS</label>
               </div>
 
-              <div class="input-wrapper radio">
-                <label class="input-label">Password</label>
-                <input
-                  type="checkbox"
-                  placeholder="sample placeholder"
-                  id="checkbox-3"
-                />
-                <label class="input-label2" for="checkbox-3">JavaScript</label>
+              <div class="input-wrapper checkbox disabled">
+                <input type="checkbox" id="checkbox-3" disabled />
+                <label for="checkbox-3">JavaScript</label>
               </div>
             </div>
 
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522checkbox%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522checkbox-1%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520for%253D%2522checkbox-1%2522%253EHTML%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522checkbox%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522checkbox-2%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520for%253D%2522checkbox-2%2522%253ECSS%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522checkbox%2522%250A%2520%2520%2520%2520placeholder%253D%2522sample%2520placeholder%2522%250A%2520%2520%2520%2520id%253D%2522checkbox-3%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label2%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520for%253D%2522checkbox-3%2522%253EJavaScript%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520checkbox%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522checkbox-1%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522checkbox-1%2522%253EHTML%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520checkbox%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522checkbox-2%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522checkbox-2%2522%253ECSS%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520checkbox%2520disabled%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522checkbox-3%2522%2520disabled%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522checkbox-3%2522%253EJavaScript%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+              
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
               <!-- iframe ends -->
             </div>
           </section>
@@ -429,7 +402,9 @@
             <a href="/components/imageComponent/image.html">
               <i class="fas fa-angle-double-left"></i> Images</a
             >
-            <a href="/components/lists/lists.html"> Lists <i class="fas fa-angle-double-right"></i></a>
+            <a href="/components/lists/lists.html">
+              Lists <i class="fas fa-angle-double-right"></i
+            ></a>
           </footer>
 
           <!-- || Input components ends -->
@@ -502,11 +477,8 @@
               <a href="#checkbox" class="side-nav-link">Checkbox </a>
             </li>
           </ul>
-
         </aside>
-
       </main>
-
     </section>
 
     <script src="/components/chips/chips.js"></script>

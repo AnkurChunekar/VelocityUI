@@ -7,67 +7,46 @@
 }
 
 /* standard snackbar component starts */
+
 .snackbar {
   width: fit-content;
   display: flex;
   align-items: center;
   background-color: var(--snackbar-bg);
-  color: white;
-  padding: 1rem 1.5rem;
+  color: var(--lynx-white);
+  padding: 1.5rem;
   border-radius: var(--small-border-radius);
-  box-shadow: 0 2px 5px var(--plain-lightgray);
+  box-shadow: 0 1px 4px var(--plain-gray);
 }
 
-.snackbar .heading {
+.snackbar button {
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 4rem;
   color: inherit;
 }
 
-.snackbar-actions {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: nowrap;
-  margin-left: auto;
-  padding-left: 3rem;
-  column-gap: 1rem;
-}
-
-.snackbar-actions * {
-  cursor: pointer;
-}
-
-.snackbar-actions .snackbar-action-btn {
-  border: none;
-  background-color: transparent;
-  color: var(--velocity-blue);
+.snackbar button:hover {
+ transform: translateY(-5%);
 }
 
 /* standard snackbar component ends */
-
-/* stacked snackbar component starts */
-
-.stacked-snackbar {
-  flex-direction: column;
-  row-gap: 2rem;
-  left: 50%;
-}
-
-/* stacked snackbar component ends */
 
 /* colors for snackbar starts */
 
 .snackbar.success {
   background-color: var(--alert-success-green);
-  color: var(--velocity-black);
+  color: var(--alert-success-icon-green);
 }
 
 .snackbar.danger {
   background-color: var(--alert-error-red);
-  color: var(--velocity-black);
+  color: var(--alert-error-icon-red);
 }
 
 .snackbar.warn {
   background-color: var(--alert-warn-orange);
-  color: var(--velocity-black);
+  color: var(--alert-warn-icon-orange);
 }
 
 /* colors for snackbar ends */
