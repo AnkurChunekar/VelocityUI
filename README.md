@@ -1,6 +1,6 @@
 # Velocity UI
 
-![Project Image](/images/velocityui-video.gif)
+![Project Image](/images/velocity-ui-video.gif)
 
 > Quickly design beautiful, responsive web pages using [Velocity UI](https://velocity-ui.netlify.app).
 ---
