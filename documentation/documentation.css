@@ -1,5 +1,7 @@
 :root {
   --carbon-iframe-bg: #151718;
+  --pink-text-bg: #ffe4ea;
+  --nav-lightblue-bg: #f2f7ff;
 }
 
 /* || Top Navbar styles ------*/
@@ -110,11 +112,11 @@
 .side-nav-link.active {
   color: var(--primary-color);
   font-weight: 600;
-  background-color: #f2f7ff;
+  background-color: var(--nav-lightblue-bg);
 }
 
 .side-navbar .side-nav-link:hover {
-  background-color: #f2f7ff;
+  background-color: var(--nav-lightblue-bg);
 }
 
 /* Page info side-navbar styles start */
@@ -184,7 +186,7 @@ main {
 }
 
 .text-pink-bg {
-  background-color: #ffe4ea;
+  background-color: var(--pink-text-bg);
   border-radius: var(--sm-radius);
 }
 
@@ -196,7 +198,7 @@ iframe {
   border: var(--sm-radius);
   transform: scale(1);
   overflow: hidden;
-  background-color: #181818;
+  background-color: var(--carbon-iframe-bg);
 }
 
 /* || Component Footer */
