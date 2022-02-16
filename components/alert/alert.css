@@ -16,34 +16,34 @@
 
 /* success */
 .alert.alert-success {
-  background-color: var(--alert-success-green);
+  background-color: var(--success-light-green);
 }
 .alert-success .fa-check-circle {
-  color: var(--alert-success-icon-green);
+  color: var(--success-dark-green);
 }
 
 /* error */
 .alert.alert-error {
-  background-color: var(--alert-error-red);
+  background-color: var(--error-light-red);
 }
 .alert-error .fa-exclamation-circle {
-  color: var(--alert-error-icon-red);
+  color: var(--error-dark-red);
 }
 
 /* info */
 .alert.alert-info {
-  background-color: var(--alert-info-blue);
+  background-color: var(--info-light-blue);
 }
 .alert-info .fa-info-circle {
-  color: var(--alert-info-icon-blue);
+  color: var(--info-dark-blue);
 }
 
 /* warn */
 .alert.alert-warn {
-  background-color: var(--alert-warn-orange);
+  background-color: var(--warn-light-orange);
 }
 .alert-warn .fa-exclamation-circle {
-  color: var(--alert-warn-icon-orange);
+  color: var(--warn-dark-orange);
 }
 
 /* alert color ends */
@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 .alert .alert-dismissible-icon:hover {
-  color: var(--alert-error-icon-red);
+  color: var(--error-dark-red);
 }
 
 /* || For Dissmisible alert btn ends */
