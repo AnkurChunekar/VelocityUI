@@ -18,7 +18,7 @@
     width: 1.5rem;
     bottom: 2px;
     right: 4px;
-    border-radius: var(--full-round-border-radius);
+    border-radius: var(--round-radius);
     border: solid 2px var(--plain-white);
 }
 
@@ -47,7 +47,7 @@
     color: var(--plain-white);
     background-color: var(--plain-red);
     padding: 3px 6px;
-    border-radius: var(--full-round-border-radius);
+    border-radius: var(--round-radius);
     top: -6px;
     right: -8px;
 }
@@ -65,36 +65,36 @@
     font-size: var(--font-size-h5);
     border-radius: none;
     color: var(--plain-black);
-    background-color: lightgray;
+    background-color: var(--plain-lightgray);
 }
 
 .tag.tag-primary {
     color: var(--plain-white);
-    background-color: var(--velocity-blue);
+    background-color: var(--primary-color);
 }
 .tag.tag-secondary {
     color: var(--plain-black);
-    background-color: lightgray;
+    background-color: var(--plain-lightgray);
 }
 .tag.tag-dark {
     color: var(--plain-white);
-    background-color: var(--velocity-black);
+    background-color: var(--dark-color);
 }
 .tag.tag-success {
     color: var(--plain-white);
-    background-color: var(--velocity-green);
+    background-color: var(--green-color);
 }
 .tag.tag-danger {
     color: var(--plain-white);
-    background-color: var(--velocity-red);
+    background-color: var(--red-color);
 }
 .tag.tag-warn {
     color: var(--plain-white);
-    background-color: var(--velocity-orange);
+    background-color: var(--orange-color);
 }
 
 .tag.tag-round-border {
-    border-radius: var(--small-border-radius);
+    border-radius: var(--sm-radius);
 }
 
 /* Tag Badges ends*/
