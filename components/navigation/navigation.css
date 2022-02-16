@@ -41,7 +41,7 @@
 }
 
 .navigation .menu-icon:hover {
- color: var(--velocity-blue);
+ color: var(--primary-color);
 }
 
 /* Search bar */
@@ -66,7 +66,7 @@
 }
 .nav-actions a:hover {
   background-color: var(--lynx-white);
-  border-radius: var(--full-round-border-radius);
+  border-radius: var(--round-radius);
 }
 
 /* Media query starts */

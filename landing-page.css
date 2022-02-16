@@ -1,9 +1,5 @@
 @import url(/css/components.css);
 
-:root {
-  --velocity-light-blue: #3385ff;
-}
-
 /* || homepage navbar starts */
 
 .homepage-navbar {
@@ -48,7 +44,7 @@
   font-weight: 600;
 }
 .nav-links li a:hover {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -73,11 +69,11 @@
 
 .homepage-main .homepage-heading {
   font-size: 6.4rem;
-  color: var(--velocity-black);
+  color: var(--dark-color);
   margin: 0 0.5rem;
 }
 .homepage-heading .heading-brand-name {
-  color: var(--velocity-light-blue);
+  color: var(--lightblue-color);
 }
 .homepage-main .homepage-description {
   font-size: 2rem;

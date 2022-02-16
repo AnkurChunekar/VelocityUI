@@ -28,7 +28,7 @@
 
 .notification-drawer {
   width: fit-content;
-  border-radius: var(--small-border-radius);
+  border-radius: var(--sm-radius);
   min-width: 280px;
   background-color: var(--plain-white);
   box-shadow: 0 2px 5px var(--plain-lightgray);
@@ -79,13 +79,4 @@ li.notification:hover {
   border-top: solid 0.5px var(--plain-lightgray);
 }
 
-/* Notification drawer ends */
 
-/* Stacked list starts */
-
-/* .notification-drawer.stacked header,
-.notification-drawer.stacked footer {
-  display: none;
-} */
-
-/* Stacked list ends */

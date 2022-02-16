@@ -5,7 +5,6 @@
 
 :root {
   --card-description-color: #808080;
-  --light-gray: lightgray;
 }
 
 .component-container {
@@ -21,7 +20,7 @@
   max-width: 26rem;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
   position: relative;
-  border-radius: var(--medium-border-radius);
+  border-radius: var(--md-radius);
 }
 
 /* Card Header */
@@ -31,8 +30,8 @@
   object-fit: cover;
   width: 100%;
   height: max-content;
-  border-top-left-radius: var(--medium-border-radius);
-  border-top-right-radius: var(--medium-border-radius);
+  border-top-left-radius: var(--md-radius);
+  border-top-right-radius: var(--md-radius);
 }
 
 /* icons */
@@ -64,7 +63,7 @@
 .card-text-content .ecom-qty input {
   width: 4rem;
   margin: 0 0.5rem;
-  border: solid 1px var(--velocity-gray);
+  border: solid 1px var(--gray-color);
   padding: 2px 4px;
   text-align: center;
 }
@@ -79,7 +78,7 @@
 
 .card .ecom-qty .qty-btn {
   padding: 0.4rem 0.6rem;
-  border-radius: var(--full-round-border-radius);
+  border-radius: var(--round-radius);
 }
 
 .card .card-text-content .rating {
@@ -126,15 +125,15 @@
   position: absolute;
   top: 1.5rem;
   right: 0.6rem;
-  color: var(--velocity-black);
+  color: var(--dark-color);
   background-color: var(--plain-white);
-  border-radius: var(--full-round-border-radius);
+  border-radius: var(--round-radius);
   box-shadow: 0 0 4px var(--plain-gray);
   cursor: pointer;
 }
 
 .card.card-ecom .card-like:hover {
-  color: var(--velocity-red);
+  color: var(--red-color);
 }
 
 .card.card-ecom .card-text-content .rating {
@@ -151,12 +150,12 @@
   position: absolute;
   top: 0.5rem;
   right: 1rem;
-  border: red;
+  border: var(--plain-red);
 }
 
 .card.card-w-dismiss .card-dismiss:hover {
   cursor: pointer;
-  color: var(--velocity-red);
+  color: var(--red-color);
 }
 
 /* || Card with dismiss icon ends */
@@ -237,12 +236,12 @@
   bottom: 0;
   right: 0;
   left: 0;
-  color: white;
+  color: var(--plain-white);
   font-weight: bold;
   font-size: 2rem;
   align-items: center;
   justify-content: center;
-  border-radius: var(--medium-border-radius);
+  border-radius: var(--md-radius);
 }
 
 .card.disabled .card-overlay {
@@ -255,7 +254,7 @@
 
 .card.card-border {
   box-shadow: none;
-  border: solid var(--light-gray) 1px;
+  border: solid var(--plain-lightgray) 1px;
 }
 
 /* || Card Border ends*/

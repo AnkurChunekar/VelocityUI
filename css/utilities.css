@@ -12,7 +12,7 @@
 /* || gray -text */
 
 .gray-text {
-  color: gray;
+  color: var(--plain-gray);
 }
 
 /* || headings and paragraph font sizes */
@@ -49,8 +49,8 @@
 /* || container for components */
 
 .component-container {
-  border: 1px solid lightgray;
-  border-radius: var(--small-border-radius);
+  border: 1px solid var(--plain-lightgray);
+  border-radius: var(--sm-radius);
   margin: 3rem 0;
   max-width: 100%;
   padding: 2rem;

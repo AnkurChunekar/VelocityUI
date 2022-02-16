@@ -10,7 +10,7 @@
     align-items: center;
     padding: 0.7rem 1rem;
     margin: 0.5rem;
-    border-radius: var(--large-border-radius);
+    border-radius: var(--lg-radius);
   }
 
   .chip-body * {
@@ -26,12 +26,12 @@
   }
 
   .blue-chip {
-    background-color: var(--velocity-blue);
+    background-color: var(--primary-color);
     color: var(--plain-white);
   }
 
   .black-chip {
-    background-color: var(--velocity-black);
+    background-color: var(--dark-color);
     color: var(--plain-white);
   }
   
