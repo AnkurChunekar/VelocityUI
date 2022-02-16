@@ -20,7 +20,7 @@ figcaption {
 
 .img-round {
   width: 100%;
-  border-radius: var(--full-round-border-radius);
+  border-radius: var(--round-radius);
 }
 
 .small-img-container {

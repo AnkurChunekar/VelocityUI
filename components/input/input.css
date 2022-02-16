@@ -5,8 +5,8 @@
 }
 
 .input-wrapper input {
-  border-radius: var(--small-border-radius);
-  border: solid 1.8px var(--velocity-black);
+  border-radius: var(--sm-radius);
+  border: solid 1.8px var(--dark-color);
   width: 100%;
   padding: 1rem 0.5rem;
   margin: 1rem 0;
@@ -21,18 +21,18 @@
 
 /* Input Validation style starts */
 .input-wrapper .error-input {
-  border: solid 2px var(--velocity-red);
+  border: solid 2px var(--red-color);
 }
 .input-wrapper .error-msg {
-  color: var(--velocity-red);
+  color: var(--red-color);
 }
 
 .input-wrapper .success-input {
-  border: solid 2px var(--velocity-green);
+  border: solid 2px var(--green-color);
 }
 
 .input-wrapper .success-msg {
-  color: var(--velocity-green);
+  color: var(--green-color);
 }
 
 /* Input Validation style ends */
@@ -65,18 +65,17 @@
 
 .input-wrapper.input-icon {
   position: relative;
-  border: solid red 1px;
   display: flex;
   align-items: center;
-  border: solid 1.8px var(--velocity-black);
-  border-radius: var(--small-border-radius);
+  border: solid 1.8px var(--dark-color);
+  border-radius: var(--sm-radius);
   margin: 1rem 0;
 }
 
 .input-icon input {
   border: none;
   margin: 0;
-  border-radius: var(--small-border-radius);
+  border-radius: var(--sm-radius);
 }
 
 .input-icon .icon {

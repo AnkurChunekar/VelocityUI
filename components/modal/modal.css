@@ -25,14 +25,14 @@
   height: fit-content;
   padding: 2rem;
   background-color: var(--plain-white);
-  border-radius: var(--medium-border-radius);
+  border-radius: var(--md-radius);
 }
 
 /* header */
 .modal header {
   display: flex;
   align-items: center;
-  color: var(--velocity-black);
+  color: var(--dark-color);
 }
 
 .modal-title {
@@ -47,7 +47,7 @@
 
 .modal header .close-icon:hover {
     cursor: pointer;
-    color: var(--velocity-red);
+    color: var(--red-color);
 }
 
 /* Section */

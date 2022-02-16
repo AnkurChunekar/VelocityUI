@@ -5,7 +5,7 @@
 }
 
 .component-container .color-box {
-    border-radius: var(--small-border-radius);
+    border-radius: var(--sm-radius);
     margin: 0.5rem 1rem;
     box-shadow: 0 2px 5px var(--plain-lightgray);
 }
@@ -13,8 +13,8 @@
 .component-container .color {
   height: 8rem;
   width: 8rem;
-  border-top-left-radius: var(--small-border-radius);
-  border-top-right-radius: var(--small-border-radius);
+  border-top-left-radius: var(--sm-radius);
+  border-top-right-radius: var(--sm-radius);
 }
 .component-container .color-hex {
   height: 3rem;
@@ -32,19 +32,19 @@
 /* Defaults */
 
 .color.blue {
-    background-color: var(--velocity-blue);
+    background-color: var(--primary-color);
 }
 .color.black {
-    background-color: var(--velocity-black);
+    background-color: var(--dark-color);
 }
 .color.pink {
-    background-color: var(--velocity-pink);
+    background-color: var(--pink-color);
 }
 .color.orange {
-    background-color: var(--velocity-orange);
+    background-color: var(--orange-color);
 }
 .color.gray {
-    background-color: var(--velocity-gray);
+    background-color: var(--secondary-color);
 }
 
 
@@ -59,11 +59,11 @@
 }
 
 .color.red {
-    background-color: var(--velocity-red);
+    background-color: var(--red-color);
 }
 
 .color.green {
-    background-color: var(--velocity-green);
+    background-color: var(--green-color);
 }
 
 .color.lynx-white {
@@ -71,53 +71,39 @@
 }
 
 .color.alert-red {
-    background-color: var(--alert-error-red);
+    background-color: var(--error-light-red);
 }
 
 .color.alert-icon-red {
-    background-color: var(--alert-error-icon-red);
+    background-color: var(--error-dark-red);
 }
 
 .color.alert-warn-orange {
-    background-color: var(--alert-warn-orange);
+    background-color: var(--warn-light-orange);
 }
 
 .color.alert-icon-orange {
-    background-color: var(--alert-warn-icon-orange);
+    background-color: var(--warn-dark-orange);
 }
 
 
 .color.alert-success-green {
-    background-color: var(--alert-success-green);
+    background-color: var(--success-light-green);
 }
 
 .color.alert-icon-green {
-    background-color: var(--alert-success-icon-green);
+    background-color: var(--success-dark-green);
 }
 
 .color.alert-info-blue {
-    background-color: var(--alert-info-blue);
+    background-color: var(--info-light-blue);
 }
 
 .color.alert-icon-blue {
-    background-color: var(--alert-info-icon-blue);
+    background-color: var(--info-dark-blue);
 }
 
 .color.lightblue {
-    background-color: var(--velocity-light-blue);
+    background-color: var(--lightblue-color);
 }
 
-
-
-/*   --alert-info-blue: rgb(190, 227, 248);
-  --alert-info-icon-blue: #3182ce; */
-
-
-
-/*   --alert-success-green: rgb(198, 246, 213);
-  --alert-success-icon-green: #38a169; */
-
-
-/* 
---alert-warn-orange: rgb(254, 235, 200);
---alert-warn-icon-orange: #dd6b20; */
