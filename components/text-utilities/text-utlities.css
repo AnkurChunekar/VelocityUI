@@ -14,15 +14,15 @@
 
 .highlight-text {
   background-color: var(--plain-lightgray);
-  border-radius: var(--small-border-radius);
+  border-radius: var(--sm-radius);
 }
 
 .primary-color-text {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
 }
 
 .secondary-color-text {
-  color: var(--velocity-gray);
+  color: var(--secondary-color);
 }
 
 .light-weight-text {
@@ -30,7 +30,7 @@
 }
 
 .gray-text {
-  color: gray;
+  color: var(--plain-gray);
 }
 
 .strike-text {

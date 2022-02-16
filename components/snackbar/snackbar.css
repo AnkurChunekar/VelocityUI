@@ -15,7 +15,7 @@
   background-color: var(--snackbar-bg);
   color: var(--lynx-white);
   padding: 1.5rem;
-  border-radius: var(--small-border-radius);
+  border-radius: var(--sm-radius);
   box-shadow: 0 1px 4px var(--plain-gray);
 }
 
@@ -35,18 +35,18 @@
 /* colors for snackbar starts */
 
 .snackbar.success {
-  background-color: var(--alert-success-green);
-  color: var(--alert-success-icon-green);
+  background-color: var(--success-light-green);
+  color: var(--success-dark-green);
 }
 
 .snackbar.danger {
-  background-color: var(--alert-error-red);
-  color: var(--alert-error-icon-red);
+  background-color: var(--error-light-red);
+  color: var(--error-dark-red);
 }
 
 .snackbar.warn {
-  background-color: var(--alert-warn-orange);
-  color: var(--alert-warn-icon-orange);
+  background-color: var(--warn-light-orange);
+  color: var(--warn-dark-orange);
 }
 
 /* colors for snackbar ends */

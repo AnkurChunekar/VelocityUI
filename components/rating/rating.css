@@ -10,7 +10,6 @@
 
 .rating i {
     color: var(--rating-star-color);
-    cursor: pointer;
 }
 
 .rating .rating-info {
