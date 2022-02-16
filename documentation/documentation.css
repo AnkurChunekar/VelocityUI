@@ -30,7 +30,7 @@
 .top-nav-brand .brand-name {
   font-size: 2.6rem;
   font-weight: bold;
-  color: var(--velocity-black);
+  color: var(--dark-color);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@
 
 .top-nav-links li a:hover {
   cursor: pointer;
-  color: var(--velocity-blue);
+  color: var(--primary-color);
 }
 
 .inline-list {
@@ -55,7 +55,7 @@
 }
 
 .menu-icon i {
-  color: var(--velocity-black);
+  color: var(--dark-color);
 }
 
 .menu-icon {
@@ -64,7 +64,7 @@
 }
 
 .menu-icon i:hover {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
 }
 
 /* || Top navbar Ends---------- */
@@ -104,11 +104,11 @@
 .side-nav-link.title {
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--velocity-black);
+  color: var(--dark-color);
 }
 
 .side-nav-link.active {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
   font-weight: 600;
   background-color: #f2f7ff;
 }
@@ -155,23 +155,23 @@ main {
 
 .main-component-body .docs-body-header {
   margin: 2rem 0;
-  color: var(--velocity-black);
-  border-bottom: solid 1px lightgray;
+  color: var(--dark-color);
+  border-bottom: solid 1px var(--plain-lightgray);
 }
 /* -- */
 .main-component-body .docs-body-para {
   margin: 2rem 0;
-  color: var(--velocity-black);
+  color: var(--dark-color);
 }
 
 .main-component-body .docs-body-section {
   padding-bottom: 2.5rem;
   margin: 3rem 0;
-  border-bottom: solid 1px lightgray;
+  border-bottom: solid 1px var(--plain-lightgray);
 }
 /* -- */
 .cta-blue-text {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
 }
 
 /* || code Container */
@@ -179,13 +179,13 @@ main {
 .code-container {
   width: 100%;
   overflow: auto;
-  border-radius: var(--small-border-radius);
+  border-radius: var(--sm-radius);
   margin: 3rem 0;
 }
 
 .text-pink-bg {
   background-color: #ffe4ea;
-  border-radius: var(--small-border-radius);
+  border-radius: var(--sm-radius);
 }
 
 /* || Iframe Container */
@@ -193,7 +193,7 @@ main {
 iframe {
   width: 100%;
   height: 100%;
-  border: var(--small-border-radius);
+  border: var(--sm-radius);
   transform: scale(1);
   overflow: hidden;
   background-color: #181818;
@@ -213,7 +213,7 @@ iframe {
 }
 
 .component-footer a:hover {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
 }
 
 /* Main Footer */
@@ -246,7 +246,7 @@ iframe {
   font-size: 1.8rem;
 }
 .main-footer li a:hover {
-  color: var(--velocity-blue);
+  color: var(--primary-color);
 }
 
 /* || Media Queries start */
