@@ -66,7 +66,7 @@ For Full Documentation and Demos of each components visit [Velocity UI Component
 
 ## Author Info
 
-- Twitter - [@ankur_chunekar](https://www.linkedin.com/in/ankur-chunekar-8071bb211)
+- Twitter - [@ankur_chunekar](https://twitter.com/ankur_chunekar)
 - Linkedin - [@ankurchunekar](https://www.linkedin.com/in/ankurchunekar/)
 - Website - [ankurchunekar.netlify.app](https://ankurchunekar.netlify.app/)
 - Hashnode - [@ankurchunekar](https://ankurchunekar.hashnode.dev/)
