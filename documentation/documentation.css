@@ -84,7 +84,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 1rem;
-  width: 240px;
+  width: 200px;
   overflow-y: auto;
   height: 100%;
 }
@@ -152,7 +152,6 @@ main {
 .main-component-body {
   padding: 0 1rem;
   max-width: 768px;
-  /* border: solid 1px red; */
 }
 
 .main-component-body .docs-body-header {
