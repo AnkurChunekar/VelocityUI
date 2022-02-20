@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity UI | Chips</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Velocity UI | Slider</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
     <link rel="stylesheet" href="/documentation/documentation.css" />
-    <link rel="stylesheet" href="/components/chips/chips.css" />
-    <link rel="stylesheet" href="/components/chips/chips-docs.css" />
+    <link rel="stylesheet" href="/components/grid/grid.css" />
 
     <script
       src="https://kit.fontawesome.com/edf7bdb339.js"
@@ -120,12 +120,12 @@
             <a href="/components/card/card.html" class="side-nav-link">Card</a>
           </li>
           <li>
-            <a href="/components/chips/chips.html" class="side-nav-link active"
+            <a href="/components/chips/chips.html" class="side-nav-link"
               >Chips</a
             >
           </li>
           <li>
-            <a href="/components/grid/grid.html" class="side-nav-link"
+            <a href="/components/grid/grid.html" class="side-nav-link active"
               >Grid</a
             >
           </li>
@@ -194,116 +194,114 @@
           <!-- || Header area start -->
 
           <header class="docs-body-header">
-            <h2>Chips</h2>
+            <h2>Grid</h2>
             <p class="docs-body-para">
-              Chips allow users to enter information, make selections, filter
-              content, or trigger actions.
+              CSS Grid Layout Module offers a grid-based layout system, with
+              rows and columns, making it easier to design web pages without
+              having to use floats and positioning.
             </p>
-            <div class="divider"></div>
+            <p class="docs-body-para">
+              Note: Resize window's width to check responsiveness.
+            </p>
+
           </header>
 
           <!-- || Header area end -->
 
-          <!-- || Basic Chips start -->
+          <!-- || Section start -->
 
-          <section id="basic" class="docs-body-section">
-            <h3>Basic Chips</h3>
+          <!-- two column fluid -->
+
+          <section id="docs-section-1" class="docs-body-section">
+            <h3>Two Column Grid</h3>
+
             <p class="docs-body-para">
-              Create standard chip using the
-              <span class="text-pink-bg">"chip-body"</span> class.
-            </p>
-            <p class="docs-body-para">
-              Additionally use classes such as
-              <span class="text-pink-bg">"normal-chip"</span>,
-              <span class="text-pink-bg">"blue-chip"</span> and
-              <span class="text-pink-bg">"black-chip"</span>, to create
-              respective components.
+              Both Columns equally resize with respect to the available space. Classes: <span class="text-pink-bg">"grid"</span> and
+              <span class="text-pink-bg">"col2-fluid"</span>.
             </p>
 
             <div class="component-container">
-              <div class="chip-body normal-chip">
-                <i class="fas fa-tag"></i>
-                <span>Tag</span>
-                <i class="fas fa-times close"></i>
-              </div>
-
-              <div class="chip-body normal-chip">
-                <i class="fas fa-check-circle"></i>
-                <span>Selected</span>
-                <i class="fas fa-times close"></i>
-              </div>
-
-              <div class="chip-body blue-chip">
-                <i class="fab fa-js-square"></i>
-                <span>JavaScript</span>
-                <i class="fas fa-times close"></i>
-              </div>
-
-              <div class="chip-body black-chip">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS</span>
-                <i class="fas fa-times close"></i>
+              <div class="grid col2-fluid">
+                <div class="grid-docs-item bg-pink"></div>
+                <div class="grid-docs-item bg-dark-green"></div>
               </div>
             </div>
 
             <div class="code-container">
               <!-- iframe starts -->
               <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522chip-body%2520normal-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-tag%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253ETag%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522chip-body%2520normal-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253ESelected%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522chip-body%2520blue-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-js-square%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253EJavaScript%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522chip-body%2520black-chip%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-css3-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253ECSS%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520col2-fluid%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-pink%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-dark-green%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
               <!-- iframe ends -->
             </div>
-
           </section>
-          <!-- || Basic Chips end -->
 
-          <!-- || Input chips start -->
+           <!-- Two column fixed fluid -->
 
-          <section id="input-chip" class="docs-body-section">
-            <h3>Chips inside Input</h3>
+          <section id="docs-section-2" class="docs-body-section">
+            <h3>Two Column Right Fluid.</h3>
+
             <p class="docs-body-para">
-              We can use chips with various components, for example try adding
-              chips inside a input given below.
+              Only 2nd Column will fit according to the available space. Classes: <span class="text-pink-bg">"grid"</span> and
+              <span class="text-pink-bg">"col2-fluid-r"</span>.
             </p>
 
             <div class="component-container">
-              <div class="input-chip-container">
-                <h3>Chips inside an input</h3>
-
-                <div class="chips-container">
-                  <div class="chip-body blue-chip">
-                    <span>One Fish</span>
-                    <i class="fas fa-times close"></i>
-                  </div>
-
-                  <div id="demo-chip-container">
-                    <input
-                      id="chip-inputElement"
-                      type="text"
-                      placeholder="New Chip..."
-                    />
-                  </div>
-                </div>
+              <div class="grid col2-fluid-r">
+                  <div class="grid-docs-item bg-lightgreen"></div>
+                <div class="grid-docs-item bg-pink"></div>
               </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520col2-fluid-r%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-lightgreen%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-pink%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+              <!-- iframe ends -->
             </div>
           </section>
 
+           <!-- Auto fit grid -->
 
-          <!-- || Input Chip end -->
+          <section id="docs-section-3" class="docs-body-section">
+            <h3>Auto Fit Grid.</h3>
 
+            <p class="docs-body-para">
+                Items inside Auto-fit Grid will automatically fit automatically inside parent container. They will have a minimum width of 300px.  Classes: <span class="text-pink-bg">"grid"</span> and
+              <span class="text-pink-bg">"auto-fit"</span>.
+            </p>
+
+            <div class="component-container">
+              <div class="grid auto-fit">
+                  <div class="grid-docs-item bg-lightgreen"></div>
+                  <div class="grid-docs-item bg-pink"></div>
+                  <div class="grid-docs-item bg-dark-green"></div>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520auto-fit%2522%253E%250A%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-lightgreen%2522%253E%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-pink%2522%253E%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522grid-docs-item%2520bg-dark-green%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Section ends -->
 
           <footer class="component-footer">
-            <a href="/components/card/card.html">
-              <i class="fas fa-angle-double-left"></i> Cards</a
+            <a href="/components/chips/chips.html">
+              <i class="fas fa-angle-double-left"></i> Chips</a
             >
             <a href="/components/imageComponent/image.html">
-              Images <i class="fas fa-angle-double-right"></i
+              Image <i class="fas fa-angle-double-right"></i
             ></a>
           </footer>
-
-          <!-- || Chips components ends -->
 
           <!-- Footer starts  -->
 
@@ -351,27 +349,24 @@
           <!-- Footer ends -->
         </div>
 
-
-
         <aside class="side-navbar page-info">
           <ul class="ul-side-navbar">
-            <li><a href="" class="side-nav-link title">On This Page</a></li>
+            <li><a class="side-nav-link title">On This Page</a></li>
 
-            <li><a href="#basic" class="side-nav-link">Basic Chips</a></li>
             <li>
-              <a href="#input-chip" class="side-nav-link">Input Chips</a>
+              <a href="#docs-section-1" class="side-nav-link">Two Column docs</a>
+            </li>
+            <li>
+              <a href="#docs-section-2" class="side-nav-link">Two Column Fluid Right</a>
+            </li>
+            <li>
+              <a href="#docs-section-3" class="side-nav-link">Auto Fit Grid</a>
             </li>
           </ul>
         </aside>
-
-
       </main>
-
     </section>
 
-    <script src="/components/chips/chips.js"></script>
-
     <script src="/documentation/JS/documentation.js"></script>
-
   </body>
 </html>
