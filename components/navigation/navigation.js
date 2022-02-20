@@ -9,3 +9,5 @@ navMenuIcon.addEventListener("click", () => {
 navMenuCloseIcon.addEventListener("click", () => {
     navSideMenu.classList.toggle("active");
 });
+
+
