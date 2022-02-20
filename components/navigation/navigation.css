@@ -5,6 +5,12 @@
   --navigation-shodow: 0 2px 5px var(--plain-lightgray);
 }
 
+.component-container {
+  height: 15rem;
+  position: relative;
+  align-items: flex-start;
+}
+
 /* || Navigation styles starts ------ */
 
 /* Navigation Parent  */
@@ -13,11 +19,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: var(--plain-white);
   padding: 1rem;
   box-shadow: var(--navigation-shodow);
-  font-size: 1.8rem;
+  font-size: var(--font-size-h4);
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .navigation a {
@@ -33,55 +40,73 @@
   margin: 0 0.5rem;
 }
 
-.navigation .menu-icon {
+.navigation .ham-icon {
   font-size: 2.5rem;
   cursor: pointer;
-  display: none;
   margin: 0 0.5rem;
 }
 
-.navigation .menu-icon:hover {
- color: var(--primary-color);
+.navigation .ham-icon:hover {
+  color: var(--primary-color);
 }
 
-/* Search bar */
+/* Nav links */
 
-.navigation .input-wrapper {
-  width: 40%;
+.navigation .nav-link {
+  margin: 0 0.5rem;
 }
 
-.navigation .input-wrapper input {
-  border: solid var(--plain-lightgray) 0.2px; 
-  outline: none;
-  border-radius: 0;
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
-  width: 100%;
-} 
+.navigation .nav-link a:hover {
+  color: var(--primary-color);
+}
+
+.navigation .navigation-ham-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  background-color: var(--plain-white);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  row-gap: 2rem;
+  padding: 2rem;
+  box-shadow: 2px 0 5px var(--plain-lightgray);
+  display: none;
+}
+
+.navigation .navigation-ham-menu.active {
+  display: flex;
+}
+
+.navigation-ham-menu #ham-close-icon {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: var(--font-size-h3);
+}
+
+.navigation-ham-menu #ham-close-icon:hover {
+  color: var(--red-color);
+}
 
 /* Nav actions */
 
 .nav-actions a {
   padding: 0.8rem 1rem;
+  cursor: pointer;
 }
+
 .nav-actions a:hover {
   background-color: var(--lynx-white);
   border-radius: var(--round-radius);
 }
 
-/* Media query starts */
-
-@media screen and (max-width: 768px) {
-
-  .navigation .menu-icon {
-    display: inline;
-  }
-
-  .navigation .input-wrapper {
-    display: none;
-  } 
-
+.nav-actions .icon-badge {
+  top: -15px;
+  right: -5px;
 }
 
-/* Media query ends */
 
+/* Media query ends */

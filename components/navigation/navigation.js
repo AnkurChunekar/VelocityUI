@@ -1,6 +1,11 @@
-const navMenuIcon = document.querySelector("#nav-menu-icon");
-const navDropdownMenu = document.querySelector(".nav-dropdown-menu");
+const navMenuIcon = document.querySelector("#ham-icon");
+const navMenuCloseIcon = document.querySelector("#ham-close-icon");
+const navSideMenu = document.querySelector("#navigation-ham-menu");
 
 navMenuIcon.addEventListener("click", () => {
-navDropdownMenu.classList.toggle("active");
+    navSideMenu.classList.toggle("active");
+});
+
+navMenuCloseIcon.addEventListener("click", () => {
+    navSideMenu.classList.toggle("active");
 });
