@@ -263,6 +263,11 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
+
+  html {
+    font-size: 60%;
+  }
+
   .side-navbar.page-info {
     display: none;
   }

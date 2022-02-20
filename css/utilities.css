@@ -15,6 +15,12 @@
   color: var(--plain-gray);
 }
 
+
+.highlight-text {
+  color: #3e89d7;
+  padding: 0 10px;
+}
+
 /* || headings and paragraph font sizes */
 
 .h1,

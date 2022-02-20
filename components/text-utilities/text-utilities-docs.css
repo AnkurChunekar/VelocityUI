@@ -1,3 +1,41 @@
+@import url(/components/grid/grid.css);
+
+:root {
+  --table-h-bg: #366dc3;
+  --table-b-bg: #dddddd;
+  --table-b-gray-bg: #f3f3f3;
+}
+
 .component-container {
   display: block;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 2.5rem 0;
+  font-size: var(--font-size-h4);
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px var(--plain-lightgray);
+  width: 100%;
+}
+
+.table thead tr {
+  background-color: var(--table-h-bg);
+  color: var(--plain-white);
+  text-align: left;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  padding: 1.2rem 1.5rem;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--table-b-bg);
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: var(--table-b-gray-bg);
 }
