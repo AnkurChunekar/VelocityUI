@@ -1,0 +1,44 @@
+:root {
+  --sky-blue: #65DEF1;
+  --mertle-green: #387D7A;
+  --bud-green: #78BC61;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grid.auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid.col2-fluid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid.col2-fluid-r {
+    grid-template-columns: 25rem 1fr;
+}
+
+/* For documentation */
+
+.grid-docs-item {
+    width: 100%;
+    height: 10rem;
+}
+
+.bg-pink {
+    background-color: var(--sky-blue);
+}
+
+.bg-dark-green {
+    background-color: var(--mertle-green);
+}
+
+.bg-lightgreen {
+    background-color: var(--bud-green);
+}
+
