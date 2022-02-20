@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h5);
   padding: 1rem;
   background-color: white;
   margin: 0 auto;
@@ -263,6 +263,11 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
+
+  html {
+    font-size: 60%;
+  }
+
   .side-navbar.page-info {
     display: none;
   }

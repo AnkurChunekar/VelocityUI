@@ -62,7 +62,7 @@
 
 .badge-container.tag {
     padding: 0.5rem 0.75rem;
-    font-size: var(--font-size-h5);
+    font-size: var(--font-size-h6);
     border-radius: none;
     color: var(--plain-black);
     background-color: var(--plain-lightgray);

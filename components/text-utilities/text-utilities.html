@@ -209,49 +209,72 @@
           <section id="styles" class="docs-body-section">
             <h3>Text Styles</h3>
 
-            <p class="docs-body-para">
-              <ul>
-                <li>Use <span class="text-pink-bg">"gray-text"</span> class for <span class="gray-text">gray text color</span>.</li>
-                <li>Use <span class="text-pink-bg">"strike-text"</span> class for strike text from center.</li>
-                <li>Use <span class="text-pink-bg">"center-align-text"</span> class to align text content center.</li>
-                <li>Use <span class="text-pink-bg">"right-align-text"</span> class to align text content right.</li>
-                <li>Use <span class="text-pink-bg">"left-align-text"</span> class to align text content left.</li>
-                <li>Use <span class="text-pink-bg">"highlight-text"</span> class for highlight text.</li>
-                <li>Use <span class="text-pink-bg">"light-weight-text"</span> class for small font weight text.</li>
-                <li>Use <span class="text-pink-bg">"b"</span> tag for bold text.</li>
-                <li>Use <span class="text-pink-bg">"primary-color-text"</span> class for primary text color.</li>
-                <li>Use <span class="text-pink-bg">"secondary-color-text"</span> class for secondary text color.</li>
-                <li>Use <span class="text-pink-bg">"small"</span> tag for bold text.</li>
-              </ul>
-            </p>
+            <table class="table">
 
-            <div class="component-container">
-              <p>This is a paragraph</p>
-              <p class="gray-text">This is gray text example</p>
-              <p class="strike-text">This is a strike through text</p>
-              <p class="center-align-text">This is a center aligned text</p>
-              <p class="right-align-text">This is a right aligned text</p>
-              <p class="left-align-text">This is a left aligned text</p>
-              <p>The <span class="highlight-text">"next"</span> word here is highlighted</p>
-              <p class="light-weight-text">This is a light weighted text</p>
-              <p><b>This is a bold text</b></p>
-              <p class="primary-color-text">Primary Color text</p>
-              <p class="secondary-color-text">Secondary Color text</p>
-              <small>smaller text here</small>
-            </div>
-        
+              <thead>
+                <tr>
+                  <th>Class Name</th>
+                  <th>Output</th>
+                </tr>
+              </thead>
 
-            <div class="code-container">
-              <!-- iframe starts -->
-              <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%253EThis%2520is%2520a%2520paragraph%253C%252Fp%253E%250A%253Cp%2520class%253D%2522gray-text%2522%253EThis%2520is%2520gray%2520text%2520example%253C%252Fp%253E%250A%253Cp%2520class%253D%2522strike-text%2522%253EThis%2520is%2520a%2520strike%2520through%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522center-align-text%2522%253EThis%2520is%2520a%2520center%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522right-align-text%2522%253EThis%2520is%2520a%2520right%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522left-align-text%2522%253EThis%2520is%2520a%2520left%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%253EThe%2520%253Cspan%2520class%253D%2522highlight-text%2522%253E%2522next%2522%253C%252Fspan%253E%2520word%2520here%2520is%2520highlighted%253C%252Fp%253E%250A%253Cp%2520class%253D%2522light-weight-text%2522%253EThis%2520is%2520a%2520light%2520weighted%2520text%253C%252Fp%253E%250A%253Cp%253E%253Cb%253EThis%2520is%2520a%2520bold%2520text%253C%252Fb%253E%253C%252Fp%253E%250A%253Cp%2520class%253D%2522primary-color-text%2522%253EPrimary%2520Color%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522secondary-color-text%2522%253ESecondary%2520Color%2520text%253C%252Fp%253E%250A%253Csmall%253Esmaller%2520text%2520here%253C%252Fsmall%253E"
-          
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+              <tbody>
+                <tr>
+                  <td>gray-text</td>
+                  <td><p class="gray-text">Gray Text example</p></td>
+                </tr>
+                <tr class="active-row">
+                  <td>strike-text</td>
+                  <td><p class="strike-text">Strike Through</p></td>
+                </tr>
 
-              <!-- iframe ends -->
+                <tr>
+                  <td>center-align-text</td>
+                  <td><p class="center-align-text">Center Aligned text</p></td>
+                </tr>
 
-            </div>
+                <tr>
+                  <td>right-align-text</td>
+                  <td><p class="right-align-text">Right Aligned text</p></td>
+                </tr>
+
+                <tr>
+                  <td>left-align-text</td>
+                  <td><p class="left-align-text">Left Aligned text</p></td>
+                </tr>
+
+                <tr>
+                  <td>highlight-text</td>
+                  <td><p class="highlight-text">Highlighted Text</p></td>
+                </tr>
+
+                <tr>
+                  <td>thin-text</td>
+                  <td><p class="thin-text">Light Weighted Text</p></td>
+                </tr>
+
+                <tr>
+                  <td>&lt;strong&gt;</td>
+                  <td><strong>Bold Text</strong></td>
+                </tr>
+
+                <tr>
+                  <td>&lt;small&gt;</td>
+                  <td><small>Small Text</small></td>
+                </tr>
+
+                <tr>
+                  <td>primary-color-text</td>
+                  <td><p class="primary-color-text">Primary Colored Text</p></td>
+                </tr>
+
+                <tr>
+                  <td>secondary-color-text</td>
+                  <td><p class="secondary-color-text">Secondary Colored Text</p></td>
+                </tr>
+
+              </tbody>
+            </table>
 
           </section>
 
@@ -318,7 +341,7 @@
             <li><a class="side-nav-link title">On This Page</a></li>
 
             <li>
-              <a href="#styles" class="side-nav-link"> Text styles</a>
+              <a href="#styles" class="side-nav-link">Text styles</a>
             </li>
 
           </ul>

@@ -12,11 +12,6 @@
   text-align: left;
 }
 
-.highlight-text {
-  background-color: var(--plain-lightgray);
-  border-radius: var(--sm-radius);
-}
-
 .primary-color-text {
   color: var(--primary-color);
 }
@@ -25,7 +20,7 @@
   color: var(--secondary-color);
 }
 
-.light-weight-text {
+.thin-text {
   font-weight: 100;
 }
 

@@ -23,6 +23,10 @@
   border-radius: var(--md-radius);
 }
 
+.card:hover {
+  transform: scale(1.01);
+}
+
 /* Card Header */
 
 /* Card image  */
@@ -55,9 +59,8 @@
   margin: 0.8rem 0;
 }
 
-.flexible-txt.subtitle {
-  font-size: 1.4rem;
-  color: var(--plain-gray);
+.flexible-txt.price-text {
+  color: var(--red-color);
 }
 
 .card-text-content .ecom-qty input {
@@ -218,6 +221,7 @@
 
 .card.card-horizontal .ecom-qty {
   display: block;
+  margin: 1rem 0;
 }
 
 .card.card-horizontal .card-text-content .rating {
