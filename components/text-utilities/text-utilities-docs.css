@@ -13,7 +13,7 @@
 .table {
   border-collapse: collapse;
   margin: 2.5rem 0;
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h5);
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px var(--plain-lightgray);

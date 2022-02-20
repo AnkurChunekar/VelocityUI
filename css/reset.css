@@ -40,23 +40,23 @@ button {
 
 /* Heading sizes */
 
-h1 {
+h1, p1 {
   font-size: var(--font-size-h1);
 }
  
-h2 {
+h2, p2 {
   font-size: var(--font-size-h2);
 }
  
-h3 {
+h3, p3 {
   font-size: var(--font-size-h3);
 }
  
-h4 {
+h4, p4 {
   font-size: var(--font-size-h4);
 }
  
-h5 {
+h5, p5 {
   font-size: var(--font-size-h5);
 }
  
