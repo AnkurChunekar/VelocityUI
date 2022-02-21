@@ -3,5 +3,5 @@ const demoBadgeHideBtn = document.querySelector("#demo-badge-hide-btn");
 
 
 demoBadgeHideBtn.addEventListener("click", () => {
-demoBadge.classList.toggle("display-none");
-})
+    demoBadge.classList.toggle("display-none");
+});
