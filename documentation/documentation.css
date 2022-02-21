@@ -87,6 +87,7 @@
   width: 200px;
   overflow-y: auto;
   height: 100%;
+  list-style: none;
 }
 
 .ul-side-navbar li {
