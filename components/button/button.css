@@ -19,6 +19,7 @@
   font-size: var(--font-size-h5);
   padding: 0.75rem 1.25rem;
   width: fit-content;
+  transition: background-color 0.3s;
 }
 
 /* || Button styling ends */
@@ -167,11 +168,11 @@
 
 /* || Button disabled start */
 
-.btn.disabled {
+.btn:disabled {
   background-color: var(--normal-gray);
   cursor: not-allowed;
 }
-.btn.disabled:hover {
+.btn:disabled:hover {
 background-color: var(--normal-gray);
 }
 

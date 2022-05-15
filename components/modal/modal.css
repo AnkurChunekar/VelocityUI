@@ -1,67 +1,52 @@
-@import url(/components/button/button.css);
-
-/* || Modal styles starts */
-
 /* Modal container */
 .modal-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
 }
 
 .modal-container.active {
-    display: flex;
+  display: flex;
 }
+
 /* modal */
 .modal {
-  max-width: 40rem;
+  max-width: 60rem;
   height: fit-content;
-  padding: 2rem;
   background-color: var(--plain-white);
-  border-radius: var(--md-radius);
+  border-radius: var(--sm-radius);
 }
 
 /* header */
 .modal header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: var(--dark-color);
-}
-
-.modal-title {
-  font-size: var(--font-size-h3);
-  margin: 0 1rem;
 }
 
 .modal header .close-icon {
   margin-left: auto;
-  font-size: 2rem;
+  color: var(--plain-gray);
 }
 
 .modal header .close-icon:hover {
-    cursor: pointer;
-    color: var(--red-color);
-}
-
-/* Section */
-.modal section {
-    padding: 2.5rem 0;
+  cursor: pointer;
+  color: var(--plain-black);
+  transform: scale(1.2);
 }
 
 /* Footer */
 
 .modal footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: var(--spacing-s);
 }
 
 /* || Modal styles ends */

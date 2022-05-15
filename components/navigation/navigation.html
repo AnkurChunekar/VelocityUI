@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="/components/input/input.css" />
     <link rel="stylesheet" href="/documentation/documentation.css" />
     <link rel="stylesheet" href="/components/navigation/navigation.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
 
     <script
-      src="https://kit.fontawesome.com/edf7bdb339.js"
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -23,35 +25,30 @@
     <!-- || top nav start -->
 
     <nav class="top-navbar">
-      <div class="top-nav-brand">
-        <a href="/index.html">
-          <img src="/images/velocity-1-logo.svg" alt="velocity-ui-brand-logo" />
-        </a>
-        <a href="/index.html" class="brand-name">Velocity</a>
+      <div class="nav-wrapper">
+        <div class="top-nav-brand">
+          <a href="/index.html">
+            <img
+              src="/images/velocity-1-logo.svg"
+              alt="velocity-ui-brand-logo"
+            />
+          </a>
+          <a href="/index.html" class="brand-name">Velocity</a>
+        </div>
+
+        <ul class="top-nav-links">
+          <li class="inline-list">
+            <a
+              href="https://github.com/AnkurChunekar/VelocityUI"
+              target="_blank"
+              ><i class="fab fa-github h3"></i
+            ></a>
+          </li>
+          <li class="inline-list menu-icon">
+            <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+          </li>
+        </ul>
       </div>
-
-      <ul class="top-nav-links doc-links">
-        <li class="inline-list">
-          <a href="/components/introduction/introduction.html">Get Started</a>
-        </li>
-        <li class="inline-list">
-          <a href="/components/alert/alert.html">Documentation</a>
-        </li>
-        <li class="inline-list">
-          <a href="/components/alert/alert.html">Components</a>
-        </li>
-      </ul>
-
-      <ul class="top-nav-links">
-        <li class="inline-list">
-          <a href="https://github.com/AnkurChunekar/VelocityUI" target="_blank"
-            ><i class="fab fa-github h3"></i
-          ></a>
-        </li>
-        <li class="inline-list menu-icon">
-          <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
-        </li>
-      </ul>
     </nav>
 
     <!-- || top nav end -->
@@ -63,119 +60,75 @@
 
       <nav id="hamburger-menu" class="side-navbar">
         <ul class="ul-side-navbar">
+          <li class="title">Get Started</li>
+
           <li>
-            <a
-              href="/components/introduction/introduction.html"
-              class="side-nav-link title"
-              >Get Started</a
-            >
-          </li>
-          <li>
-            <a
-              href="/components/introduction/introduction.html"
-              class="side-nav-link"
+            <a href="../introduction/introduction.html" class="side-nav-link"
               >Installation</a
             >
           </li>
           <li>
-            <a href="/components/colors-docs/colors.html" class="side-nav-link"
+            <a href="../colors-docs/colors.html" class="side-nav-link"
               >Colors</a
             >
           </li>
           <li>
-            <a
-              href="/components/typography-docs/typography.html"
-              class="side-nav-link"
+            <a href="../typography-docs/typography.html" class="side-nav-link"
               >Typography</a
             >
           </li>
 
-          <li>
-            <a href="/components/alert/alert.html" class="side-nav-link title"
-              >Components</a
-            >
-          </li>
+          <li class="title">Components</li>
 
           <li>
-            <a href="/components/alert/alert.html" class="side-nav-link"
-              >Alert</a
-            >
+            <a href="../alert/alert.html" class="side-nav-link">Alert</a>
           </li>
           <li>
-            <a href="/components/avatar/avatar.html" class="side-nav-link"
-              >Avatar</a
-            >
+            <a href="../avatar/avatar.html" class="side-nav-link">Avatar</a>
           </li>
           <li>
-            <a href="/components/badge/badge.html" class="side-nav-link"
-              >Badge</a
-            >
+            <a href="../badge/badge.html" class="side-nav-link">Badge</a>
           </li>
           <li>
-            <a href="/components/button/button.html" class="side-nav-link"
-              >Button</a
-            >
+            <a href="../button/button.html" class="side-nav-link">Button</a>
           </li>
           <li>
-            <a href="/components/card/card.html" class="side-nav-link">Card</a>
+            <a href="../card/card.html" class="side-nav-link">Card</a>
           </li>
           <li>
-            <a href="/components/chips/chips.html" class="side-nav-link"
-              >Chips</a
-            >
+            <a href="../chips/chips.html" class="side-nav-link">Chips</a>
           </li>
           <li>
-            <a href="/components/grid/grid.html" class="side-nav-link">Grid</a>
+            <a href="../grid/grid.html" class="side-nav-link">Grid</a>
           </li>
           <li>
-            <a
-              href="/components/imageComponent/image.html"
-              class="side-nav-link"
+            <a href="../imageComponent/image.html" class="side-nav-link"
               >images</a
             >
           </li>
           <li>
-            <a href="/components/input/input.html" class="side-nav-link"
-              >Input</a
-            >
+            <a href="../input/input.html" class="side-nav-link">Input</a>
           </li>
           <li>
-            <a href="/components/lists/lists.html" class="side-nav-link"
-              >Lists</a
-            >
+            <a href="../lists/lists.html" class="side-nav-link">Lists</a>
           </li>
           <li>
-            <a href="/components/modal/modal.html" class="side-nav-link"
-              >Modal</a
-            >
+            <a href="../modal/modal.html" class="side-nav-link">Modal</a>
           </li>
           <li>
-            <a
-              href="/components/navigation/navigation.html"
-              class="side-nav-link active"
+            <a href="../navigation/navigation.html" class="side-nav-link active"
               >Navigation</a
             >
           </li>
           <li>
-            <a href="/components/rating/rating.html" class="side-nav-link"
-              >Rating</a
-            >
+            <a href="../rating/rating.html" class="side-nav-link">Rating</a>
           </li>
           <li>
-            <a href="/components/slider/slider.html" class="side-nav-link"
-              >Slider</a
-            >
+            <a href="../slider/slider.html" class="side-nav-link">Slider</a>
           </li>
           <li>
-            <a href="/components/snackbar/snackbar.html" class="side-nav-link"
+            <a href="../snackbar/snackbar.html" class="side-nav-link"
               >Snackbar</a
-            >
-          </li>
-          <li>
-            <a
-              href="/components/text-utilities/text-utilities.html"
-              class="side-nav-link"
-              >Text Utilities</a
             >
           </li>
         </ul>
@@ -190,7 +143,7 @@
           <!-- || Header area start -->
 
           <header class="docs-body-header">
-            <h2>Navigation</h2>
+            <h1 class="fw-600 fs-2">Navigation</h1>
             <p class="docs-body-para">
               Navigation bar is used to navigate through the websites. Velocity
               provides a responsive navigation bar.
@@ -206,7 +159,7 @@
           <!-- || Navigation start -->
 
           <section id="standard" class="docs-body-section">
-            <h3>Standard Navigation bar</h3>
+            <h2 class="fw-600 fs-3">Standard Navigation bar</h2>
 
             <p class="docs-body-para">
               Navigations can be easily created using
@@ -228,9 +181,9 @@
 
                 <div class="nav-actions">
                   <a><i class="fas fa-search"></i></a>
+                  <a> <i class="fa-solid fa-user"></i> </a>
                   <a><i class="fas fa-heart"></i></a>
                   <a><i class="fas fa-shopping-cart"></i></a>
-                  <a>Login</a>
                 </div>
               </nav>
             </div>
@@ -319,7 +272,7 @@
 
         <aside class="side-navbar page-info">
           <ul class="ul-side-navbar">
-            <li><a href="" class="side-nav-link title">On This Page</a></li>
+            <li class="title">On This Page</li>
 
             <li>
               <a href="#standard" class="side-nav-link"> Standard Navigation</a>

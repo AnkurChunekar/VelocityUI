@@ -19,6 +19,10 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.grid.col3-fluid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .grid.col2-fluid-r {
     grid-template-columns: 25rem 1fr;
 }
