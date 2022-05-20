@@ -22,6 +22,10 @@
   transition: background-color 0.3s;
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
 /* || Button styling ends */
 
 /* || Button Solid starts */
