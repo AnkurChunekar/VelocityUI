@@ -101,7 +101,7 @@ a {
   width: 100%;
 }
 
-.side-nav-link {
+.ul-side-navbar a {
   display: flex;
   align-items: center;
   color: var(--plain-gray);
@@ -117,13 +117,13 @@ a {
   padding: 1rem;
 }
 
-.side-nav-link.active {
+.ul-side-navbar a.active {
   color: var(--primary-color);
   font-weight: 600;
   background-color: var(--nav-lightblue-bg);
 }
 
-.side-navbar .side-nav-link:hover {
+.side-navbar .ul-side-navbar a:hover {
   color: var(--primary-color);
   font-weight: bold;
   transition: all 0.3s;
@@ -312,11 +312,11 @@ iframe {
     width: 100%;
   }
 
-  .side-nav-link {
+  .ul-side-navbar a {
     font-size: 1.7rem;
   }
 
-  .side-nav-link.title {
+  .ul-side-navbar a.title {
     font-size: 1.9rem;
   }
 
