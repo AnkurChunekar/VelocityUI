@@ -1,16 +1,5 @@
-@import url(/components/avatar/avatar.css);
-@import url(/components/button/button.css);
-@import url(/components/badge/badge.css);
-@import url(/components/rating/rating.css);
-
 :root {
   --card-description-color: #808080;
-}
-
-.component-container {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1rem 0;
 }
 
 /* ||------ Standard Card start */
@@ -18,90 +7,125 @@
 .card {
   height: max-content;
   max-width: 26rem;
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   position: relative;
-  border-radius: var(--md-radius);
+  border-radius: var(--sm-radius);
 }
 
 .card:hover {
-  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Card Header */
 
 /* Card image  */
+
 .card .card-image img {
   object-fit: cover;
   width: 100%;
   height: max-content;
-  border-top-left-radius: var(--md-radius);
-  border-top-right-radius: var(--md-radius);
+  border-radius: var(--sm-radius) var(--sm-radius) 0 0;
+  border-bottom: solid 1px var(--plain-lightgray);
 }
 
 /* icons */
 
-.card .card-badge {
+.card .card-like,
+.card .card-dismiss,
+.card .tag {
   display: none;
+}
+
+.card .card-like,
+.card .card-dismiss {
+  position: absolute;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  top: var(--spacing-xxs);
+  right: var(--spacing-xxs);
+  color: var(--plain-gray);
+  background-color: var(--plain-white);
+  border-radius: var(--sm-radius);
+  border: solid 1px var(--plain-lightgray);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.card .card-dismiss:hover {
+  color: var(--red-color);
+  border: solid 1px var(--red-color);
+  transition: all 0.3s;
 }
 
 /* Card Text Content */
 
-.card-body .card-text-content {
-  margin: 0 1.5rem;
+.card-text-content .card-title {
+  font-size: var(--font-size-h5);
+  font-weight: 600;
 }
 
-.card-text-content .card-title {
-  font-size: 1.8rem;
+.card .subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .card-text-content .card-title,
-.card-text-content .flexible-txt {
-  margin: 0.8rem 0;
-}
-
-.flexible-txt.price-text {
-  color: var(--red-color);
-}
-
-.card-text-content .ecom-qty input {
-  width: 4rem;
-  margin: 0 0.5rem;
-  border: solid 1px var(--gray-color);
-  padding: 2px 4px;
-  text-align: center;
+.card-text-content .subtitle,
+.card-text-content .rating {
+  margin: var(--spacing-xxs) 0;
 }
 
 .card .ecom-qty {
-  display: none;
-}
-
-.card .ecom-qty span {
-  margin: 0 0.5rem;
+  width: max-content;
+  border-radius: var(--sm-radius);
+  margin: var(--spacing-xxs) 0;
 }
 
 .card .ecom-qty .qty-btn {
-  padding: 0.4rem 0.6rem;
-  border-radius: var(--round-radius);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid var(--plain-lightgray) 1.6px;
 }
 
-.card .card-text-content .rating {
+.card .ecom-qty .qty-btn.inc {
+  border-radius: 0 5px 5px 0;
+}
+
+.card .ecom-qty .qty-btn.dec {
+  border-radius: 5px 0 0 5px;
+}
+
+.card .ecom-qty .qty-btn:hover {
+  color: var(--primary-color);
+}
+
+.card .ecom-qty .qty-btn:focus {
+  outline: solid 2px var(--lightblue-color);
+}
+
+.card .ecom-qty .qty-btn:disabled {
+  color: lightgray;
+}
+
+.card .ecom-qty .qty-num {
+  border-top: solid var(--plain-lightgray) 1.5px;
+  border-bottom: solid var(--plain-lightgray) 1.5px;
+}
+
+.card .rating,
+.card .ecom-qty,
+.card .price {
   display: none;
 }
 
 /* || Card footer */
 
 .card .card-actions {
-  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  row-gap: 0.8rem;
+  column-gap: var(--spacing-xxs);
 }
 
-.card .card-actions .btn {
-  width: 100%;
-}
-
-.card.single-btn .card-actions .card-btn-2 {
+.card.single-btn .card-actions .btn-secondary {
   display: none;
 }
 
@@ -109,11 +133,8 @@
 
 /* || Card with badges start */
 
-.card.card-w-badge .left-badge {
+.card.card-w-badge .tag {
   display: block;
-}
-
-.card.card-w-badge .left-badge {
   position: absolute;
   top: 2rem;
   left: -0.2rem;
@@ -121,75 +142,65 @@
 
 /* || Card with badge ends*/
 
-/* || card with like starts */
+/* || Ecom Card starts */
 
-.card.card-ecom .card-like {
+.card.card-ecom .card-like,
+.card.card-ecom .price {
   display: block;
-  position: absolute;
-  top: 1.5rem;
-  right: 0.6rem;
-  color: var(--dark-color);
-  background-color: var(--plain-white);
-  border-radius: var(--round-radius);
-  box-shadow: 0 0 4px var(--plain-gray);
-  cursor: pointer;
 }
 
-.card.card-ecom .card-like:hover {
-  color: var(--red-color);
+.card .card-like:hover, 
+.card .card-like.active {
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+  transition: all 0.3s;
+}
+
+.card .card-like:disabled {
+  cursor: not-allowed;
+}
+
+.card .card-like:disabled:hover {
+  color: var(--plain-lightgray);
+  border: solid 1px var(--plain-lightgray);
 }
 
 .card.card-ecom .card-text-content .rating {
   display: block;
 }
 
-/* || card with like ends */
+.card.card-ecom .card-actions {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card.card-ecom .btn-primary {
+  width: 100%;
+}
+
+.card.card-ecom .btn-secondary {
+  display: none;
+}
+
+/* || Ecom Card ends */
 
 /* || Card with dismiss icon starts  */
 
-.card.card-w-dismiss .card-dismiss {
-  display: block;
-  color: var(--plain-gray);
-  position: absolute;
-  top: 0.5rem;
-  right: 1rem;
-  border: var(--plain-red);
+.card.card-w-dismiss .card-like {
+  display: none;
 }
 
-.card.card-w-dismiss .card-dismiss:hover {
-  cursor: pointer;
-  color: var(--red-color);
+.card.card-w-dismiss .card-dismiss {
+  display: block;
 }
 
 /* || Card with dismiss icon ends */
 
-/* || Card with text overlays starts*/
-
-.card.card-text-overlay .card-text-content {
-  position: relative;
-  margin: 0 1rem;
-}
-
-.card.card-text-overlay .card-title {
-  position: absolute;
-  top: -7rem;
-}
-
-.card.card-text-overlay .subtitle {
-  position: absolute;
-  top: -4.5rem;
-}
-
-.card.card-text-overlay .details {
-  display: none;
-}
-
-/* || Card with text overlays ends*/
-
 /* || Card with text only starts*/
 
 .card.card-text-only .card-image,
-.card.card-text-only .card-actions {
+.card.card-text-only .card-actions,
+card.card.card-text-only .price {
   display: none;
 }
 
@@ -199,33 +210,51 @@
 
 .card.card-horizontal {
   display: flex;
-  max-width: 55rem;
+  max-width: 100%;
+  width: 100%;
 }
 
 .card.card-horizontal .card-image {
-  width: 80%;
+  max-width: 13.5rem;
+  height: 100%;
+  flex-shrink: 2;
 }
 
 .card.card-horizontal .card-image img {
   height: 100%;
   width: 100%;
-}
-
-.card.card-horizontal .card-body {
-  width: 100%;
+  border: none;
 }
 
 .card.card.card-horizontal .card-text-content {
-  margin: 1rem 1.5rem 4rem 1.5rem;
+  min-width: 185px;
+}
+
+.card.card-horizontal .card-actions {
+  display: none;
 }
 
 .card.card-horizontal .ecom-qty {
-  display: block;
-  margin: 1rem 0;
+  display: flex;
 }
 
-.card.card-horizontal .card-text-content .rating {
+.card.card-horizontal .price {
   display: block;
+  margin: var(--spacing-xxs) 0;
+}
+
+.card.card-horizontal .card-like {
+  display: block;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  top: auto;
+}
+
+.card.card-horizontal .card-dismiss {
+  display: block;
+  bottom: 1.2rem;
+  right: 6rem;
+  top: auto;
 }
 
 /* || Horizontal card ends*/
@@ -242,7 +271,7 @@
   left: 0;
   color: var(--plain-white);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: var(--font-size-h3);
   align-items: center;
   justify-content: center;
   border-radius: var(--md-radius);

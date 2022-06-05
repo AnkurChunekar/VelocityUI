@@ -1,15 +1,17 @@
 /* alert styles start */
 
 .alert {
-  width: 100%;
-  padding: 1rem;
+  width: 40em;
+  padding: 1.2rem;
   display: flex;
   align-items: center;
+  column-gap: 1rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .alert .icon {
-  margin: 0 0.5rem;
+  font-size: var(--font-size-h3);
 }
 
 /* || Alert Color styles  */
@@ -55,7 +57,7 @@
   cursor: pointer;
 }
 .alert .alert-dismissible-icon:hover {
-  color: var(--error-dark-red);
+  transform: scale(1.25);
 }
 
 /* || For Dissmisible alert btn ends */
@@ -64,11 +66,13 @@
 
 .alert.alert-w-additional-text {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 2rem;
 }
-.alert.alert-w-additional-text .additional-text {
-  margin: 1rem 3rem;
+
+.alert.alert-w-additional-text .icon {
+  font-size: var(--font-size-h2);
 }
 
 /* || Alert with aditional text ends*/

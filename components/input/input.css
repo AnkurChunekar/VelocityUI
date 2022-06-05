@@ -1,100 +1,91 @@
-/* Input style starts */
+/* Input style  */
+
+:root {
+  --input-shadow: #f1f8ff 0px 0px 0px 4px;
+  --input-success-shadow: #d7ebd8 0px 0px 0px 4px;
+  --input-error-shadow: #f8d1d1 0px 0px 0px 4px;
+}
 
 .input-wrapper {
   width: 100%;
 }
 
-.input-wrapper input {
-  border-radius: var(--sm-radius);
-  border: solid 1.8px var(--dark-color);
+.input {
+  border: solid 1px var(--plain-lightgray);
+  background-color: var(--lynx-white);
   width: 100%;
-  padding: 1rem 0.5rem;
-  margin: 1rem 0;
-  outline: none;
 }
 
-.input-wrapper .input-label {
+.input:focus {
+  background-color: transparent;
+  outline: none;
+  border: solid 1px var(--lightblue-color);
+  box-shadow: var(--input-shadow);
+}
+
+.input-label {
   display: block;
 }
 
-/* Input style ends */
+/* Input Validation style  */
 
-/* Input Validation style starts */
-.input-wrapper .error-input {
-  border: solid 2px var(--red-color);
+.input-wrapper .error-msg,
+.input-wrapper .success-msg {
+  display: none;
 }
-.input-wrapper .error-msg {
+
+.input-wrapper.error .input {
+  border: solid 1px var(--red-color);
+}
+
+.input-wrapper.error .input:focus {
+  box-shadow: var(--input-error-shadow);
+}
+
+.input-wrapper.error .error-msg {
+  display: block;
   color: var(--red-color);
 }
 
-.input-wrapper .success-input {
-  border: solid 2px var(--green-color);
+.input-wrapper.success .input {
+  display: block;
+  border: solid 1px var(--green-color);
 }
 
-.input-wrapper .success-msg {
+.input-wrapper.success .input:focus {
+  box-shadow: var(--input-success-shadow);
+}
+
+.input-wrapper.success .success-msg {
+  display: block;
   color: var(--green-color);
 }
 
-/* Input Validation style ends */
+/* Radio  */
 
-/* Radio starts */
-
-.input-wrapper.radio,
-.input-wrapper.checkbox {
-  width: max-content;
-}
-
-.input-wrapper.radio label,
-.input-wrapper.checkbox label {
-  cursor: pointer;
-}
-
-.input-wrapper.radio input,
-.input-wrapper.checkbox input {
-  width: max-content;
-}
-
-.input-wrapper.disabled label {
+.radio.disabled label,
+.checkbox.disabled label {
   color: var(--plain-gray);
   cursor: not-allowed;
 }
 
-/* Radio ends */
+/* Input w button style  */
 
-/* Input w search icon style starts */
-
-.input-wrapper.input-icon {
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: solid 1.8px var(--dark-color);
-  border-radius: var(--sm-radius);
-  margin: 1rem 0;
+.input-w-btn .input {
+  flex-grow: 1;
+  outline: none;
+  border-radius: var(--sm-radius) 0 0 var(--sm-radius);
 }
 
-.input-icon input {
-  border: none;
-  margin: 0;
-  border-radius: var(--sm-radius);
+.input-w-btn .input-btn {
+  border: solid 1px var(--plain-lightgray);
+  border-left: none;
+  border-radius: 0 var(--sm-radius) var(--sm-radius) 0;
+  background-color: var(--plain-white);
 }
 
-.input-icon .icon {
-  margin: 0 1rem;
-  cursor: pointer;
+.input-w-btn .input-btn:hover {
+  color: var(--plain-white);
+  background-color: var(--primary-color);
+  transition: background-color 0.3s;
 }
-
-.input-wrapper.search .icon {
-  position: absolute;
-  display: inline;
-  top: 1.4rem;
-  right: 1rem;
-  color: var(--plain-gray);
-  cursor: pointer;
-}
-
-.input-wrapper.search .search-bar {
-  display: inline-block;
-  position: relative;
-}
-
-/* Input w search icon ends */

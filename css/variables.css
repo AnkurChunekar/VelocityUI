@@ -1,5 +1,4 @@
 :root {
-
   /* Border Radius */
 
   --sm-radius: 5px;
@@ -43,10 +42,23 @@
 
   /* Font Sizes*/
 
-  --font-size-h1: 4.0rem;
+  --font-size-h1: 4rem;
   --font-size-h2: 3.2rem;
   --font-size-h3: 2.4rem;
-  --font-size-h4: 2.0rem;
+  --font-size-h4: 2rem;
   --font-size-h5: 1.6rem;
   --font-size-h6: 1.2rem;
+
+  /* Spacing */
+
+  --spacing-xxxs: 0.4rem;
+  --spacing-xxs: 0.8rem;
+  --spacing-xs: 1.2rem;
+  --spacing-s: 1.6rem;
+  --spacing-md1: 2rem;
+  --spacing-md2: 2.4rem;
+  --spacing-lg: 2.8rem;
+  --spacing-xl: 3.2rem;
+  --spacing-xxl: 3.6rem;
+  --spacing-xxxl: 4rem;
 }

@@ -1,25 +1,41 @@
 :root {
-    --rating-star-color: orange;
+  --rating-star-color: orange;
 }
 
 /* Rating starts */
 
 .rating {
-    width: fit-content;
+  width: fit-content;  
 }
 
 .rating i {
-    color: var(--rating-star-color);
+    color: var(--plain-lightgray);
+}
+
+.rating.s1 i:nth-child(-n+1) {
+    color: var(--rating-star-color);  
+}
+
+.rating.s2 i:nth-child(-n+2) {
+    color: var(--rating-star-color);  
+}
+
+.rating.s3 i:nth-child(-n+3) {
+    color: var(--rating-star-color);  
+}
+
+.rating.s4 i:nth-child(-n+4) {
+    color: var(--rating-star-color);  
+}
+
+.rating.s5 i:nth-child(-n+5) {
+    color: var(--rating-star-color);  
 }
 
 .rating .rating-info {
-    margin-left: 1rem;
+  margin-left: var(--spacing-xxs);
+  color: var(--rating-star-color);
+  font-weight: 500;
 }
 
-.rating.lg {
-font-size: 2rem;
-}
-.rating.sm {
-    font-size: 1.2rem;
-}
 /* Rating ends */
