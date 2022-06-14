@@ -1,7 +1,8 @@
 /* alert styles start */
 
 .alert {
-  width: 40em;
+  width: 100%;
+  max-width: 40em;
   padding: 1.2rem;
   display: flex;
   align-items: center;
